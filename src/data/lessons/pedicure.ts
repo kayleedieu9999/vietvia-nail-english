@@ -1,0 +1,113 @@
+import { Lesson } from "@/types/content";
+
+export const pedicureLesson: Lesson = {
+  id: "pedicure-1",
+  slug: "lam-pedicure-cho-khach",
+  topicId: "pedicure",
+  title: "Làm Pedicure cho khách",
+  description: "Những câu tiếng Anh thường dùng khi chăm sóc chân cho khách.",
+  level: "beginner",
+  questions: [
+    {
+      id: "pedi-1",
+      type: "conversation_response",
+      speaker: "Khách",
+      badgeEmoji: "🦶",
+      english: "It takes about an hour.",
+      vietnamese: "Khoảng một tiếng.",
+      prompt: "How long does a pedicure take?",
+      promptVietnamese: "Làm pedicure mất bao lâu?",
+      choices: [
+        { id: "a", text: "It takes about an hour." },
+        { id: "b", text: "Sure. How about this one?" },
+        { id: "c", text: "Your nails are too short." },
+      ],
+      correctAnswer: "a",
+      explanation: "Khách hỏi về thời gian — trả lời bằng số phút hoặc giờ cụ thể.",
+      wrongAnswerExplanations:
+        "'Sure. How about this one?' là câu gợi ý màu sắc, không phải trả lời về thời gian. 'Your nails are too short.' cũng không liên quan đến câu hỏi này.",
+      usageTip: "Dùng khi khách hỏi thời gian làm pedicure trước khi bắt đầu.",
+    },
+    {
+      id: "pedi-2",
+      type: "conversation_response",
+      speaker: "Khách",
+      badgeEmoji: "🌡️",
+      english: "Sure, one moment.",
+      vietnamese: "Dạ được, chờ một chút.",
+      prompt: "Can you make the water a little warmer?",
+      promptVietnamese: "Chị làm nước ấm hơn một chút được không?",
+      choices: [
+        { id: "a", text: "Sure, one moment." },
+        { id: "b", text: "Your nails are too short." },
+        { id: "c", text: "It takes about an hour." },
+      ],
+      correctAnswer: "a",
+      explanation: "Khách yêu cầu điều chỉnh — đồng ý và thực hiện ngay để khách thoải mái.",
+      wrongAnswerExplanations:
+        "'Your nails are too short.' và 'It takes about an hour.' đều không liên quan đến yêu cầu về nhiệt độ nước.",
+      usageTip: "Dùng khi khách yêu cầu chỉnh nhiệt độ nước trong lúc ngâm chân.",
+    },
+    {
+      id: "pedi-3",
+      type: "conversation_response",
+      speaker: "Khách",
+      badgeEmoji: "✅",
+      english: "Yes, we do.",
+      vietnamese: "Dạ có.",
+      prompt: "Do you do gel pedicures?",
+      promptVietnamese: "Ở đây có làm pedicure gel không?",
+      choices: [
+        { id: "a", text: "Yes, we do." },
+        { id: "b", text: "Your nails are too short." },
+        { id: "c", text: "It takes about an hour." },
+      ],
+      correctAnswer: "a",
+      explanation: "Trả lời trực tiếp có hay không dịch vụ mà khách hỏi.",
+      wrongAnswerExplanations:
+        "'Your nails are too short.' và 'It takes about an hour.' không phải câu trả lời Yes/No cho câu hỏi về dịch vụ gel.",
+      usageTip: "Dùng khi khách hỏi tiệm có làm loại dịch vụ cụ thể nào đó không.",
+    },
+    {
+      id: "pedi-4",
+      type: "conversation_response",
+      speaker: "Khách",
+      badgeEmoji: "🧴",
+      english: "Yes, I'll take care of that.",
+      vietnamese: "Dạ được, tôi sẽ chăm sóc kỹ.",
+      prompt: "Can you make my heels smooth?",
+      promptVietnamese: "Chị làm gót chân tôi mịn được không?",
+      choices: [
+        { id: "a", text: "Yes, I'll take care of that." },
+        { id: "b", text: "It takes about an hour." },
+        { id: "c", text: "Your nails are too short." },
+      ],
+      correctAnswer: "a",
+      explanation: "Khách yêu cầu cụ thể — nhận lời và trấn an khách sẽ được chăm sóc kỹ.",
+      wrongAnswerExplanations:
+        "'It takes about an hour.' nói về thời gian, không phải phản hồi cho yêu cầu chăm sóc gót chân. 'Your nails are too short.' cũng không liên quan.",
+      usageTip: "Dùng khi khách yêu cầu chăm sóc kỹ một phần cụ thể như gót chân.",
+    },
+    {
+      id: "pedi-5",
+      type: "conversation_response",
+      speaker: "Khách",
+      badgeEmoji: "🎁",
+      english: "Yes, that's called a combo.",
+      vietnamese: "Dạ được, đó gọi là combo.",
+      prompt: "Can I get a pedicure and manicure together?",
+      promptVietnamese: "Tôi làm pedicure và manicure cùng lúc được không?",
+      choices: [
+        { id: "a", text: "Yes, that's called a combo." },
+        { id: "b", text: "Your nails are too short." },
+        { id: "c", text: "It takes about an hour." },
+      ],
+      correctAnswer: "a",
+      explanation: "Xác nhận dịch vụ kết hợp và gọi tên gói dịch vụ để khách dễ hiểu.",
+      wrongAnswerExplanations:
+        "'Your nails are too short.' và 'It takes about an hour.' không xác nhận được yêu cầu làm hai dịch vụ cùng lúc mà khách vừa hỏi.",
+      usageTip:
+        "Dùng khi khách hỏi có thể làm nhiều dịch vụ cùng lúc không, và mình giới thiệu tên gói dịch vụ.",
+    },
+  ],
+};

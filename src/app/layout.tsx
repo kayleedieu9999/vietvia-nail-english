@@ -9,13 +9,12 @@ const beVietnamPro = Be_Vietnam_Pro({
 });
 
 export const metadata: Metadata = {
-  title: "VietVia - Luyện tiếng Anh nghề Nails",
+  title: "VietVia English Practice",
   description:
-    "5 câu tiếng Anh nghề nails mỗi ngày. Không cần đăng nhập, chỉ khoảng 2 phút.",
+    "Luyện tiếng Anh mỗi ngày cho người Việt ở Mỹ. Không cần đăng nhập, có giải thích tiếng Việt.",
   openGraph: {
-    title: "VietVia - Luyện tiếng Anh nghề Nails",
-    description:
-      "Hôm nay bạn nói gì với khách? 5 câu tiếng Anh nghề nails, khoảng 2 phút.",
+    title: "VietVia English Practice",
+    description: "Mỗi ngày một chút, tiếng Anh sẽ dễ hơn.",
     type: "website",
   },
 };

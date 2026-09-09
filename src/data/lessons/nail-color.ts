@@ -1,0 +1,113 @@
+import { Lesson } from "@/types/content";
+
+export const nailColorLesson: Lesson = {
+  id: "nail-color-1",
+  slug: "chon-mau-son",
+  topicId: "nail-color",
+  title: "Chọn màu sơn cùng khách",
+  description: "Giúp khách tìm được màu sơn ưng ý bằng những câu tiếng Anh đơn giản.",
+  level: "beginner",
+  questions: [
+    {
+      id: "color-1",
+      type: "conversation_response",
+      speaker: "Khách",
+      badgeEmoji: "🎨",
+      english: "Sure. How about this one?",
+      vietnamese: "Được chứ. Màu này thì sao?",
+      prompt: "Do you have anything a little darker?",
+      promptVietnamese: "Bạn có màu nào đậm hơn một chút không?",
+      choices: [
+        { id: "a", text: "It takes about an hour." },
+        { id: "b", text: "Sure. How about this one?" },
+        { id: "c", text: "Your nails are too short." },
+      ],
+      correctAnswer: "b",
+      explanation: "Khi khách muốn màu khác, mình gợi ý ngay một màu khác để khách xem thử.",
+      wrongAnswerExplanations:
+        "'It takes about an hour.' là câu nói về thời gian làm dịch vụ, không liên quan đến việc chọn màu. 'Your nails are too short.' là nhận xét về móng tay, không phải phản hồi khi khách hỏi về màu sắc.",
+      usageTip: "Dùng khi khách muốn xem thêm màu khác đậm hơn hoặc khác với màu ban đầu.",
+    },
+    {
+      id: "color-2",
+      type: "conversation_response",
+      speaker: "Khách",
+      badgeEmoji: "❤️",
+      english: "We have a lot of reds. Let me show you.",
+      vietnamese: "Ở đây có nhiều màu đỏ lắm. Để tôi cho chị xem.",
+      prompt: "What colors do you have in red?",
+      promptVietnamese: "Ở đây có những màu đỏ nào?",
+      choices: [
+        { id: "a", text: "We have a lot of reds. Let me show you." },
+        { id: "b", text: "It takes about an hour." },
+        { id: "c", text: "Your nails are too short." },
+      ],
+      correctAnswer: "a",
+      explanation: "Khách hỏi về một nhóm màu cụ thể — mời khách xem bảng màu ngay.",
+      wrongAnswerExplanations:
+        "'It takes about an hour.' nói về thời gian, không phải câu trả lời cho câu hỏi về màu sắc. 'Your nails are too short.' cũng không liên quan đến việc khách hỏi màu đỏ.",
+      usageTip: "Dùng khi khách hỏi về một nhóm màu cụ thể, ví dụ các màu đỏ, hồng, cam...",
+    },
+    {
+      id: "color-3",
+      type: "conversation_response",
+      speaker: "Khách",
+      badgeEmoji: "👀",
+      english: "Sure, here you go.",
+      vietnamese: "Dạ được, đây ạ.",
+      prompt: "Can I see that color?",
+      promptVietnamese: "Cho tôi xem màu đó được không?",
+      choices: [
+        { id: "a", text: "Sure, here you go." },
+        { id: "b", text: "Your nails are too short." },
+        { id: "c", text: "It takes about an hour." },
+      ],
+      correctAnswer: "a",
+      explanation: "Khách muốn xem màu — đưa màu cho khách xem ngay, đơn giản và lịch sự.",
+      wrongAnswerExplanations:
+        "'Your nails are too short.' là nhận xét về móng, không phải phản hồi khi khách muốn xem màu. 'It takes about an hour.' nói về thời gian, cũng không liên quan.",
+      usageTip: "Dùng khi khách chỉ tay vào một màu và muốn xem gần hơn.",
+    },
+    {
+      id: "color-4",
+      type: "conversation_response",
+      speaker: "Khách",
+      badgeEmoji: "🌸",
+      english: "Yes, we have a lighter one too.",
+      vietnamese: "Có, chúng tôi cũng có màu nhạt hơn.",
+      prompt: "Do you have this in a lighter color?",
+      promptVietnamese: "Có màu này nhạt hơn không?",
+      choices: [
+        { id: "a", text: "Yes, we have a lighter one too." },
+        { id: "b", text: "Your nails are too short." },
+        { id: "c", text: "It takes about an hour." },
+      ],
+      correctAnswer: "a",
+      explanation:
+        "Trả lời có hoặc không, rồi chỉ màu phù hợp cho khách. Câu này xác nhận tiệm có màu nhạt hơn như khách muốn.",
+      wrongAnswerExplanations:
+        "'Your nails are too short.' và 'It takes about an hour.' đều không liên quan đến việc khách hỏi về sắc độ màu sơn.",
+      usageTip: "Dùng khi khách muốn màu nhạt hơn màu đang xem.",
+    },
+    {
+      id: "color-5",
+      type: "conversation_response",
+      speaker: "Khách",
+      badgeEmoji: "✨",
+      english: "This pink is very popular this season.",
+      vietnamese: "Màu hồng này đang rất được ưa chuộng mùa này.",
+      prompt: "What color is popular right now?",
+      promptVietnamese: "Màu nào đang được ưa chuộng?",
+      choices: [
+        { id: "a", text: "This pink is very popular this season." },
+        { id: "b", text: "It takes about an hour." },
+        { id: "c", text: "Your nails are too short." },
+      ],
+      correctAnswer: "a",
+      explanation: "Khách hỏi xu hướng — gợi ý một màu đang được ưa chuộng để khách dễ chọn.",
+      wrongAnswerExplanations:
+        "'It takes about an hour.' nói về thời gian dịch vụ, không phải xu hướng màu sắc. 'Your nails are too short.' cũng không liên quan đến câu hỏi về màu nào đang hot.",
+      usageTip: "Dùng khi khách phân vân chưa biết chọn màu nào, mình có thể gợi ý màu đang hot.",
+    },
+  ],
+};

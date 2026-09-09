@@ -1,0 +1,113 @@
+import { Lesson } from "@/types/content";
+
+export const customerRequestsLesson: Lesson = {
+  id: "customer-requests-1",
+  slug: "khach-yeu-cau-thay-doi",
+  topicId: "customer-requests",
+  title: "Khách yêu cầu thay đổi",
+  description: "Nghe và đáp lại tự tin khi khách yêu cầu điều gì đó khác đi.",
+  level: "beginner",
+  questions: [
+    {
+      id: "req-1",
+      type: "conversation_response",
+      speaker: "Khách",
+      badgeEmoji: "✂️",
+      english: "Sure, how short would you like?",
+      vietnamese: "Dạ được, chị muốn ngắn cỡ nào?",
+      prompt: "Can you make them shorter?",
+      promptVietnamese: "Chị cắt ngắn lại giúp tôi được không?",
+      choices: [
+        { id: "a", text: "Sure, how short would you like?" },
+        { id: "b", text: "Your nails are too short." },
+        { id: "c", text: "It takes about an hour." },
+      ],
+      correctAnswer: "a",
+      explanation: "Khách yêu cầu — hỏi thêm chi tiết để làm đúng ý khách.",
+      wrongAnswerExplanations:
+        "'Your nails are too short.' và 'It takes about an hour.' đều không phải câu hỏi lại phù hợp khi khách muốn cắt ngắn móng.",
+      usageTip: "Dùng khi khách yêu cầu thay đổi độ dài móng — hỏi thêm để làm đúng ý khách.",
+    },
+    {
+      id: "req-2",
+      type: "conversation_response",
+      speaker: "Khách",
+      badgeEmoji: "🔧",
+      english: "Of course, let me fix that for you.",
+      vietnamese: "Dạ được, để tôi sửa cho chị.",
+      prompt: "This nail is broken. Can you fix it?",
+      promptVietnamese: "Móng này bị gãy rồi. Chị sửa giúp tôi được không?",
+      choices: [
+        { id: "a", text: "Of course, let me fix that for you." },
+        { id: "b", text: "It takes about an hour." },
+        { id: "c", text: "Your nails are too short." },
+      ],
+      correctAnswer: "a",
+      explanation: "Khách gặp sự cố — nhận lời sửa ngay để khách an tâm.",
+      wrongAnswerExplanations:
+        "'It takes about an hour.' nói về thời gian, không phải phản hồi khi khách báo móng bị gãy. 'Your nails are too short.' cũng không liên quan.",
+      usageTip: "Dùng khi khách gặp sự cố với móng và cần mình sửa ngay.",
+    },
+    {
+      id: "req-3",
+      type: "conversation_response",
+      speaker: "Khách",
+      badgeEmoji: "🖌️",
+      english: "Sure, what design do you like?",
+      vietnamese: "Dạ được, chị thích kiểu nào?",
+      prompt: "Can I get a design on my nails?",
+      promptVietnamese: "Tôi vẽ hoa văn lên móng được không?",
+      choices: [
+        { id: "a", text: "Sure, what design do you like?" },
+        { id: "b", text: "Your nails are too short." },
+        { id: "c", text: "It takes about an hour." },
+      ],
+      correctAnswer: "a",
+      explanation: "Khách muốn thêm dịch vụ — hỏi thêm sở thích của khách để vẽ đúng ý.",
+      wrongAnswerExplanations:
+        "'Your nails are too short.' và 'It takes about an hour.' không hỏi thêm được thông tin về mẫu hoa văn mà khách muốn.",
+      usageTip: "Dùng khi khách muốn vẽ thêm hoa văn lên móng.",
+    },
+    {
+      id: "req-4",
+      type: "conversation_response",
+      speaker: "Khách",
+      badgeEmoji: "💵",
+      english: "It depends on the design.",
+      vietnamese: "Còn tùy vào kiểu vẽ.",
+      prompt: "How much extra for nail art?",
+      promptVietnamese: "Vẽ nail thêm bao nhiêu tiền?",
+      choices: [
+        { id: "a", text: "It depends on the design." },
+        { id: "b", text: "Your nails are too short." },
+        { id: "c", text: "Sure. How about this one?" },
+      ],
+      correctAnswer: "a",
+      explanation: "Khách hỏi giá — giải thích giá còn tùy theo yêu cầu của khách.",
+      wrongAnswerExplanations:
+        "'Your nails are too short.' không liên quan đến giá cả. 'Sure. How about this one?' là câu gợi ý màu sắc, không trả lời câu hỏi về giá tiền.",
+      usageTip: "Dùng khi khách hỏi giá vẽ nail thêm — vì giá còn tùy độ phức tạp của mẫu.",
+    },
+    {
+      id: "req-5",
+      type: "conversation_response",
+      speaker: "Khách",
+      badgeEmoji: "⬜",
+      english: "No problem, square it is.",
+      vietnamese: "Dạ không sao, tôi sẽ làm vuông.",
+      prompt: "Can you make them square, not round?",
+      promptVietnamese: "Chị làm móng vuông, đừng làm tròn nhé.",
+      choices: [
+        { id: "a", text: "No problem, square it is." },
+        { id: "b", text: "It takes about an hour." },
+        { id: "c", text: "Your nails are too short." },
+      ],
+      correctAnswer: "a",
+      explanation:
+        "Khách nêu yêu cầu cụ thể về kiểu dáng — xác nhận sẽ làm theo đúng ý khách muốn.",
+      wrongAnswerExplanations:
+        "'It takes about an hour.' và 'Your nails are too short.' đều không xác nhận được yêu cầu về kiểu dáng móng mà khách vừa nói.",
+      usageTip: "Dùng khi khách yêu cầu cụ thể về kiểu dáng móng, ví dụ vuông hay tròn.",
+    },
+  ],
+};
