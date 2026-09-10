@@ -1,6 +1,13 @@
 import { shuffle } from "@/lib/shuffle";
 import { Lesson, Question } from "@/types/content";
-import { getAllQuestions } from "@/data/lessons";
+
+/**
+ * Client-safe: this file must never import `@/data/lessons` (the full
+ * question dataset). It's imported by the "use client" LessonPlayer, so any
+ * heavy import here ships to every visitor's browser. Daily Practice's
+ * question selection (which needs the full dataset) lives server-side in
+ * `@/lib/daily-round` instead — see that file and `/api/daily`.
+ */
 
 export interface RoundQuestion extends Question {
   shuffledChoices: Question["choices"];
@@ -19,20 +26,6 @@ export function buildLessonRound(lesson: Lesson): RoundQuestion[] {
   }));
 }
 
-const DAILY_QUESTION_COUNT = 5;
-
-/** Builds "5 câu hôm nay" by pulling random questions from across every lesson on the site. */
-export function buildDailyRound(count: number = DAILY_QUESTION_COUNT): RoundQuestion[] {
-  const pool = getAllQuestions();
-  const picked = shuffle(pool).slice(0, count);
-  return picked.map(({ lesson, question }) => ({
-    ...question,
-    shuffledChoices: shuffle(question.choices),
-    sourceLessonSlug: lesson.slug,
-    sourceLessonTitle: lesson.title,
-  }));
-}
-
 export interface ScoreResult {
   passed: boolean;
   percentage: number;
@@ -42,7 +35,7 @@ export interface ScoreResult {
 /**
  * Short rounds (5 questions, like Daily 5) need a stricter bar since one
  * miss already swings the percentage a lot — 4/5 or better counts as HAPPY.
- * Longer lessons use the general 60% rule.
+ * Longer lessons use a graded 4-tier message by percentage.
  */
 export function getScoreResult(score: number, total: number): ScoreResult {
   if (total <= 0) {
@@ -51,9 +44,16 @@ export function getScoreResult(score: number, total: number): ScoreResult {
   const percentage = score / total;
   const passed = total <= 5 ? score >= Math.min(4, total) : percentage >= 0.6;
 
-  const message = passed
-    ? "Làm tốt lắm! Bạn đã hiểu khá nhiều câu trong bài này. Cứ luyện một chút mỗi ngày nhé!"
-    : "Chưa sao đâu. Thử lại một lần nữa nhé. Mỗi lần luyện sẽ giúp bạn nhớ lâu hơn.";
+  let message: string;
+  if (percentage >= 0.8) {
+    message = "Xuất sắc! Bạn nắm rất chắc bài này. Cứ luyện đều mỗi ngày nhé!";
+  } else if (percentage >= 0.6) {
+    message = "Làm tốt lắm! Bạn đã hiểu khá nhiều câu trong bài này.";
+  } else if (percentage >= 0.4) {
+    message = "Bạn đang tiến bộ. Luyện thêm một chút nữa là sẽ nhớ chắc hơn.";
+  } else {
+    message = "Chưa sao đâu. Thử lại một lần nữa nhé. Mỗi lần luyện sẽ giúp bạn nhớ lâu hơn.";
+  }
 
   return { passed, percentage, message };
 }

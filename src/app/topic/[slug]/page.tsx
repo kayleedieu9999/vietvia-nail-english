@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getTopicBySlug, topics } from "@/data/topics";
-import { getLessonsByTopic } from "@/data/lessons";
+import { getLessonSummariesByTopic } from "@/data/lessons";
 import LessonList from "@/components/LessonList";
 
 interface TopicPageProps {
@@ -28,7 +28,7 @@ export default async function TopicPage({ params }: TopicPageProps) {
   const topic = getTopicBySlug(slug);
   if (!topic) notFound();
 
-  const lessons = getLessonsByTopic(topic.id);
+  const lessons = getLessonSummariesByTopic(topic.id);
 
   return (
     <div className="min-h-dvh px-5 pb-16 pt-8">

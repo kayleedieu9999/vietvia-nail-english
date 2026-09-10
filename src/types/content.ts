@@ -11,9 +11,11 @@ export type QuestionType =
   | "fill_blank"
   | "listening"
   | "true_false"
-  | "matching";
+  | "matching"
+  | "choose_best_sentence"
+  | "situation_response";
 
-export type LessonLevel = "beginner" | "intermediate" | "advanced" | "practice";
+export type LessonLevel = "beginner" | "intermediate" | "advanced" | "practice" | "situation";
 
 export interface QuestionChoice {
   id: string;
@@ -63,6 +65,22 @@ export interface Lesson {
   /** Optional group label (e.g. "BẮT ĐẦU") for topic pages with many lessons. Lessons without one render as a flat list. */
   section?: string;
   questions: Question[];
+}
+
+/**
+ * Lightweight lesson metadata with no question content — safe to pass into
+ * Client Components (topic listings, "continue learning", results) without
+ * pulling thousands of questions' worth of text into the browser bundle.
+ */
+export interface LessonSummary {
+  id: string;
+  slug: string;
+  topicId: string;
+  title: string;
+  description: string;
+  level: LessonLevel;
+  section?: string;
+  questionCount: number;
 }
 
 export interface Topic {

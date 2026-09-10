@@ -1,19 +1,70 @@
 import Link from "next/link";
-import { topics } from "@/data/topics";
-import { allLessons, getLessonsByTopic } from "@/data/lessons";
-import { getTopicBySlug } from "@/data/topics";
+import { topics, getTopicBySlug } from "@/data/topics";
+import { getAllLessonSummaries, getLessonSummariesByTopic } from "@/data/lessons";
+import { LessonSummary } from "@/types/content";
 import TopicCard from "@/components/TopicCard";
 import ContinueLearningCard from "@/components/ContinueLearningCard";
 import HomeHero from "@/components/HomeHero";
 
 const RECENT_LESSON_COUNT = 5;
-const NAILS_FEATURED_COUNT = 6;
-const NAILS_TOPIC_ID = "nail-general";
+const FEATURED_PER_TOPIC = 6;
+
+/** Topics that get their own "featured lessons" strip on the homepage (topic slugs). */
+const FEATURED_TOPIC_SLUGS = [
+  "nail-general",
+  "small-talk",
+  "customer-requests",
+  "pedicure",
+  "nail-color",
+  "unhappy-customer",
+  "dich-vu-tay",
+];
+
+function TopicFeaturedSection({
+  topicId,
+  title,
+  emoji,
+  lessons,
+  totalCount,
+}: {
+  topicId: string;
+  title: string;
+  emoji: string;
+  lessons: LessonSummary[];
+  totalCount: number;
+}) {
+  if (lessons.length === 0) return null;
+
+  return (
+    <section className="mx-auto mt-10 w-full max-w-sm">
+      <div className="mb-3 flex items-center justify-between">
+        <h2 className="text-sm font-extrabold uppercase tracking-wide text-slate-500">{title}</h2>
+        <Link href={`/topic/${topicId}`} className="text-sm font-semibold text-rose-500">
+          Xem tất cả {totalCount} bài
+        </Link>
+      </div>
+      <div className="-mx-5 flex gap-3 overflow-x-auto px-5 pb-2">
+        {lessons.map((lesson, index) => (
+          <Link
+            key={lesson.id}
+            href={`/lesson/${lesson.slug}`}
+            className="flex w-48 shrink-0 flex-col rounded-2xl bg-white p-4 shadow-sm ring-1 ring-rose-100 transition active:scale-[0.98]"
+          >
+            <span className="text-2xl">{emoji}</span>
+            <p className="mt-2 text-sm font-bold leading-snug text-slate-900">{lesson.title}</p>
+            <p className="mt-1 text-xs text-slate-500">
+              Bài {index + 1} · {lesson.questionCount} câu
+            </p>
+          </Link>
+        ))}
+      </div>
+    </section>
+  );
+}
 
 export default function HomePage() {
-  const recentLessons = allLessons.slice(0, RECENT_LESSON_COUNT);
-  const nailsLessons = getLessonsByTopic(NAILS_TOPIC_ID);
-  const nailsFeatured = nailsLessons.slice(0, NAILS_FEATURED_COUNT);
+  const allSummaries = getAllLessonSummaries();
+  const recentLessons = allSummaries.slice(0, RECENT_LESSON_COUNT);
 
   return (
     <div className="min-h-dvh px-5 pb-16 pt-8">
@@ -40,7 +91,7 @@ export default function HomePage() {
         </Link>
       </section>
 
-      <ContinueLearningCard />
+      <ContinueLearningCard summaries={allSummaries} />
 
       <section className="mx-auto mt-10 w-full max-w-sm">
         <div className="mb-3 flex items-center justify-between">
@@ -52,45 +103,31 @@ export default function HomePage() {
           </Link>
         </div>
         <div className="grid grid-cols-2 gap-3">
-          {topics.slice(0, 6).map((topic) => (
+          {topics.slice(0, 7).map((topic) => (
             <TopicCard
               key={topic.id}
               topic={topic}
-              lessonCount={getLessonsByTopic(topic.id).length}
+              lessonCount={getLessonSummariesByTopic(topic.id).length}
             />
           ))}
         </div>
       </section>
 
-      {nailsFeatured.length > 0 && (
-        <section className="mx-auto mt-10 w-full max-w-sm">
-          <div className="mb-3 flex items-center justify-between">
-            <h2 className="text-sm font-extrabold uppercase tracking-wide text-slate-500">
-              Tiếng Anh nghề Nails
-            </h2>
-            <Link href={`/topic/${NAILS_TOPIC_ID}`} className="text-sm font-semibold text-rose-500">
-              Xem tất cả {nailsLessons.length} bài
-            </Link>
-          </div>
-          <div className="-mx-5 flex gap-3 overflow-x-auto px-5 pb-2">
-            {nailsFeatured.map((lesson, index) => (
-              <Link
-                key={lesson.id}
-                href={`/lesson/${lesson.slug}`}
-                className="flex w-48 shrink-0 flex-col rounded-2xl bg-white p-4 shadow-sm ring-1 ring-rose-100 transition active:scale-[0.98]"
-              >
-                <span className="text-2xl">💅</span>
-                <p className="mt-2 text-sm font-bold leading-snug text-slate-900">
-                  {lesson.title}
-                </p>
-                <p className="mt-1 text-xs text-slate-500">
-                  Bài {index + 1} · {lesson.questions.length} câu
-                </p>
-              </Link>
-            ))}
-          </div>
-        </section>
-      )}
+      {FEATURED_TOPIC_SLUGS.map((topicSlug) => {
+        const topic = getTopicBySlug(topicSlug);
+        if (!topic) return null;
+        const topicLessons = getLessonSummariesByTopic(topic.id);
+        return (
+          <TopicFeaturedSection
+            key={topic.id}
+            topicId={topic.slug}
+            title={topic.title}
+            emoji={topic.emoji}
+            lessons={topicLessons.slice(0, FEATURED_PER_TOPIC)}
+            totalCount={topicLessons.length}
+          />
+        );
+      })}
 
       <section className="mx-auto mt-10 w-full max-w-sm">
         <h2 className="mb-3 text-sm font-extrabold uppercase tracking-wide text-slate-500">
@@ -110,7 +147,7 @@ export default function HomePage() {
                   {lesson.title}
                 </p>
                 <p className="mt-1 text-xs text-slate-500">
-                  {lesson.questions.length} câu · {topic?.title}
+                  {lesson.questionCount} câu · {topic?.title}
                 </p>
               </Link>
             );

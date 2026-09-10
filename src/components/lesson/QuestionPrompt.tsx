@@ -32,6 +32,10 @@ export function questionLabel(question: RoundQuestion): string {
       return "Câu này đúng hay sai?";
     case "matching":
       return "Chọn đáp án đúng:";
+    case "choose_best_sentence":
+      return "Chọn câu phù hợp nhất:";
+    case "situation_response":
+      return "Bạn nên nói gì trong tình huống này?";
   }
 }
 
@@ -50,7 +54,9 @@ export default function QuestionPrompt({ question }: QuestionPromptProps) {
         </span>
       )}
 
-      {question.type === "vietnamese_to_english" ? (
+      {question.type === "vietnamese_to_english" ||
+      question.type === "choose_best_sentence" ||
+      question.type === "situation_response" ? (
         <p className="mt-3 text-lg font-semibold leading-snug text-slate-800">
           {question.promptContext}
         </p>

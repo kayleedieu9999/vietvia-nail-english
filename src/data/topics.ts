@@ -48,6 +48,13 @@ export const topics: Topic[] = [
     emoji: "😟",
   },
   {
+    id: "hand-service",
+    slug: "dich-vu-tay",
+    title: "Dịch Vụ Tay",
+    description: "Từ chào khách đến hoàn tất — các bước làm manicure bằng tiếng Anh.",
+    emoji: "🤲",
+  },
+  {
     id: "food-life",
     slug: "food-life",
     title: "Đồ Ăn & Cuộc Sống",

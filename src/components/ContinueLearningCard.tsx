@@ -2,13 +2,22 @@
 
 import Link from "next/link";
 import { useProgress } from "@/lib/progress";
-import { getLessonBySlug } from "@/data/lessons";
+import { LessonSummary } from "@/types/content";
 import { getTopicBySlug } from "@/data/topics";
 
-export default function ContinueLearningCard() {
+interface ContinueLearningCardProps {
+  /**
+   * Lightweight lesson metadata (no question text) for every lesson on the
+   * site, passed down from a Server Component so this Client Component
+   * never has to import the full (huge) lesson dataset itself.
+   */
+  summaries: LessonSummary[];
+}
+
+export default function ContinueLearningCard({ summaries }: ContinueLearningCardProps) {
   const progress = useProgress();
   const slug = progress.lastOpenedLessonSlug;
-  const lesson = slug ? getLessonBySlug(slug) : undefined;
+  const lesson = slug ? summaries.find((s) => s.slug === slug) : undefined;
   if (!lesson) return null;
 
   const topic = getTopicBySlug(lesson.topicId);

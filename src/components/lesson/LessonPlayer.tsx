@@ -1,10 +1,10 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { Lesson } from "@/types/content";
-import { RoundQuestion, buildDailyRound, buildLessonRound, getScoreResult } from "@/lib/lesson-engine";
+import { RoundQuestion, buildLessonRound, getScoreResult } from "@/lib/lesson-engine";
 import { recordLessonCompletion, setLastOpenedLesson } from "@/lib/progress";
 import SalonScene from "@/components/SalonScene";
 import QuestionPrompt, { questionLabel } from "@/components/lesson/QuestionPrompt";
@@ -14,15 +14,23 @@ import ResultCard from "@/components/lesson/ResultCard";
 
 type Screen = "intro" | "quiz" | "result";
 
-/** Plain-data description of what round to build — kept serializable so a Server Component page can pass it straight through. */
-export type RoundSource = { type: "lesson"; lesson: Lesson } | { type: "daily"; count: number };
+/**
+ * Plain-data description of what round to build — kept serializable so a
+ * Server Component page can pass it straight through. The "daily" variant
+ * carries an already-built round (computed server-side from the full
+ * dataset in `@/lib/daily-round`) rather than a count, so this file and
+ * LessonPlayer never need to import that dataset themselves.
+ */
+export type RoundSource =
+  | { type: "lesson"; lesson: Lesson }
+  | { type: "daily"; questions: RoundQuestion[] };
 
 function buildRoundFromSource(source: RoundSource): RoundQuestion[] {
-  return source.type === "lesson" ? buildLessonRound(source.lesson) : buildDailyRound(source.count);
+  return source.type === "lesson" ? buildLessonRound(source.lesson) : source.questions;
 }
 
 function questionCountFromSource(source: RoundSource): number {
-  return source.type === "lesson" ? source.lesson.questions.length : source.count;
+  return source.type === "lesson" ? source.lesson.questions.length : source.questions.length;
 }
 
 interface LessonPlayerProps {
@@ -62,13 +70,31 @@ export default function LessonPlayer({
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedChoiceId, setSelectedChoiceId] = useState<string | null>(null);
   const [score, setScore] = useState(0);
+  const [isLoadingRound, setIsLoadingRound] = useState(false);
+  const hasStartedOnce = useRef(false);
 
   useEffect(() => {
     if (progressKey) setLastOpenedLesson(progressKey);
   }, [progressKey]);
 
-  function startRound() {
-    setRound(buildRoundFromSource(source));
+  async function startRound() {
+    // Daily Practice's first round is pre-built server-side (in the
+    // `source` prop); every retry after that fetches a fresh random 5 from
+    // /api/daily instead, since the client never has the full question
+    // dataset to pick from itself.
+    if (source.type === "daily" && hasStartedOnce.current) {
+      setIsLoadingRound(true);
+      try {
+        const res = await fetch("/api/daily");
+        const freshQuestions: RoundQuestion[] = await res.json();
+        setRound(freshQuestions);
+      } finally {
+        setIsLoadingRound(false);
+      }
+    } else {
+      setRound(buildRoundFromSource(source));
+    }
+    hasStartedOnce.current = true;
     setCurrentIndex(0);
     setSelectedChoiceId(null);
     setScore(0);
@@ -211,9 +237,10 @@ export default function LessonPlayer({
       <button
         type="button"
         onClick={startRound}
-        className="w-full rounded-2xl bg-rose-500 px-6 py-4 text-lg font-bold text-white shadow-sm shadow-rose-300 transition active:scale-[0.98] active:bg-rose-600"
+        disabled={isLoadingRound}
+        className="w-full rounded-2xl bg-rose-500 px-6 py-4 text-lg font-bold text-white shadow-sm shadow-rose-300 transition active:scale-[0.98] active:bg-rose-600 disabled:opacity-60"
       >
-        THỬ LẠI
+        {isLoadingRound ? "Đang tải..." : "THỬ LẠI"}
       </button>
       {nextLessonHref && (
         <button
