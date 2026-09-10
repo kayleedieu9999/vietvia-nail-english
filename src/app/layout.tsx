@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Be_Vietnam_Pro } from "next/font/google";
+import Footer from "@/components/Footer";
 import "./globals.css";
 
 const beVietnamPro = Be_Vietnam_Pro({
@@ -34,7 +35,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${beVietnamPro.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-rose-50 font-sans text-slate-900">
-        {children}
+        <main className="flex-1">{children}</main>
+        <Footer />
       </body>
     </html>
   );

@@ -5,6 +5,7 @@ import { LessonSummary } from "@/types/content";
 import TopicCard from "@/components/TopicCard";
 import ContinueLearningCard from "@/components/ContinueLearningCard";
 import HomeHero from "@/components/HomeHero";
+import AppStoreButton from "@/components/AppStoreButton";
 
 const RECENT_LESSON_COUNT = 5;
 const FEATURED_PER_TOPIC = 6;
@@ -72,6 +73,9 @@ export default function HomePage() {
         <p className="text-lg font-extrabold tracking-wide text-rose-500">
           VietVia English Practice
         </p>
+        <div className="mt-3 flex justify-center">
+          <AppStoreButton variant="pill" />
+        </div>
       </header>
 
       <HomeHero />
@@ -176,6 +180,18 @@ export default function HomePage() {
             Luyện ngay
           </span>
         </Link>
+      </section>
+
+      <section className="mx-auto mt-10 w-full max-w-sm rounded-3xl bg-white p-6 text-center shadow-sm ring-1 ring-rose-100">
+        <h2 className="text-lg font-extrabold text-slate-900">
+          Luyện thêm với ứng dụng VietVia
+        </h2>
+        <p className="mt-2 text-sm text-slate-600">
+          Mang theo các bài luyện tiếng Anh bên mình và luyện bất cứ khi nào có thời gian.
+        </p>
+        <div className="mt-4 flex justify-center">
+          <AppStoreButton variant="badge" />
+        </div>
       </section>
     </div>
   );
