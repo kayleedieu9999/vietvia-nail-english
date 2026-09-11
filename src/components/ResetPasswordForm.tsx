@@ -29,9 +29,6 @@ const MIN_PASSWORD_LENGTH = 6;
 
 type Status = "checking" | "ready" | "invalid" | "done";
 
-const INVALID_MESSAGE =
-  "Link đặt lại mật khẩu không hợp lệ hoặc đã hết hạn. Vui lòng quay lại app VietVia và yêu cầu link mới.";
-
 export default function ResetPasswordForm() {
   const [status, setStatus] = useState<Status>("checking");
   const [password, setPassword] = useState("");
@@ -106,7 +103,7 @@ export default function ResetPasswordForm() {
       return;
     }
     if (password !== confirm) {
-      setError("Mật khẩu nhập lại chưa khớp. Vui lòng kiểm tra lại.");
+      setError("Hai mật khẩu chưa giống nhau.");
       return;
     }
 
@@ -143,7 +140,12 @@ export default function ResetPasswordForm() {
   if (status === "invalid") {
     return (
       <div className="mt-4">
-        <p className="text-base text-slate-700">{INVALID_MESSAGE}</p>
+        <p className="text-base text-slate-700">
+          Link đặt lại mật khẩu không hợp lệ hoặc đã hết hạn.
+        </p>
+        <p className="mt-2 text-base text-slate-700">
+          Vui lòng quay lại app VietVia và yêu cầu link mới.
+        </p>
         <a
           href="vietvia://"
           className="mt-6 block w-full rounded-xl bg-rose-500 px-5 py-4 text-center text-base font-bold text-white transition hover:bg-rose-600"

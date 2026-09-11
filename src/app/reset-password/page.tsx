@@ -20,6 +20,9 @@ export default function ResetPasswordPage() {
     <div className="min-h-dvh px-5 pb-16 pt-12">
       <div className="mx-auto w-full max-w-sm">
         <h1 className="text-2xl font-extrabold text-slate-900">Đặt lại mật khẩu</h1>
+        <p className="mt-2 text-base text-slate-600">
+          Nhập mật khẩu mới cho tài khoản VietVia của bạn.
+        </p>
         <ResetPasswordForm />
       </div>
     </div>
