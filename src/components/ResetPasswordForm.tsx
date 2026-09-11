@@ -134,7 +134,11 @@ export default function ResetPasswordForm() {
   }
 
   if (status === "checking") {
-    return <p className="mt-4 text-sm text-slate-600">Đang kiểm tra liên kết...</p>;
+    return (
+      <p className="mt-4 text-sm text-slate-600">
+        Đang xác nhận link đặt lại mật khẩu...
+      </p>
+    );
   }
 
   if (status === "invalid") {
@@ -163,7 +167,7 @@ export default function ResetPasswordForm() {
           Mật khẩu đã được đổi thành công.
         </p>
         <p className="mt-2 text-base text-slate-700">
-          Bạn có thể quay lại app VietVia để đăng nhập.
+          Bạn có thể quay lại app VietVia và đăng nhập bằng mật khẩu mới.
         </p>
         <a
           href="vietvia://"
