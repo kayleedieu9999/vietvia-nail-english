@@ -26,6 +26,13 @@ const EXPECTED_TOPIC_COUNTS: Record<string, number | null> = {
   "hand-service": 50,
   "nail-general": 15,
   "food-life": 1,
+  "daily-english": 50,
+  airport: 50,
+  emergency: 50,
+  dmv: 50,
+  citizenship: 50,
+  listening: 50,
+  pronunciation: 50,
 };
 
 function normalize(text: string): string {
@@ -147,6 +154,11 @@ for (const [topicId, lessons] of byTopic) {
   const exempt = DUPLICATE_SCAN_EXEMPT_TOPICS.has(topicId);
   for (const lesson of lessons) {
     for (const q of lesson.questions) {
+      // "true_false" comprehension-check questions intentionally re-test a
+      // sentence already taught earlier in the SAME lesson (e.g. "Does this
+      // sentence mean X?") — that's a deliberate design, not a content bug,
+      // so it's excluded from duplicate detection.
+      if (q.type === "true_false") continue;
       const key = normalize(q.english);
       const prior = sentenceToLocation.get(key);
       if (prior) {

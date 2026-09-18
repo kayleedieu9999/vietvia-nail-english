@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Be_Vietnam_Pro } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
-import Footer from "@/components/Footer";
+import AppShell from "@/components/nav/AppShell";
 import "./globals.css";
 
 const beVietnamPro = Be_Vietnam_Pro({
@@ -26,7 +26,7 @@ export const viewport: Viewport = {
   initialScale: 1,
   maximumScale: 1,
   userScalable: false,
-  themeColor: "#fdf2f8",
+  themeColor: "#fbf6f1",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
@@ -35,9 +35,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="vi"
       className={`${beVietnamPro.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-rose-50 font-sans text-slate-900">
-        <main className="flex-1">{children}</main>
-        <Footer />
+      <body className="min-h-full bg-canvas font-sans text-slate-900">
+        <AppShell>{children}</AppShell>
         <Analytics />
       </body>
     </html>

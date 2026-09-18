@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { topics } from "@/data/topics";
-import { getLessonsByTopic } from "@/data/lessons";
-import TopicCard from "@/components/TopicCard";
+import { getLessonSummariesByTopic } from "@/data/lessons";
+import TopicListRow from "@/components/TopicListRow";
 
 export const metadata: Metadata = {
   title: "Chủ đề - VietVia English Practice",
@@ -22,12 +22,12 @@ export default function TopicsPage() {
           Chọn một chủ đề để bắt đầu luyện tập.
         </p>
 
-        <div className="mt-6 grid grid-cols-2 gap-3">
+        <div className="mt-6 space-y-2.5">
           {topics.map((topic) => (
-            <TopicCard
+            <TopicListRow
               key={topic.id}
               topic={topic}
-              lessonCount={getLessonsByTopic(topic.id).length}
+              lessonSlugs={getLessonSummariesByTopic(topic.id).map((l) => l.slug)}
             />
           ))}
         </div>

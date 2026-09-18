@@ -11,6 +11,13 @@ import { pedicureMoreLessons } from "@/data/lessons/pedicure-more";
 import { nailColorMoreLessons } from "@/data/lessons/nail-color-more";
 import { unhappyCustomerLessons } from "@/data/lessons/unhappy-customer";
 import { handServiceLessons } from "@/data/lessons/hand-service";
+import { dailyEnglishLessons } from "@/data/lessons/daily-english";
+import { airportLessons } from "@/data/lessons/airport";
+import { emergencyLessons } from "@/data/lessons/emergency";
+import { dmvLessons } from "@/data/lessons/dmv";
+import { citizenshipLessons } from "@/data/lessons/citizenship";
+import { listeningLessons } from "@/data/lessons/listening";
+import { pronunciationLessons } from "@/data/lessons/pronunciation";
 
 /**
  * Every lesson on the site. To add a new lesson: write a new file in
@@ -30,6 +37,13 @@ export const allLessons: Lesson[] = [
   ...nailColorMoreLessons,
   ...unhappyCustomerLessons,
   ...handServiceLessons,
+  ...dailyEnglishLessons,
+  ...airportLessons,
+  ...emergencyLessons,
+  ...dmvLessons,
+  ...citizenshipLessons,
+  ...listeningLessons,
+  ...pronunciationLessons,
 ];
 
 export function getLessonsByTopic(topicId: string): Lesson[] {

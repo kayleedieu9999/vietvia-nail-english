@@ -2,7 +2,7 @@ import Link from "next/link";
 import { topics, getTopicBySlug } from "@/data/topics";
 import { getAllLessonSummaries, getLessonSummariesByTopic } from "@/data/lessons";
 import { LessonSummary } from "@/types/content";
-import TopicCard from "@/components/TopicCard";
+import TopicListRow from "@/components/TopicListRow";
 import ContinueLearningCard from "@/components/ContinueLearningCard";
 import HomeHero from "@/components/HomeHero";
 import AppStoreButton from "@/components/AppStoreButton";
@@ -100,18 +100,18 @@ export default function HomePage() {
       <section className="mx-auto mt-10 w-full max-w-sm">
         <div className="mb-3 flex items-center justify-between">
           <h2 className="text-sm font-extrabold uppercase tracking-wide text-slate-500">
-            Chủ đề
+            Lộ trình học tập
           </h2>
           <Link href="/topics" className="text-sm font-semibold text-rose-500">
             Xem tất cả
           </Link>
         </div>
-        <div className="grid grid-cols-2 gap-3">
+        <div className="space-y-2.5">
           {topics.slice(0, 7).map((topic) => (
-            <TopicCard
+            <TopicListRow
               key={topic.id}
               topic={topic}
-              lessonCount={getLessonSummariesByTopic(topic.id).length}
+              lessonSlugs={getLessonSummariesByTopic(topic.id).map((l) => l.slug)}
             />
           ))}
         </div>

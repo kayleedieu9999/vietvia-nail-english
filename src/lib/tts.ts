@@ -27,7 +27,7 @@ function getVoices(): Promise<SpeechSynthesisVoice[]> {
 }
 
 /** Speaks English text aloud using the browser's built-in text-to-speech, US English. */
-export async function speakEnglish(text: string): Promise<void> {
+export async function speakEnglish(text: string, rate = 0.92): Promise<void> {
   if (!isSpeechSupported()) return;
   const synth = window.speechSynthesis;
   synth.cancel();
@@ -35,9 +35,12 @@ export async function speakEnglish(text: string): Promise<void> {
   const voices = await getVoices();
   const utterance = new SpeechSynthesisUtterance(text);
   utterance.lang = "en-US";
-  utterance.rate = 0.92;
+  utterance.rate = rate;
   const voice = pickVoice(voices);
   if (voice) utterance.voice = voice;
 
   synth.speak(utterance);
 }
+
+/** Slow-speech rate for the "🐢 Nghe chậm" button — same convention the sister Expo app uses. */
+export const SLOW_SPEECH_RATE = 0.45;
