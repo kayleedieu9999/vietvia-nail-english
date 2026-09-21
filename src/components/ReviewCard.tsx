@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useGrammarProgress } from "@/lib/grammarProgress";
 
 interface ReviewCardProps {
@@ -11,9 +12,9 @@ interface ReviewCardProps {
 /**
  * "Câu cần ôn lại" — real sentences from grammar rules the learner actually
  * answered wrong (`quizCorrect === false` in `grammarProgress`), not
- * placeholder text. Includes a small CSS phone mockup (not a stock photo —
- * the site has no such asset) previewing the homepage, echoing the
- * reference design's phone-preview panel.
+ * placeholder text. The side visual is a realistic photo (a hand holding a
+ * phone showing a warm, burgundy learning-app screen) instead of the earlier
+ * cartoon-ish CSS phone mockup.
  */
 export default function ReviewCard({ reviewSentencePool }: ReviewCardProps) {
   const progress = useGrammarProgress();
@@ -55,19 +56,14 @@ export default function ReviewCard({ reviewSentencePool }: ReviewCardProps) {
           )}
         </div>
 
-        {/* Small CSS phone mockup — a stand-in preview, not a real screenshot asset. */}
-        <div className="hidden w-24 shrink-0 rounded-[1.4rem] border-4 border-slate-800 bg-canvas p-1.5 lg:block">
-          <div className="rounded-xl bg-white p-1.5">
-            <p className="text-[8px] font-extrabold text-rose-600">💅 VietVia</p>
-            <p className="mt-1 text-[7px] font-bold text-slate-700">Chào bạn 👋</p>
-            <div className="mt-1 rounded bg-rose-100 p-1">
-              <div className="h-1 w-2/3 rounded-full bg-rose-400" />
-            </div>
-            <div className="mt-1 space-y-1">
-              <div className="h-3 rounded bg-well" />
-              <div className="h-3 rounded bg-well" />
-            </div>
-          </div>
+        <div className="relative hidden w-24 shrink-0 overflow-hidden rounded-2xl lg:block">
+          <Image
+            src="/images/review-phone.png"
+            alt="Học viên cầm điện thoại xem bài luyện tiếng Anh trên VietVia"
+            fill
+            className="object-cover"
+            sizes="96px"
+          />
         </div>
       </div>
 

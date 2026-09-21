@@ -95,3 +95,8 @@ export function setLastOpenedLesson(lessonSlug: string): void {
 export function getAllProgress(): Record<string, LessonProgress> {
   return getState().lessons;
 }
+
+/** Clears all locally-stored lesson progress (Settings → "Xóa dữ liệu luyện tập"). Cannot be undone. */
+export function resetProgress(): void {
+  setState(EMPTY_STATE);
+}

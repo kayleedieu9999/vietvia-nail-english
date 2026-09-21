@@ -10,9 +10,6 @@ import { LessonProgress } from "./progress";
  * wall-clock time spent.
  */
 
-export const DAILY_GOAL_LESSONS = 3;
-export const DAILY_GOAL_MINUTES = 10;
-
 const WEEK_MS = 7 * 24 * 60 * 60 * 1000;
 
 function estimateMinutes(questionCount: number): number {
@@ -76,6 +73,24 @@ export function computeWeeklySummary(lessons: Record<string, LessonProgress>): W
   );
 
   return { streakDays: computeStreak(lessons).streakDays, lessonsThisWeek, questionsThisWeek, estimatedMinutesThisWeek };
+}
+
+export interface AllTimeSummary {
+  streakDays: number;
+  lessonsCompleted: number;
+  totalMinutes: number;
+  totalQuestions: number;
+}
+
+/** All-time totals across every lesson ever played — used on the Hồ sơ (profile) page. */
+export function computeAllTimeSummary(lessons: Record<string, LessonProgress>): AllTimeSummary {
+  const values = Object.values(lessons);
+  return {
+    streakDays: computeStreak(lessons).streakDays,
+    lessonsCompleted: values.length,
+    totalMinutes: values.reduce((sum, lesson) => sum + estimateMinutes(lesson.bestTotal), 0),
+    totalQuestions: values.reduce((sum, lesson) => sum + lesson.bestTotal, 0),
+  };
 }
 
 /** Vietnamese Mon-first weekday labels, matching the streak/weekly-chart row in the reference design. */

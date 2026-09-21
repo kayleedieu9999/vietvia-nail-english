@@ -30,9 +30,9 @@ export interface NavSection {
 /**
  * Sidebar/bottom-nav structure. Grouped into "Học hôm nay" (daily practice
  * entry points) / "Lộ trình" (structured curriculum) / "Tiến độ" (progress
- * tracking) / "Tài khoản" (account — placeholders until the site has real
- * auth) per the Modern Nail Lounge redesign. Every item maps to a REAL route
- * that already exists; nothing here is a fabricated destination.
+ * tracking) / "Tài khoản" (a local on-device profile + settings — "Gói học"
+ * stays disabled since there's no real subscription system yet) per the
+ * Modern Nail Lounge redesign. Every enabled item maps to a REAL route.
  */
 export function buildNavSections(): NavSection[] {
   return [
@@ -77,9 +77,9 @@ export function buildNavSections(): NavSection[] {
       key: "account",
       title: "TÀI KHOẢN",
       items: [
-        { key: "profile", icon: "👤", label: "Hồ sơ", href: "/account/profile", disabled: true },
+        { key: "profile", icon: "👤", label: "Hồ sơ", href: "/account/profile" },
         { key: "plan", icon: "💳", label: "Gói học", href: "/account/plan", disabled: true },
-        { key: "settings", icon: "⚙️", label: "Cài đặt", href: "/account/settings", disabled: true },
+        { key: "settings", icon: "⚙️", label: "Cài đặt", href: "/account/settings" },
       ],
     },
   ];

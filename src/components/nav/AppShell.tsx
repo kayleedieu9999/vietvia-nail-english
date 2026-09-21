@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Footer from "@/components/Footer";
+import TextScaleEffect from "@/components/TextScaleEffect";
 import Sidebar from "./Sidebar";
 import BottomNav from "./BottomNav";
 import TopBar from "./TopBar";
@@ -15,6 +16,7 @@ import TopBar from "./TopBar";
 export default function AppShell({ children }: { children: React.ReactNode }) {
   return (
     <div className="flex min-h-dvh">
+      <TextScaleEffect />
       <Sidebar />
       <div className="flex min-w-0 flex-1 flex-col">
         <header className="sticky top-0 z-20 flex items-center justify-center border-b border-slate-200 bg-white/90 px-5 py-3 backdrop-blur lg:hidden">

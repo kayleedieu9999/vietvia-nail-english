@@ -73,6 +73,11 @@ export function getGrammarProgressSnapshot(): Record<string, RuleProgress> {
   return getState().rules;
 }
 
+/** Clears all locally-stored grammar-rule progress (Settings → "Xóa dữ liệu luyện tập"). Cannot be undone. */
+export function resetGrammarProgress(): void {
+  setState(EMPTY_STATE);
+}
+
 export function recordRuleOpened(ruleId: string): void {
   const current = getState();
   const existing = current.rules[ruleId];

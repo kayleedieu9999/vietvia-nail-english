@@ -1,16 +1,19 @@
 "use client";
 
+import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { useLocalSettings } from "@/lib/localSettings";
 
 /**
  * Desktop-only top bar (search + notification + profile slot) above the
- * main dashboard content. The profile block is intentionally generic — the
- * site has no login/account system, so there's no real user to name or
- * photograph here, just a friendly "Xin chào" slot in the same visual
- * position a logged-in avatar would occupy.
+ * main dashboard content. The profile block links to the local on-device
+ * profile page (`/account/profile`) and shows the learner's own nickname —
+ * the site still has no login/account system, so this is a real local
+ * setting, not a fabricated logged-in identity.
  */
 export default function TopBar() {
   const router = useRouter();
+  const { displayName } = useLocalSettings();
 
   return (
     <div className="hidden items-center gap-4 lg:flex">
@@ -45,15 +48,18 @@ export default function TopBar() {
         <span className="absolute right-2.5 top-2.5 h-2 w-2 rounded-full bg-rose-500" />
       </button>
 
-      <div className="flex shrink-0 items-center gap-2.5 rounded-full border border-slate-200 bg-white py-1.5 pl-1.5 pr-4">
+      <Link
+        href="/account/profile"
+        className="flex shrink-0 items-center gap-2.5 rounded-full border border-slate-200 bg-white py-1.5 pl-1.5 pr-4 transition hover:border-rose-200"
+      >
         <div className="flex h-8 w-8 items-center justify-center rounded-full bg-rose-100 text-base">
           🙋‍♀️
         </div>
         <div className="leading-tight">
           <p className="text-xs text-slate-400">Xin chào</p>
-          <p className="text-sm font-bold text-slate-900">Học viên VietVia</p>
+          <p className="text-sm font-bold text-slate-900">{displayName}</p>
         </div>
-      </div>
+      </Link>
     </div>
   );
 }
