@@ -15,32 +15,22 @@ interface HubCardProps {
 }
 
 function HubCard({ emoji, title, description, cta, href, pct, accent }: HubCardProps) {
-  const ctaClasses =
-    accent === "rose"
-      ? "bg-rose-500 shadow-rose-300 active:bg-rose-600"
-      : "bg-orange-500 shadow-orange-300 active:bg-orange-600";
+  const ctaClass = accent === "rose" ? "btn-primary" : "btn-secondary";
 
   return (
-    <Link
-      href={href}
-      className="block rounded-2xl bg-white p-5 shadow-sm ring-1 ring-rose-100 transition active:scale-[0.98]"
-    >
+    <Link href={href} className="card-surface-interactive block">
       <span className="text-3xl">{emoji}</span>
       <p className="mt-3 text-lg font-extrabold text-slate-900">{title}</p>
       <p className="mt-1 text-sm leading-relaxed text-slate-600">{description}</p>
       {pct !== undefined && (
         <div className="mt-3 flex items-center gap-3">
-          <div className="h-2 flex-1 overflow-hidden rounded-full bg-rose-100">
+          <div className="h-2 flex-1 overflow-hidden rounded-full bg-well">
             <div className="h-full rounded-full bg-rose-500" style={{ width: `${pct}%` }} />
           </div>
           <span className="text-xs font-extrabold text-rose-500">{pct}% hoàn thành</span>
         </div>
       )}
-      <span
-        className={`mt-4 block w-full rounded-xl px-4 py-2.5 text-center text-sm font-bold text-white shadow-sm ${ctaClasses}`}
-      >
-        {cta}
-      </span>
+      <span className={`${ctaClass} mt-4 w-full`}>{cta}</span>
     </Link>
   );
 }

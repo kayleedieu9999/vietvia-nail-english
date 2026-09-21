@@ -31,8 +31,10 @@ export default function TopicListRow({ topic, lessonSlugs }: TopicListRowProps) 
 
   const row = (
     <div
-      className={`flex items-center gap-3 rounded-2xl p-3.5 shadow-sm ring-1 transition ${
-        hasLessons ? "bg-white ring-rose-100 active:scale-[0.98]" : "bg-slate-50 ring-slate-100"
+      className={`flex items-center gap-3 rounded-2xl border p-3.5 transition ${
+        hasLessons
+          ? "border-slate-200 bg-white active:scale-[0.98]"
+          : "border-slate-100 bg-slate-50"
       }`}
     >
       <div

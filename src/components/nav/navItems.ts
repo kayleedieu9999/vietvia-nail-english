@@ -12,6 +12,13 @@ export interface NavItem {
   href: string;
   /** Present only on the expandable "100 Quy tắc ngữ pháp" row. */
   children?: NavChild[];
+  /**
+   * True for a destination that doesn't exist yet on the site (e.g. account
+   * settings — there's no auth/profile system to link to). Rendered as a
+   * visible-but-non-clickable "Sắp có" row instead of inventing a fake page,
+   * same honesty rule as `TopicListRow`'s disabled state.
+   */
+  disabled?: boolean;
 }
 
 export interface NavSection {
@@ -21,34 +28,29 @@ export interface NavSection {
 }
 
 /**
- * Sidebar/bottom-nav structure. The REAL published VietVia app (verified
- * from its actual App Store listing/screenshots, not just the in-progress
- * Expo source) has exactly 4 bottom tabs — Học / Thư viện / Gia Sư / Hồ sơ —
- * with "Lộ trình học tập" living as a section ON the Học (home) screen, not
- * a 5th tab. This mirrors that: 4 primary destinations, with the grammar
- * program + other Lộ trình content grouped as a section rather than a peer
- * tab. "Gia Sư" (AI tutor chat) and "Hồ sơ" (login/profile) have no website
- * equivalent — inventing fake destinations for them would be dishonest, so
- * those slots map to the closest REAL features instead (quick practice,
- * results) rather than being labeled as something they're not.
+ * Sidebar/bottom-nav structure. Grouped into "Học hôm nay" (daily practice
+ * entry points) / "Lộ trình" (structured curriculum) / "Tiến độ" (progress
+ * tracking) / "Tài khoản" (account — placeholders until the site has real
+ * auth) per the Modern Nail Lounge redesign. Every item maps to a REAL route
+ * that already exists; nothing here is a fabricated destination.
  */
 export function buildNavSections(): NavSection[] {
   return [
     {
-      key: "main",
-      title: "MAIN",
+      key: "today",
+      title: "HỌC HÔM NAY",
       items: [
-        { key: "home", icon: "🏠", label: "Học", href: "/" },
-        { key: "topics", icon: "📚", label: "Thư viện", href: "/topics" },
-        { key: "daily", icon: "⚡", label: "Luyện nhanh", href: "/daily" },
-        { key: "results", icon: "📊", label: "Kết quả", href: "/results" },
+        { key: "home", icon: "🏠", label: "Hôm nay", href: "/" },
+        { key: "speak", icon: "🗣️", label: "Luyện nói", href: "/daily" },
+        { key: "nails-convo", icon: "💅", label: "Hội thoại Nails", href: "/topic/nail-general" },
+        { key: "drills", icon: "📚", label: "Bài luyện", href: "/topics" },
       ],
     },
     {
       key: "path",
-      title: "LỘ TRÌNH HỌC TẬP",
+      title: "LỘ TRÌNH",
       items: [
-        { key: "lo-trinh", icon: "✨", label: "Lộ trình của bạn", href: "/lo-trinh" },
+        { key: "foundation", icon: "🧱", label: "Tiếng Anh nền tảng", href: "/lo-trinh" },
         {
           key: "grammar100",
           icon: "🧩",
@@ -61,6 +63,23 @@ export function buildNavSections(): NavSection[] {
         },
         { key: "pronunciation", icon: "🔊", label: "Phát âm", href: "/topic/pronunciation" },
         { key: "listening", icon: "👂", label: "Nghe & phản xạ", href: "/topic/listening" },
+      ],
+    },
+    {
+      key: "progress",
+      title: "TIẾN ĐỘ",
+      items: [
+        { key: "my-progress", icon: "📊", label: "Tiến độ của tôi", href: "/results" },
+        { key: "review", icon: "🔁", label: "Câu cần ôn lại", href: "/lo-trinh/ngu-phap" },
+      ],
+    },
+    {
+      key: "account",
+      title: "TÀI KHOẢN",
+      items: [
+        { key: "profile", icon: "👤", label: "Hồ sơ", href: "/account/profile", disabled: true },
+        { key: "plan", icon: "💳", label: "Gói học", href: "/account/plan", disabled: true },
+        { key: "settings", icon: "⚙️", label: "Cài đặt", href: "/account/settings", disabled: true },
       ],
     },
   ];

@@ -18,7 +18,7 @@ export default function BottomNav() {
 
   return (
     <nav
-      className="fixed inset-x-0 bottom-0 z-30 border-t border-rose-100 bg-canvas-warm/95 backdrop-blur lg:hidden"
+      className="fixed inset-x-0 bottom-0 z-30 border-t border-slate-200 bg-white/95 backdrop-blur lg:hidden"
       style={{ paddingBottom: "env(safe-area-inset-bottom)" }}
     >
       <ul className="mx-auto flex w-full max-w-sm items-stretch justify-between px-2">
@@ -29,7 +29,7 @@ export default function BottomNav() {
               <Link
                 href={item.href}
                 className={`flex flex-col items-center gap-0.5 py-2 text-[11px] font-bold transition ${
-                  active ? "text-rose-500" : "text-slate-400"
+                  active ? "text-rose-600" : "text-slate-400"
                 }`}
               >
                 <span className={`text-xl leading-none transition ${active ? "" : "opacity-70"}`}>{item.icon}</span>

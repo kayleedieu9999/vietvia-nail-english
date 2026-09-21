@@ -4,9 +4,8 @@ import { useState } from "react";
 import Image from "next/image";
 import { IllustratedSalonScene } from "@/components/SalonScene";
 
-const HERO_IMAGE_URL = "/images/home-hero.webp";
-const HERO_ALT =
-  "Thợ nails người Việt và khách hàng người Mỹ trò chuyện thân thiện trong tiệm nails hiện đại";
+const HERO_IMAGE_URL = "/images/hero-manicure.png";
+const HERO_ALT = "Bàn tay được làm nail gel màu hồng phấn tinh tế, phong cách nail lounge cao cấp";
 
 /**
  * The homepage cover visual — the first thing a visitor sees. Slot-based

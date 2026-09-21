@@ -41,7 +41,7 @@ export default function PhaseDetailView({ phase, rules }: PhaseDetailViewProps) 
             <Link
               key={rule.id}
               href={`/lo-trinh/ngu-phap/rule/${rule.id}`}
-              className="flex items-center gap-3 rounded-2xl bg-white p-3.5 shadow-sm ring-1 ring-rose-100 transition active:scale-[0.98]"
+              className="flex items-center gap-3 rounded-2xl border border-slate-200 bg-white p-3.5 transition active:scale-[0.98]"
             >
               <span
                 className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-xl text-sm font-bold ${

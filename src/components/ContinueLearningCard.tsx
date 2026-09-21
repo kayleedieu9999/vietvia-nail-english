@@ -22,36 +22,44 @@ export default function ContinueLearningCard({ summaries }: ContinueLearningCard
 
   const topic = getTopicBySlug(lesson.topicId);
   const lessonProgress = progress.lessons[lesson.slug];
+  const pct = lessonProgress
+    ? Math.round((lessonProgress.bestScore / lessonProgress.bestTotal) * 100)
+    : 0;
 
   return (
-    <section className="mx-auto mt-8 w-full max-w-sm">
-      <h2 className="mb-3 text-sm font-extrabold uppercase tracking-wide text-slate-500">
-        Tiếp tục luyện
-      </h2>
-      <Link
-        href={`/lesson/${lesson.slug}`}
-        className="flex items-center gap-4 rounded-2xl bg-white p-4 shadow-sm ring-1 ring-rose-100 transition active:scale-[0.98]"
-      >
-        <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-orange-100 text-xl">
-          🔁
+    <Link href={`/lesson/${lesson.slug}`} className="card-surface-interactive flex h-full flex-col lg:p-7">
+      <div className="flex items-center justify-between">
+        <p className="flex items-center gap-2 text-sm font-extrabold text-slate-900 lg:text-base">
+          <span aria-hidden>📊</span> Tiếp tục bài đang luyện
+        </p>
+        <span aria-hidden className="text-slate-300">
+          ›
+        </span>
+      </div>
+
+      <div className="mt-4 flex items-center gap-3">
+        <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-rose-100 text-2xl">
+          {topic?.emoji ?? "🔁"}
         </div>
         <div className="min-w-0 flex-1">
-          {topic && (
-            <p className="text-xs font-bold uppercase tracking-wide text-orange-500">
-              {topic.title}
-            </p>
-          )}
-          <p className="mt-0.5 truncate text-base font-bold text-slate-900">{lesson.title}</p>
+          <p className="truncate text-base font-bold text-slate-900">{lesson.title}</p>
           {lessonProgress && (
-            <p className="mt-0.5 text-sm text-emerald-600">
-              Điểm cao nhất: {lessonProgress.bestScore}/{lessonProgress.bestTotal}
+            <p className="mt-0.5 text-sm text-slate-500">
+              {lessonProgress.bestScore} / {lessonProgress.bestTotal} câu
             </p>
           )}
         </div>
-        <span className="shrink-0 rounded-xl bg-rose-500 px-4 py-2 text-sm font-bold text-white">
-          Tiếp tục
-        </span>
-      </Link>
-    </section>
+      </div>
+
+      {lessonProgress && (
+        <div className="mt-3 h-2 w-full overflow-hidden rounded-full bg-well">
+          <div className="h-full rounded-full bg-rose-500 transition-all" style={{ width: `${pct}%` }} />
+        </div>
+      )}
+
+      <span className="btn-primary mt-5 w-full">
+        Tiếp tục luyện <span aria-hidden>→</span>
+      </span>
+    </Link>
   );
 }

@@ -1,18 +1,22 @@
 import Link from "next/link";
-import { topics, getTopicBySlug } from "@/data/topics";
+import { topics } from "@/data/topics";
 import { getAllLessonSummaries, getLessonSummariesByTopic } from "@/data/lessons";
-import { LessonSummary } from "@/types/content";
-import TopicListRow from "@/components/TopicListRow";
+import { getReviewSentencePool } from "@/data/grammar";
+import TopicCard from "@/components/TopicCard";
 import ContinueLearningCard from "@/components/ContinueLearningCard";
 import HomeHero from "@/components/HomeHero";
 import AppStoreButton from "@/components/AppStoreButton";
+import GreetingHero from "@/components/GreetingHero";
+import StreakCard from "@/components/StreakCard";
+import DailyGoalCard from "@/components/DailyGoalCard";
+import QuoteCard from "@/components/QuoteCard";
+import TodayLessonCard from "@/components/TodayLessonCard";
+import WeeklyProgressCard from "@/components/WeeklyProgressCard";
+import ReviewCard from "@/components/ReviewCard";
+import PromoBanner from "@/components/PromoBanner";
 
-const RECENT_LESSON_COUNT = 5;
-const FEATURED_PER_TOPIC = 6;
-
-/** Topics that get their own "featured lessons" strip on the homepage (topic slugs). */
-const FEATURED_TOPIC_SLUGS = [
-  "nail-general",
+/** Practice-category slugs shown on the homepage grid, in the order design calls for. */
+const CATEGORY_SLUGS = [
   "small-talk",
   "customer-requests",
   "pedicure",
@@ -21,178 +25,110 @@ const FEATURED_TOPIC_SLUGS = [
   "dich-vu-tay",
 ];
 
-function TopicFeaturedSection({
-  topicId,
-  title,
-  emoji,
-  lessons,
-  totalCount,
-}: {
-  topicId: string;
-  title: string;
-  emoji: string;
-  lessons: LessonSummary[];
-  totalCount: number;
-}) {
-  if (lessons.length === 0) return null;
-
-  return (
-    <section className="mx-auto mt-10 w-full max-w-sm">
-      <div className="mb-3 flex items-center justify-between">
-        <h2 className="text-sm font-extrabold uppercase tracking-wide text-slate-500">{title}</h2>
-        <Link href={`/topic/${topicId}`} className="text-sm font-semibold text-rose-500">
-          Xem tất cả {totalCount} bài
-        </Link>
-      </div>
-      <div className="-mx-5 flex gap-3 overflow-x-auto px-5 pb-2">
-        {lessons.map((lesson, index) => (
-          <Link
-            key={lesson.id}
-            href={`/lesson/${lesson.slug}`}
-            className="flex w-48 shrink-0 flex-col rounded-2xl bg-white p-4 shadow-sm ring-1 ring-rose-100 transition active:scale-[0.98]"
-          >
-            <span className="text-2xl">{emoji}</span>
-            <p className="mt-2 text-sm font-bold leading-snug text-slate-900">{lesson.title}</p>
-            <p className="mt-1 text-xs text-slate-500">
-              Bài {index + 1} · {lesson.questionCount} câu
-            </p>
-          </Link>
-        ))}
-      </div>
-    </section>
-  );
-}
-
 export default function HomePage() {
   const allSummaries = getAllLessonSummaries();
-  const recentLessons = allSummaries.slice(0, RECENT_LESSON_COUNT);
+  const reviewSentencePool = getReviewSentencePool();
+  const categoryTopics = CATEGORY_SLUGS.map((slug) => topics.find((t) => t.slug === slug)).filter(
+    (t): t is (typeof topics)[number] => Boolean(t),
+  );
 
   return (
-    <div className="min-h-dvh px-5 pb-16 pt-8">
-      <header className="text-center">
-        <p className="text-lg font-extrabold tracking-wide text-rose-500">
-          VietVia English Practice
-        </p>
-        <div className="mt-3 flex justify-center">
+    <div className="min-h-dvh px-5 pb-16 pt-6 lg:px-10 lg:pb-24 lg:pt-8">
+      {/* Below lg the page stays a single centered column (max-w-sm, the
+          original mobile-app-width layout); at lg+ it opens up into a real
+          desktop dashboard capped at 1180px so 1440px screens don't leave a
+          narrow column surrounded by empty space. */}
+      <div className="mx-auto w-full max-w-sm lg:max-w-[1180px]">
+        <header className="flex items-center justify-between lg:hidden">
+          <span className="text-sm font-extrabold tracking-wide text-rose-600">VietVia</span>
           <AppStoreButton variant="pill" />
+        </header>
+
+        <div className="mt-6 lg:mt-0">
+          <GreetingHero />
         </div>
-      </header>
 
-      <HomeHero />
+        <section className="mt-5 grid grid-cols-1 gap-3 lg:mt-8 lg:grid-cols-3 lg:gap-5">
+          <StreakCard />
+          <DailyGoalCard />
+          <QuoteCard />
+        </section>
 
-      <section className="mx-auto mt-6 w-full max-w-sm text-center">
-        <h1 className="text-3xl font-extrabold leading-tight text-slate-900">
-          Mỗi ngày một chút
-          <br />
-          Tiếng Anh sẽ dễ hơn.
-        </h1>
+        <section className="mt-4 grid grid-cols-1 gap-4 lg:mt-6 lg:grid-cols-12 lg:gap-6">
+          <div className="lg:col-span-5">
+            <TodayLessonCard summaries={allSummaries} />
+          </div>
+          <div className="lg:col-span-3">
+            <ContinueLearningCard summaries={allSummaries} />
+          </div>
+          <div className="lg:col-span-4">
+            <WeeklyProgressCard />
+          </div>
+        </section>
 
-        <Link
-          href="/daily"
-          className="mt-6 block w-full rounded-2xl bg-rose-500 px-6 py-5 text-lg font-bold text-white shadow-sm shadow-rose-300 transition active:scale-[0.98] active:bg-rose-600"
-        >
-          LUYỆN 5 CÂU HÔM NAY
-        </Link>
-      </section>
-
-      <ContinueLearningCard summaries={allSummaries} />
-
-      <section className="mx-auto mt-10 w-full max-w-sm">
-        <div className="mb-3 flex items-center justify-between">
-          <h2 className="text-sm font-extrabold uppercase tracking-wide text-slate-500">
-            Lộ trình học tập
-          </h2>
-          <Link href="/topics" className="text-sm font-semibold text-rose-500">
-            Xem tất cả
-          </Link>
-        </div>
-        <div className="space-y-2.5">
-          {topics.slice(0, 7).map((topic) => (
-            <TopicListRow
-              key={topic.id}
-              topic={topic}
-              lessonSlugs={getLessonSummariesByTopic(topic.id).map((l) => l.slug)}
-            />
-          ))}
-        </div>
-      </section>
-
-      {FEATURED_TOPIC_SLUGS.map((topicSlug) => {
-        const topic = getTopicBySlug(topicSlug);
-        if (!topic) return null;
-        const topicLessons = getLessonSummariesByTopic(topic.id);
-        return (
-          <TopicFeaturedSection
-            key={topic.id}
-            topicId={topic.slug}
-            title={topic.title}
-            emoji={topic.emoji}
-            lessons={topicLessons.slice(0, FEATURED_PER_TOPIC)}
-            totalCount={topicLessons.length}
-          />
-        );
-      })}
-
-      <section className="mx-auto mt-10 w-full max-w-sm">
-        <h2 className="mb-3 text-sm font-extrabold uppercase tracking-wide text-slate-500">
-          Bài mới
-        </h2>
-        <div className="-mx-5 flex gap-3 overflow-x-auto px-5 pb-2">
-          {recentLessons.map((lesson) => {
-            const topic = getTopicBySlug(lesson.topicId);
-            return (
-              <Link
-                key={lesson.id}
-                href={`/lesson/${lesson.slug}`}
-                className="flex w-48 shrink-0 flex-col rounded-2xl bg-white p-4 shadow-sm ring-1 ring-rose-100 transition active:scale-[0.98]"
-              >
-                <span className="text-2xl">{topic?.emoji ?? "📚"}</span>
-                <p className="mt-2 text-sm font-bold leading-snug text-slate-900">
-                  {lesson.title}
-                </p>
-                <p className="mt-1 text-xs text-slate-500">
-                  {lesson.questionCount} câu · {topic?.title}
-                </p>
+        <section className="mt-8 grid grid-cols-1 gap-6 lg:mt-10 lg:grid-cols-3">
+          <div className="lg:col-span-2">
+            <div className="mb-3 flex items-center justify-between lg:mb-4">
+              <h2 className="text-lg font-extrabold text-slate-900 lg:text-2xl">
+                Bạn muốn luyện gì hôm nay?
+              </h2>
+              <Link href="/topics" className="text-sm font-semibold text-rose-500 lg:text-base">
+                Xem tất cả bài luyện
               </Link>
-            );
-          })}
-        </div>
-      </section>
+            </div>
+            <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:gap-4">
+              {categoryTopics.map((topic) => (
+                <TopicCard
+                  key={topic.id}
+                  topic={topic}
+                  lessonSlugs={getLessonSummariesByTopic(topic.id).map((l) => l.slug)}
+                />
+              ))}
+            </div>
 
-      <section className="mx-auto mt-10 w-full max-w-sm">
-        <h2 className="mb-3 text-sm font-extrabold uppercase tracking-wide text-slate-500">
-          Luyện nhanh hôm nay
-        </h2>
-        <Link
-          href="/daily"
-          className="flex items-center gap-4 rounded-2xl bg-white p-4 shadow-sm ring-1 ring-orange-100 transition active:scale-[0.98]"
-        >
-          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-orange-100 text-xl">
-            ⚡
+            <div className="mt-6">
+              <PromoBanner />
+            </div>
           </div>
-          <div className="min-w-0 flex-1">
-            <p className="text-base font-bold text-slate-900">5 câu ngẫu nhiên, 2 phút</p>
-            <p className="mt-0.5 text-sm text-slate-500">
-              Không cần đăng nhập — bấm là luyện được ngay.
+
+          <div className="lg:col-span-1">
+            <ReviewCard reviewSentencePool={reviewSentencePool} />
+          </div>
+        </section>
+
+        <div className="mx-auto mt-8 w-full lg:mt-10 lg:max-w-2xl">
+          <section className="card-surface">
+            <Link href="/daily" className="flex items-center gap-4">
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-orange-100 text-xl">
+                ⚡
+              </div>
+              <div className="min-w-0 flex-1">
+                <p className="text-base font-bold text-slate-900">5 câu ngẫu nhiên, 2 phút</p>
+                <p className="mt-0.5 text-sm text-slate-500">
+                  Không cần đăng nhập — bấm là luyện được ngay.
+                </p>
+              </div>
+              <span className="shrink-0 rounded-xl bg-rose-500 px-4 py-2 text-sm font-bold text-white">
+                Luyện ngay
+              </span>
+            </Link>
+          </section>
+
+          <div className="lg:hidden">
+            <HomeHero />
+          </div>
+
+          <section className="card-surface mt-8 text-center">
+            <h2 className="text-lg font-extrabold text-slate-900">Luyện thêm với ứng dụng VietVia</h2>
+            <p className="mt-2 text-sm text-slate-600">
+              Mang theo các bài luyện tiếng Anh bên mình và luyện bất cứ khi nào có thời gian.
             </p>
-          </div>
-          <span className="shrink-0 rounded-xl bg-orange-500 px-4 py-2 text-sm font-bold text-white">
-            Luyện ngay
-          </span>
-        </Link>
-      </section>
-
-      <section className="mx-auto mt-10 w-full max-w-sm rounded-3xl bg-white p-6 text-center shadow-sm ring-1 ring-rose-100">
-        <h2 className="text-lg font-extrabold text-slate-900">
-          Luyện thêm với ứng dụng VietVia
-        </h2>
-        <p className="mt-2 text-sm text-slate-600">
-          Mang theo các bài luyện tiếng Anh bên mình và luyện bất cứ khi nào có thời gian.
-        </p>
-        <div className="mt-4 flex justify-center">
-          <AppStoreButton variant="badge" />
+            <div className="mt-4 flex justify-center">
+              <AppStoreButton variant="badge" />
+            </div>
+          </section>
         </div>
-      </section>
+      </div>
     </div>
   );
 }

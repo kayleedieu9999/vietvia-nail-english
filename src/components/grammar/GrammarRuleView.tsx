@@ -66,14 +66,14 @@ export default function GrammarRuleView({ rule, onContinue }: GrammarRuleViewPro
 
       <section className="space-y-2">
         <SectionLabel>Mẫu câu</SectionLabel>
-        <div className="rounded-2xl bg-white p-4 text-center text-lg font-bold text-slate-900 shadow-sm ring-1 ring-rose-100">
+        <div className="rounded-2xl border border-slate-200 bg-white p-4 text-center text-lg font-bold text-slate-900">
           {rule.pattern}
         </div>
       </section>
 
       <section className="space-y-2">
         <SectionLabel>Trong tiệm nails</SectionLabel>
-        <div className="rounded-2xl bg-white p-4 shadow-sm ring-1 ring-rose-100">
+        <div className="rounded-2xl border border-slate-200 bg-white p-4">
           <p className="text-lg font-bold text-slate-900">{rule.nailSalonExample.english}</p>
           <p className="mt-1 text-sm text-slate-600">{rule.nailSalonExample.vietnamese}</p>
           <div className="mt-3 flex flex-wrap gap-2">
@@ -121,7 +121,7 @@ export default function GrammarRuleView({ rule, onContinue }: GrammarRuleViewPro
           {rule.moreExamples.map((example, index) => (
             <div
               key={index}
-              className="flex items-center justify-between gap-3 rounded-xl bg-white p-3 shadow-sm ring-1 ring-rose-100"
+              className="flex items-center justify-between gap-3 rounded-xl border border-slate-200 bg-white p-3"
             >
               <div className="min-w-0">
                 <p className="truncate text-sm font-bold text-slate-900">{example.english}</p>
@@ -186,7 +186,7 @@ export default function GrammarRuleView({ rule, onContinue }: GrammarRuleViewPro
 
       <section className="space-y-2">
         <SectionLabel>Speaking practice</SectionLabel>
-        <div className="rounded-2xl bg-white p-4 shadow-sm ring-1 ring-rose-100">
+        <div className="rounded-2xl border border-slate-200 bg-white p-4">
           <p className="text-lg font-bold text-slate-900">{rule.speakingPractice.targetEnglish}</p>
           <p className="mt-1 text-sm text-slate-600">{rule.speakingPractice.vietnameseHint}</p>
           <div className="mt-3 flex flex-wrap gap-2">
@@ -225,11 +225,7 @@ export default function GrammarRuleView({ rule, onContinue }: GrammarRuleViewPro
         </div>
       </section>
 
-      <button
-        type="button"
-        onClick={() => onContinue(quizCorrect)}
-        className="w-full rounded-2xl bg-rose-500 px-6 py-4 text-lg font-bold text-white shadow-sm shadow-rose-300 transition active:scale-[0.98] active:bg-rose-600"
-      >
+      <button type="button" onClick={() => onContinue(quizCorrect)} className="btn-primary w-full text-lg">
         Tiếp tục
       </button>
     </div>

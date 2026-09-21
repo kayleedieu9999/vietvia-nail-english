@@ -28,13 +28,13 @@ export default function PhaseCompletion({
         Bạn có thể dùng &quot;{phase.titleVi}&quot; tự nhiên hơn khi nói chuyện với khách.
       </p>
 
-      <div className="mt-6 w-full space-y-2 rounded-2xl bg-white p-5 shadow-sm ring-1 ring-rose-100">
+      <div className="card-surface mt-6 w-full space-y-2">
         <p className="text-sm font-bold text-slate-800">
           {totalCount}/{totalCount} bài hoàn thành
         </p>
         <p className="text-sm font-bold text-emerald-600">{masteredCount} câu thành thạo</p>
         {reviewCount > 0 && (
-          <p className="text-sm font-bold text-orange-500">{reviewCount} câu nên ôn lại</p>
+          <p className="text-sm font-bold text-orange-600">{reviewCount} câu nên ôn lại</p>
         )}
         {nextPhase && (
           <p className="pt-2 text-sm text-slate-500">
@@ -45,17 +45,11 @@ export default function PhaseCompletion({
 
       <div className="mt-6 w-full space-y-3">
         {nextPhase && nextPhaseFirstRuleHref && (
-          <Link
-            href={nextPhaseFirstRuleHref}
-            className="block w-full rounded-2xl bg-rose-500 px-6 py-4 text-lg font-bold text-white shadow-sm shadow-rose-300 transition active:scale-[0.98] active:bg-rose-600"
-          >
+          <Link href={nextPhaseFirstRuleHref} className="btn-primary block w-full text-lg">
             Tiếp tục chặng {nextPhase.phaseNumber}
           </Link>
         )}
-        <Link
-          href="/lo-trinh/ngu-phap"
-          className="block w-full rounded-2xl bg-white px-6 py-4 text-lg font-bold text-rose-500 shadow-sm ring-1 ring-rose-200 transition active:scale-[0.98]"
-        >
+        <Link href="/lo-trinh/ngu-phap" className="btn-secondary block w-full text-lg">
           Về lộ trình
         </Link>
       </div>

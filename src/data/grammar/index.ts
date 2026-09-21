@@ -245,3 +245,14 @@ export function getAllGrammarRuleSummaries(): GrammarRuleSummary[] {
 export function getGrammarRuleSummariesByPhase(phaseNumber: number): GrammarRuleSummary[] {
   return getGrammarRulesByPhase(phaseNumber).map(toSummary);
 }
+
+/**
+ * id → the one target-practice sentence for that rule. Just the 100 short
+ * strings (a few KB), not the full teaching content — safe to ship to a
+ * Client Component (the homepage "review queue" card) so it can show the
+ * REAL sentence for whichever rules the learner actually got wrong, instead
+ * of inventing placeholder text.
+ */
+export function getReviewSentencePool(): Record<string, string> {
+  return Object.fromEntries(allGrammarRules.map((rule) => [rule.id, rule.speakingPractice.targetEnglish]));
+}

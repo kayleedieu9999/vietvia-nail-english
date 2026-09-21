@@ -2,6 +2,7 @@ import Link from "next/link";
 import Footer from "@/components/Footer";
 import Sidebar from "./Sidebar";
 import BottomNav from "./BottomNav";
+import TopBar from "./TopBar";
 
 /**
  * Site-wide navigation shell — a desktop sidebar (`Sidebar`) beside the
@@ -16,10 +17,13 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
     <div className="flex min-h-dvh">
       <Sidebar />
       <div className="flex min-w-0 flex-1 flex-col">
-        <header className="sticky top-0 z-20 flex items-center justify-center border-b border-rose-100 bg-canvas-warm/90 px-5 py-3 backdrop-blur lg:hidden">
-          <Link href="/" className="text-base font-extrabold tracking-wide text-rose-500">
+        <header className="sticky top-0 z-20 flex items-center justify-center border-b border-slate-200 bg-white/90 px-5 py-3 backdrop-blur lg:hidden">
+          <Link href="/" className="text-base font-extrabold tracking-wide text-rose-600">
             VietVia
           </Link>
+        </header>
+        <header className="sticky top-0 z-20 hidden border-b border-slate-200 bg-white/95 px-10 py-4 backdrop-blur lg:block">
+          <TopBar />
         </header>
         <main className="flex-1">{children}</main>
         <div className="pb-20 lg:pb-0">

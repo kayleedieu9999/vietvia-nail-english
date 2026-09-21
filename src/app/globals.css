@@ -1,75 +1,125 @@
 @import "tailwindcss";
 
 :root {
-  --background: #fbf6f1;
-  --foreground: #141b34;
+  --background: #f7f3ef;
+  --foreground: #2a1f22;
 }
 
 /**
- * "Academy" palette — matches the sister Vietvia Expo app's design system
- * (src/theme/academy.ts) so the website reads as the same product. This
+ * "Modern Nail Lounge" palette — warm, premium burgundy/champagne theme for
+ * a nail-tech English practice product (adults 30-65, not a school LMS or
+ * kids' app). Tuned against a reference dashboard mock: deeper, richer
+ * burgundy (#8b1e4f) than the earlier pass, warmer beige backgrounds. This
  * overrides Tailwind's built-in rose/orange/emerald/slate scales in place —
  * every existing `rose-500`, `ring-orange-100`, `text-slate-600`, etc. across
  * the site picks up the new values automatically, no component markup
- * changed. rose = coral (primary accent), orange/emerald = the app's
- * ACADEMY_ACCENT orange/mint, slate = the app's ACADEMY_INK navy-tinted
- * neutrals instead of Tailwind's default cool gray.
+ * changed. rose = burgundy (primary accent), orange = champagne (secondary
+ * accent), emerald = success green, slate = warm charcoal/taupe neutrals
+ * instead of Tailwind's default cool gray. Centralizing the palette here
+ * means colors are never hardcoded per-component — change the brand by
+ * editing these tokens only.
  */
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-be-vietnam-pro);
+  --font-script: var(--font-caveat);
 
-  --color-canvas: #fbf6f1;
-  --color-canvas-warm: #fdf9f5;
-  --color-well: #f4efea;
+  /* Canvas / surface */
+  --color-canvas: #f7f3ef;
+  --color-canvas-warm: #fbf8f5;
+  --color-well: #f1eae5;
+  --color-surface: #ffffff;
 
-  --color-rose-50: #fdeff3;
-  --color-rose-100: #fbdfe6;
-  --color-rose-200: #f8c1ce;
-  --color-rose-300: #f597ad;
-  --color-rose-400: #f26184;
-  --color-rose-500: #f2416b;
-  --color-rose-600: #d92d57;
-  --color-rose-700: #a82444;
-  --color-rose-800: #7a1f35;
-  --color-rose-900: #571928;
+  /* Burgundy (primary) — rose-500 = primary burgundy, rose-400 = secondary burgundy, rose-100 = soft blush */
+  --color-rose-50: #fbf3f5;
+  --color-rose-100: #f3e3e8;
+  --color-rose-200: #e9c7d3;
+  --color-rose-300: #c97d9c;
+  --color-rose-400: #a33463;
+  --color-rose-500: #8b1e4f;
+  --color-rose-600: #6e1840;
+  --color-rose-700: #551433;
+  --color-rose-800: #401026;
+  --color-rose-900: #2c0b1a;
 
-  --color-orange-50: #fef3e6;
-  --color-orange-100: #ffeedb;
-  --color-orange-200: #ffdbb1;
-  --color-orange-300: #f4c289;
-  --color-orange-400: #f2a64d;
-  --color-orange-500: #f59322;
-  --color-orange-600: #df7a05;
-  --color-orange-700: #ad5f04;
-  --color-orange-800: #965203;
-  --color-orange-900: #6e3c02;
+  /* Champagne / warm beige (secondary accent) */
+  --color-orange-50: #fbf6f0;
+  --color-orange-100: #f2e3d7;
+  --color-orange-200: #efd9c8;
+  --color-orange-300: #e6c4a8;
+  --color-orange-400: #dcae87;
+  --color-orange-500: #d8b46a;
+  --color-orange-600: #be9a4f;
+  --color-orange-700: #9c7d3f;
+  --color-orange-800: #7a6132;
+  --color-orange-900: #584624;
 
-  --color-emerald-50: #ecf9f4;
-  --color-emerald-100: #e1f7ef;
-  --color-emerald-200: #c1eede;
-  --color-emerald-300: #60d8ad;
-  --color-emerald-400: #2dce94;
-  --color-emerald-500: #22b07d;
-  --color-emerald-600: #17885f;
-  --color-emerald-700: #105c41;
-  --color-emerald-800: #0c4630;
-  --color-emerald-900: #083322;
+  /* Success green */
+  --color-emerald-50: #eff6f1;
+  --color-emerald-100: #dcebe1;
+  --color-emerald-200: #b9d7c4;
+  --color-emerald-300: #8dbc9e;
+  --color-emerald-400: #6b9d80;
+  --color-emerald-500: #4f7a5b;
+  --color-emerald-600: #3f6249;
+  --color-emerald-700: #324e3a;
+  --color-emerald-800: #263b2c;
+  --color-emerald-900: #1a281e;
 
-  --color-slate-50: #f8f8fb;
-  --color-slate-100: #f1f2f6;
-  --color-slate-200: #e3e5ed;
-  --color-slate-300: #c7cad9;
-  --color-slate-400: #a3a8bc;
-  --color-slate-500: #7b819b;
-  --color-slate-600: #3d4463;
-  --color-slate-700: #2a3151;
-  --color-slate-800: #1e2540;
-  --color-slate-900: #141b34;
+  /* Warm neutrals (text/border) — slate-900 = text dark, slate-500 = muted text, slate-200 = border */
+  --color-slate-50: #f7f3ef;
+  --color-slate-100: #f1eae6;
+  --color-slate-200: #e9e1e4;
+  --color-slate-300: #d4c8cb;
+  --color-slate-400: #a89a9e;
+  --color-slate-500: #6f6468;
+  --color-slate-600: #4a3f42;
+  --color-slate-700: #382e31;
+  --color-slate-800: #2e2427;
+  --color-slate-900: #2a1f22;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
+}
+
+/**
+ * Shared card/button primitives — the "Modern Nail Lounge" surfaces. Defined
+ * once here instead of hand-rolled Tailwind strings sprinkled across every
+ * component, so the visual language (radius, padding, shadow weight, button
+ * height) stays consistent site-wide and can be re-tuned in one place.
+ */
+@layer components {
+  .card-surface {
+    @apply rounded-3xl border border-slate-200 bg-white p-5 shadow-[0_1px_2px_rgba(34,29,32,0.04)];
+  }
+
+  .card-surface-interactive {
+    @apply rounded-3xl border border-slate-200 bg-white p-5 shadow-[0_1px_2px_rgba(34,29,32,0.04)] transition hover:-translate-y-0.5 hover:shadow-[0_8px_20px_rgba(122,41,72,0.08)] active:translate-y-0 active:scale-[0.99];
+  }
+
+  .btn-primary {
+    @apply inline-flex min-h-[52px] items-center justify-center gap-2 rounded-2xl bg-rose-500 px-6 text-base font-semibold text-white transition active:scale-[0.98] active:bg-rose-600;
+  }
+
+  .btn-secondary {
+    @apply inline-flex min-h-[52px] items-center justify-center gap-2 rounded-2xl border border-rose-200 bg-rose-50 px-6 text-base font-semibold text-rose-600 transition active:scale-[0.98] active:bg-rose-100;
+  }
+
+  /* White pill CTA used on top of the burgundy "today's lesson" hero card. */
+  .btn-pill-on-dark {
+    @apply inline-flex min-h-[52px] items-center justify-center gap-2 rounded-full bg-white px-6 text-base font-bold text-rose-600 transition active:scale-[0.98];
+  }
+
+  /* Rounded search input in the desktop top bar. */
+  .input-search {
+    @apply h-11 w-full rounded-full border border-slate-200 bg-white px-4 text-sm text-slate-700 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-rose-200;
+  }
+
+  /* Small rounded stat chip (weekly progress row). */
+  .stat-chip {
+    @apply flex flex-1 items-center gap-2 rounded-2xl border border-slate-200 bg-canvas px-3 py-2.5;
+  }
 }

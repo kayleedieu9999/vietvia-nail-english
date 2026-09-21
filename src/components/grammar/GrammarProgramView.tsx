@@ -39,15 +39,15 @@ export default function GrammarProgramView({ phases, ruleSummaries }: GrammarPro
         Không cần học ngữ pháp quá khó. Mình đi từng phần ngắn và dùng ngay trong giao tiếp.
       </p>
 
-      <div className="mt-5 space-y-2 rounded-2xl bg-white p-5 shadow-sm ring-1 ring-rose-100">
-        <div className="h-2 w-full overflow-hidden rounded-full bg-rose-100">
+      <div className="card-surface mt-5 space-y-2">
+        <div className="h-2 w-full overflow-hidden rounded-full bg-well">
           <div className="h-full rounded-full bg-rose-500" style={{ width: `${overallPct}%` }} />
         </div>
         <p className="text-lg font-extrabold text-slate-900">
           Bạn đã luyện {overall.completed} / {overall.total}
         </p>
         {reviewCount > 0 && (
-          <p className="text-sm font-bold text-orange-500">{reviewCount} câu nên ôn lại</p>
+          <p className="text-sm font-bold text-orange-600">{reviewCount} câu nên ôn lại</p>
         )}
         {next && (
           <p className="text-sm text-slate-500">

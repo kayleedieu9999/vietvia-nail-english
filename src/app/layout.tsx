@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Be_Vietnam_Pro } from "next/font/google";
+import { Be_Vietnam_Pro, Caveat } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import AppShell from "@/components/nav/AppShell";
 import "./globals.css";
@@ -8,6 +8,13 @@ const beVietnamPro = Be_Vietnam_Pro({
   variable: "--font-be-vietnam-pro",
   subsets: ["vietnamese", "latin"],
   weight: ["400", "500", "600", "700", "800"],
+});
+
+/** Decorative handwritten accent — used only for the small hero-banner caption on desktop. */
+const caveat = Caveat({
+  variable: "--font-caveat",
+  subsets: ["latin"],
+  weight: ["500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -33,7 +40,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="vi"
-      className={`${beVietnamPro.variable} h-full antialiased`}
+      className={`${beVietnamPro.variable} ${caveat.variable} h-full antialiased`}
     >
       <body className="min-h-full bg-canvas font-sans text-slate-900">
         <AppShell>{children}</AppShell>
