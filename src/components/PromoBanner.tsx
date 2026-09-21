@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 
 /** Wide closing banner. */
@@ -13,7 +14,7 @@ export default function PromoBanner() {
           sizes="(max-width: 1024px) 100vw, 256px"
         />
       </div>
-      <div className="flex flex-1 flex-col justify-center gap-2 px-6 py-6 text-center lg:flex-row lg:items-center lg:justify-between lg:text-left">
+      <div className="flex flex-1 flex-col justify-center gap-4 px-6 py-6 text-center lg:flex-row lg:items-center lg:justify-between lg:text-left">
         <div>
           <p className="text-2xl font-extrabold leading-tight text-slate-900">Learn English</p>
           <p className="text-2xl font-extrabold leading-tight text-rose-500">Build a Brighter Future</p>
@@ -21,10 +22,13 @@ export default function PromoBanner() {
             <span aria-hidden>💅</span> VietVia
           </p>
         </div>
-        <p className="mt-4 max-w-xs text-sm italic leading-relaxed text-slate-600 lg:mt-0">
+        <p className="max-w-xs text-sm italic leading-relaxed text-slate-600">
           &quot;Bạn không chỉ học tiếng Anh, bạn đang mở ra nhiều cơ hội hơn cho chính mình.&quot;{" "}
           <span aria-hidden>🤎</span>
         </p>
+        <Link href="/daily" className="btn-secondary w-full shrink-0 lg:w-fit">
+          Bắt đầu hành trình <span aria-hidden>→</span>
+        </Link>
       </div>
     </section>
   );

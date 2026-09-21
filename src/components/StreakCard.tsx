@@ -23,7 +23,7 @@ export default function StreakCard() {
               className={`flex h-7 w-7 items-center justify-center rounded-full text-xs ${
                 week[i]?.active
                   ? "bg-rose-500 text-white"
-                  : "border border-dashed border-slate-300 text-slate-300"
+                  : "border border-slate-200 text-slate-300"
               }`}
             >
               {week[i]?.active ? "✓" : ""}

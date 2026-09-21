@@ -66,33 +66,35 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section className="mt-8 grid grid-cols-1 gap-6 lg:mt-10 lg:grid-cols-3">
-          <div className="lg:col-span-2">
-            <div className="mb-3 flex items-center justify-between lg:mb-4">
-              <h2 className="text-lg font-extrabold text-slate-900 lg:text-2xl">
-                Bạn muốn luyện gì hôm nay?
-              </h2>
-              <Link href="/topics" className="text-sm font-semibold text-rose-500 lg:text-base">
-                Xem tất cả bài luyện
-              </Link>
-            </div>
-            <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:gap-4">
-              {categoryTopics.map((topic) => (
-                <TopicCard
-                  key={topic.id}
-                  topic={topic}
-                  lessonSlugs={getLessonSummariesByTopic(topic.id).map((l) => l.slug)}
-                />
-              ))}
+        <section className="mt-8 lg:mt-10">
+          <div className="grid grid-cols-1 gap-6 lg:grid-cols-12">
+            <div className="lg:col-span-8">
+              <div className="mb-3 flex items-center justify-between lg:mb-4">
+                <h2 className="text-lg font-extrabold text-slate-900 lg:text-2xl">
+                  Bạn muốn luyện gì hôm nay?
+                </h2>
+                <Link href="/topics" className="text-sm font-semibold text-rose-500 lg:text-base">
+                  Xem tất cả bài luyện
+                </Link>
+              </div>
+              <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6 lg:gap-3">
+                {categoryTopics.map((topic) => (
+                  <TopicCard
+                    key={topic.id}
+                    topic={topic}
+                    lessonSlugs={getLessonSummariesByTopic(topic.id).map((l) => l.slug)}
+                  />
+                ))}
+              </div>
             </div>
 
-            <div className="mt-6">
-              <PromoBanner />
+            <div className="lg:col-span-4">
+              <ReviewCard reviewSentencePool={reviewSentencePool} />
             </div>
           </div>
 
-          <div className="lg:col-span-1">
-            <ReviewCard reviewSentencePool={reviewSentencePool} />
+          <div className="mt-6">
+            <PromoBanner />
           </div>
         </section>
 

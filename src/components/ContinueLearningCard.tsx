@@ -1,9 +1,9 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useProgress } from "@/lib/progress";
 import { LessonSummary } from "@/types/content";
-import { getTopicBySlug } from "@/data/topics";
 
 interface ContinueLearningCardProps {
   /**
@@ -20,7 +20,6 @@ export default function ContinueLearningCard({ summaries }: ContinueLearningCard
   const lesson = slug ? summaries.find((s) => s.slug === slug) : undefined;
   if (!lesson) return null;
 
-  const topic = getTopicBySlug(lesson.topicId);
   const lessonProgress = progress.lessons[lesson.slug];
   const pct = lessonProgress
     ? Math.round((lessonProgress.bestScore / lessonProgress.bestTotal) * 100)
@@ -38,8 +37,14 @@ export default function ContinueLearningCard({ summaries }: ContinueLearningCard
       </div>
 
       <div className="mt-4 flex items-center gap-3">
-        <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-rose-100 text-2xl">
-          {topic?.emoji ?? "🔁"}
+        <div className="relative h-14 w-14 shrink-0 overflow-hidden rounded-2xl">
+          <Image
+            src="/images/continue-lesson-thumb.png"
+            alt=""
+            fill
+            className="object-cover"
+            sizes="56px"
+          />
         </div>
         <div className="min-w-0 flex-1">
           <p className="truncate text-base font-bold text-slate-900">{lesson.title}</p>

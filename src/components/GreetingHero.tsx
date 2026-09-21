@@ -2,7 +2,7 @@ import Image from "next/image";
 
 /**
  * Top-of-dashboard greeting + tagline, with a desktop-only decorative banner
- * (`/images/hero-manicure.png`). Purely static copy (no personalization):
+ * (`/images/review-nail-tech.jpg`). Purely static copy (no personalization):
  * the site has no login/profile system, so there's no real name to greet
  * the visitor by.
  */
@@ -23,20 +23,18 @@ export default function GreetingHero() {
 
       <div className="relative mt-5 hidden h-40 w-full max-w-md shrink-0 overflow-hidden rounded-3xl lg:mt-0 lg:block">
         <Image
-          src="/images/hero-manicure.png"
-          alt="Bàn tay được làm nail gel màu hồng phấn tinh tế, phong cách nail lounge cao cấp"
+          src="/images/review-nail-tech.jpg"
+          alt="Thợ nails VietVia đang tư vấn màu sơn cho khách trong tiệm nails hiện đại"
           fill
           className="object-cover"
           sizes="420px"
         />
-        <div className="absolute inset-0 bg-gradient-to-l from-rose-900/10 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-rose-900/35 via-transparent to-transparent" />
         <p
-          className="absolute right-4 top-3 text-right text-lg leading-tight text-rose-600 drop-shadow-sm"
+          className="absolute bottom-3 left-4 text-lg leading-tight text-white drop-shadow-md"
           style={{ fontFamily: "var(--font-script)" }}
         >
-          Better English
-          <br />
-          Brighter Opportunities
+          More Confidence, Brighter Opportunities
         </p>
       </div>
     </section>

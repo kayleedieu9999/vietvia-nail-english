@@ -59,6 +59,9 @@ export default function TopBar() {
           <p className="text-xs text-slate-400">Xin chào</p>
           <p className="text-sm font-bold text-slate-900">{displayName}</p>
         </div>
+        <span aria-hidden className="text-xs text-slate-400">
+          ▾
+        </span>
       </Link>
     </div>
   );
