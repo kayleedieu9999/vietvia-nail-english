@@ -9,6 +9,7 @@ export const nailsThanhToanGroup10: Lesson[] = [
     title: "Xác nhận thẻ đã tính tiền đúng chưa",
     description: "Xác nhận với khách số tiền trên thẻ đã đúng và khớp với hóa đơn.",
     level: "intermediate",
+    coverImage: "/images/lessons/tt-new-16-xac-nhan-the-tinh-tien-dung.jpg",
     questions: [
       {
         id: "tt-new-16-1",
@@ -195,6 +196,7 @@ export const nailsThanhToanGroup10: Lesson[] = [
     title: "Giải thích thời gian khô dưới đèn UV",
     description: "Hướng dẫn khách về thời gian hong khô móng dưới đèn UV sau khi sơn gel.",
     level: "beginner",
+    coverImage: "/images/lessons/tt-new-17-thoi-gian-kho-den-uv.jpg",
     questions: [
       {
         id: "tt-new-17-1",
@@ -382,6 +384,7 @@ export const nailsThanhToanGroup10: Lesson[] = [
     title: "Nhắc khách chờ trước khi cầm đồ đạc",
     description: "Nhắc khách nhẹ nhàng chờ khô hẳn trước khi cầm điện thoại, ví, hoặc đồ đạc.",
     level: "beginner",
+    coverImage: "/images/lessons/tt-new-18-nhac-cho-khach-cham-vao-do.jpg",
     questions: [
       {
         id: "tt-new-18-1",
@@ -568,6 +571,7 @@ export const nailsThanhToanGroup10: Lesson[] = [
     title: "Khách bỏ quên đồ đạc ở bàn",
     description: "Nhắc khách khi phát hiện đồ đạc bị bỏ quên tại bàn làm móng.",
     level: "beginner",
+    coverImage: "/images/lessons/tt-new-19-khach-bo-quen-do-dac.jpg",
     questions: [
       {
         id: "tt-new-19-1",
@@ -755,6 +759,7 @@ export const nailsThanhToanGroup10: Lesson[] = [
     title: "Gợi ý lịch hẹn lại sau vài tuần",
     description: "Gợi ý khoảng thời gian phù hợp để khách quay lại làm lại móng.",
     level: "intermediate",
+    coverImage: "/images/lessons/tt-new-20-goi-y-lich-hen-lai.jpg",
     questions: [
       {
         id: "tt-new-20-1",

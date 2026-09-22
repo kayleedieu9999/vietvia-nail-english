@@ -9,6 +9,7 @@ export const nailsDichVuGroup06: Lesson[] = [
     title: "Chủ động đề nghị dũa mỏng lại",
     description: "Luyện cách chủ động nhận ra và đề nghị chỉnh sửa độ dày trước khi khách phải phàn nàn.",
     level: "beginner",
+    coverImage: "/images/lessons/unh-13-too-thick-3.jpg",
     questions: [
       {
         id: "unh-13-1",
@@ -202,6 +203,7 @@ export const nailsDichVuGroup06: Lesson[] = [
     title: "Giới thiệu các loại dịch vụ tay",
     description: "Giới thiệu cho khách các lựa chọn dịch vụ làm tay khác nhau.",
     level: "beginner",
+    coverImage: "/images/lessons/hand-02-greeting-2.jpg",
     questions: [
       {
         id: "hand-2-1",
@@ -396,6 +398,7 @@ export const nailsDichVuGroup06: Lesson[] = [
     title: "Trao đổi về giá và những gì có trong dịch vụ",
     description: "Giải thích giá cả và các bước có trong dịch vụ manicure.",
     level: "beginner",
+    coverImage: "/images/lessons/hand-04-greeting-4.jpg",
     questions: [
       {
         id: "hand-4-1",
@@ -590,6 +593,7 @@ export const nailsDichVuGroup06: Lesson[] = [
     title: "Tháo sơn cũ cho khách",
     description: "Câu tiếng Anh dùng khi bắt đầu tháo sơn móng cũ.",
     level: "beginner",
+    coverImage: "/images/lessons/hand-06-remove-polish-1.jpg",
     questions: [
       {
         id: "hand-6-1",
@@ -782,6 +786,7 @@ export const nailsDichVuGroup06: Lesson[] = [
     title: "Xử lý khi sơn cũ khó tháo",
     description: "Cách xử lý khi gặp sơn gel hoặc sơn cũ khó lấy ra.",
     level: "beginner",
+    coverImage: "/images/lessons/hand-07-remove-polish-2.jpg",
     questions: [
       {
         id: "hand-7-1",

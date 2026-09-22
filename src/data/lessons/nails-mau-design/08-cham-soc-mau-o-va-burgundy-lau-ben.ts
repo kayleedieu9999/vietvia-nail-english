@@ -9,6 +9,7 @@ export const nailsMauDesignGroup08: Lesson[] = [
     title: "Chăm sóc màu đỏ và burgundy lâu bền",
     description: "Luyện cách hướng dẫn khách giữ màu đỏ, burgundy đẹp lâu hơn.",
     level: "practice",
+    coverImage: "/images/lessons/clr-04-red-burgundy-5.jpg",
     questions: [
       {
         id: "clr-20-1",
@@ -207,6 +208,7 @@ export const nailsMauDesignGroup08: Lesson[] = [
     title: "Giới thiệu màu trung tính",
     description: "Luyện cách giới thiệu nhóm màu trung tính như xám, taupe, be cho khách.",
     level: "practice",
+    coverImage: "/images/lessons/clr-05-neutral-1.jpg",
     questions: [
       {
         id: "clr-21-1",
@@ -405,6 +407,7 @@ export const nailsMauDesignGroup08: Lesson[] = [
     title: "Trung tính nhưng không nhàm chán",
     description: "Luyện cách gợi ý các sắc trung tính có điểm nhấn để không quá đơn điệu.",
     level: "practice",
+    coverImage: "/images/lessons/clr-05-neutral-3.jpg",
     questions: [
       {
         id: "clr-23-1",
@@ -603,6 +606,7 @@ export const nailsMauDesignGroup08: Lesson[] = [
     title: "Trung tính cho khách lớn tuổi",
     description: "Luyện cách gợi ý màu trung tính nhẹ nhàng, thanh lịch cho khách lớn tuổi.",
     level: "practice",
+    coverImage: "/images/lessons/clr-05-neutral-4.jpg",
     questions: [
       {
         id: "clr-24-1",
@@ -801,6 +805,7 @@ export const nailsMauDesignGroup08: Lesson[] = [
     title: "Chuyển từ màu nổi bật sang trung tính",
     description: "Luyện cách trò chuyện khi khách muốn đổi từ màu nổi bật sang phong cách trung tính hơn.",
     level: "practice",
+    coverImage: "/images/lessons/clr-05-neutral-5.jpg",
     questions: [
       {
         id: "clr-25-1",

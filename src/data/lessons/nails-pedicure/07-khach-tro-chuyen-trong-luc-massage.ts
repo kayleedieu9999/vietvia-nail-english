@@ -9,6 +9,7 @@ export const nailsPedicureGroup07: Lesson[] = [
     title: "Khách trò chuyện trong lúc massage",
     description: "Câu tiếng Anh khi trò chuyện nhẹ với khách trong lúc massage chân.",
     level: "practice",
+    coverImage: "/images/lessons/ped-06-massage-4.jpg",
     questions: [
       {
         id: "ped-29-1",
@@ -205,6 +206,7 @@ export const nailsPedicureGroup07: Lesson[] = [
     title: "Kết thúc bước massage",
     description: "Câu tiếng Anh khi kết thúc bước massage và chuyển sang bước tiếp theo.",
     level: "practice",
+    coverImage: "/images/lessons/ped-06-massage-5.jpg",
     questions: [
       {
         id: "ped-30-1",
@@ -401,6 +403,7 @@ export const nailsPedicureGroup07: Lesson[] = [
     title: "Giới thiệu bước khăn nóng",
     description: "Câu tiếng Anh khi quấn khăn nóng cho khách sau bước massage.",
     level: "situation",
+    coverImage: "/images/lessons/ped-07-hot-towel-scrub-1.jpg",
     questions: [
       {
         id: "ped-31-1",
@@ -597,6 +600,7 @@ export const nailsPedicureGroup07: Lesson[] = [
     title: "Giải thích bước tẩy da chết bằng đường",
     description: "Câu tiếng Anh khi giải thích bước tẩy da chết chân bằng đường hoặc muối.",
     level: "situation",
+    coverImage: "/images/lessons/ped-07-hot-towel-scrub-2.jpg",
     questions: [
       {
         id: "ped-32-1",
@@ -793,6 +797,7 @@ export const nailsPedicureGroup07: Lesson[] = [
     title: "Khách chọn mùi hương yêu thích",
     description: "Câu tiếng Anh khi khách lựa chọn mùi hương cho bước tẩy da chết hoặc khăn nóng.",
     level: "situation",
+    coverImage: "/images/lessons/ped-07-hot-towel-scrub-3.jpg",
     questions: [
       {
         id: "ped-33-1",

@@ -9,6 +9,7 @@ export const nailsDichVuGroup12: Lesson[] = [
     title: "Hướng dẫn chăm sóc gel tại nhà",
     description: "Hướng dẫn khách cách chăm sóc và bảo quản gel manicure tại nhà.",
     level: "situation",
+    coverImage: "/images/lessons/hand-45-gel-5.jpg",
     questions: [
       {
         id: "hand-45-1",
@@ -201,6 +202,7 @@ export const nailsDichVuGroup12: Lesson[] = [
     title: "Kiểm tra kết quả cuối cùng",
     description: "Mời khách kiểm tra và xác nhận sự hài lòng với kết quả cuối cùng.",
     level: "situation",
+    coverImage: "/images/lessons/hand-46-finishing-1.jpg",
     questions: [
       {
         id: "hand-46-1",
@@ -393,6 +395,7 @@ export const nailsDichVuGroup12: Lesson[] = [
     title: "Hướng dẫn giữ móng bền lâu",
     description: "Hướng dẫn khách những điều cần làm để giữ móng đẹp lâu.",
     level: "situation",
+    coverImage: "/images/lessons/hand-47-finishing-2.jpg",
     questions: [
       {
         id: "hand-47-1",
@@ -585,6 +588,7 @@ export const nailsDichVuGroup12: Lesson[] = [
     title: "Xử lý khi khách chưa hoàn toàn hài lòng",
     description: "Cách xử lý khéo léo khi khách còn điều gì chưa hài lòng ở cuối buổi.",
     level: "situation",
+    coverImage: "/images/lessons/hand-48-finishing-3.jpg",
     questions: [
       {
         id: "hand-48-1",

@@ -9,6 +9,7 @@ export const nailsSmallTalkGroup03: Lesson[] = [
     title: "Chia sẻ về ngày nghỉ của mình",
     description: "Cách chia sẻ nhẹ nhàng về ngày nghỉ hoặc lịch làm việc riêng của thợ nails.",
     level: "beginner",
+    coverImage: "/images/lessons/st-10-cong-viec-ngay-nghi-5.jpg",
     questions: [
       {
         id: "st-10-1",
@@ -223,6 +224,7 @@ export const nailsSmallTalkGroup03: Lesson[] = [
     title: "Nói về thời tiết nóng",
     description: "Cách trò chuyện nhẹ nhàng khi thời tiết đang nóng bức.",
     level: "beginner",
+    coverImage: "/images/lessons/st-11-thoi-tiet-1.jpg",
     questions: [
       {
         id: "st-11-1",
@@ -437,6 +439,7 @@ export const nailsSmallTalkGroup03: Lesson[] = [
     title: "Nói về trời mưa",
     description: "Cách trò chuyện nhẹ nhàng khi trời đang mưa hoặc sắp mưa.",
     level: "beginner",
+    coverImage: "/images/lessons/st-12-thoi-tiet-2.jpg",
     questions: [
       {
         id: "st-12-1",
@@ -651,6 +654,7 @@ export const nailsSmallTalkGroup03: Lesson[] = [
     title: "Nói về trời lạnh",
     description: "Cách trò chuyện nhẹ nhàng khi thời tiết chuyển lạnh.",
     level: "beginner",
+    coverImage: "/images/lessons/st-13-thoi-tiet-3.jpg",
     questions: [
       {
         id: "st-13-1",
@@ -865,6 +869,7 @@ export const nailsSmallTalkGroup03: Lesson[] = [
     title: "Nói về ngày nắng đẹp",
     description: "Cách trò chuyện nhẹ nhàng vào những ngày thời tiết đẹp, dễ chịu.",
     level: "beginner",
+    coverImage: "/images/lessons/st-14-thoi-tiet-4.jpg",
     questions: [
       {
         id: "st-14-1",

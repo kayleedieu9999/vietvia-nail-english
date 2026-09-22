@@ -9,6 +9,7 @@ export const nailsBatDauGroup07: Lesson[] = [
     title: "Hỏi sở thích trước khi bắt đầu",
     description: "Câu tiếng Anh để hỏi khách về hình dáng móng và loại sơn trước khi làm.",
     level: "beginner",
+    coverImage: "/images/lessons/ped-01-bat-dau-5.jpg",
     questions: [
       {
         id: "ped-5-1",
@@ -205,6 +206,7 @@ export const nailsBatDauGroup07: Lesson[] = [
     title: "Hỏi độ dài móng chân",
     description: "Câu tiếng Anh để hỏi khách muốn cắt móng chân ngắn hay dài.",
     level: "beginner",
+    coverImage: "/images/lessons/ped-03-cat-giua-mong-1.jpg",
     questions: [
       {
         id: "ped-11-1",
@@ -401,6 +403,7 @@ export const nailsBatDauGroup07: Lesson[] = [
     title: "Khi khách muốn đổi ý về độ dài",
     description: "Cách xử lý khi khách thay đổi ý định về độ dài móng chân giữa buổi.",
     level: "beginner",
+    coverImage: "/images/lessons/ped-03-cat-giua-mong-4.jpg",
     questions: [
       {
         id: "ped-14-1",
@@ -597,6 +600,7 @@ export const nailsBatDauGroup07: Lesson[] = [
     title: "Xác nhận hình dáng móng đã hoàn tất",
     description: "Câu tiếng Anh để cho khách xem và xác nhận hình dáng móng chân sau khi cắt giũa.",
     level: "beginner",
+    coverImage: "/images/lessons/ped-03-cat-giua-mong-5.jpg",
     questions: [
       {
         id: "ped-15-1",
@@ -793,6 +797,7 @@ export const nailsBatDauGroup07: Lesson[] = [
     title: "Hỏi màu cho khách mới",
     description: "Luyện các câu hỏi màu sắc dùng cho khách lần đầu đến tiệm.",
     level: "beginner",
+    coverImage: "/images/lessons/clr-01-hoi-mau-2.jpg",
     questions: [
       {
         id: "clr-2-1",

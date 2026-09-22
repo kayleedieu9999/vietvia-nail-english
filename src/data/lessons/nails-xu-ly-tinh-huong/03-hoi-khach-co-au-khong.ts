@@ -10,6 +10,7 @@ export const nailsXuLyTinhHuongGroup03: Lesson[] = [
   title: "Hỏi khách có đau không",
   description: "Quan tâm hỏi thăm khách trong lúc làm để đảm bảo thoải mái.",
   level: "beginner",
+  coverImage: "/images/lessons/hoi-khach-co-dau-khong.jpg",
   questions: buildQuestions("nails-53", [
     {
       emoji: "🤕",
@@ -128,6 +129,7 @@ export const nailsXuLyTinhHuongGroup03: Lesson[] = [
     title: "Móng không đều độ dài",
     description: "Xử lý khi khách nói móng bên này dài hơn bên kia.",
     level: "beginner",
+    coverImage: "/images/lessons/cr-04-mong-khong-deu-1.jpg",
     questions: [
       {
         id: "cr-4-1",
@@ -328,6 +330,7 @@ export const nailsXuLyTinhHuongGroup03: Lesson[] = [
     title: "Sửa một móng bị gãy",
     description: "Luyện câu trả lời khi khách yêu cầu sửa một móng cụ thể bị gãy.",
     level: "practice",
+    coverImage: "/images/lessons/cr-26-fix-mong-gay-1.jpg",
     questions: [
       {
         id: "cr-26-1",
@@ -523,6 +526,7 @@ export const nailsXuLyTinhHuongGroup03: Lesson[] = [
     title: "Móng bị tróc hoặc bong ra",
     description: "Xử lý khi khách báo móng bột hoặc gel bị bong, tróc ra khỏi móng thật.",
     level: "practice",
+    coverImage: "/images/lessons/cr-28-mong-tuot-keo.jpg",
     questions: [
       {
         id: "cr-28-1",
@@ -718,6 +722,7 @@ export const nailsXuLyTinhHuongGroup03: Lesson[] = [
     title: "Móng bị gãy sát da khi ở nhà",
     description: "Xử lý tình huống khách bị gãy móng nặng, sát vào da, cần chăm sóc kỹ hơn.",
     level: "practice",
+    coverImage: "/images/lessons/cr-29-mong-gay-sau-nha.jpg",
     questions: [
       {
         id: "cr-29-1",

@@ -9,6 +9,7 @@ export const nailsThanhToanGroup03: Lesson[] = [
     title: "Giá cho việc sửa một móng",
     description: "Trả lời khi khách hỏi về giá của việc sửa lẻ một móng bị gãy.",
     level: "practice",
+    coverImage: "/images/lessons/cr-30-gia-sua-mong-le.jpg",
     questions: [
       {
         id: "cr-30-1",
@@ -205,6 +206,7 @@ export const nailsThanhToanGroup03: Lesson[] = [
     title: "Gợi ý đặt lịch hẹn lần sau",
     description: "Câu tiếng Anh khi gợi ý khách đặt lịch hẹn cho lần pedicure tiếp theo.",
     level: "situation",
+    coverImage: "/images/lessons/ped-10-hoan-tat-4.jpg",
     questions: [
       {
         id: "ped-49-1",
@@ -401,6 +403,7 @@ export const nailsThanhToanGroup03: Lesson[] = [
     title: "Chào tạm biệt khách và cảm ơn",
     description: "Câu tiếng Anh để chào tạm biệt và cảm ơn khách sau khi hoàn tất pedicure.",
     level: "situation",
+    coverImage: "/images/lessons/ped-10-hoan-tat-5.jpg",
     questions: [
       {
         id: "ped-50-1",

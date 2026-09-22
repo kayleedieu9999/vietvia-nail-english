@@ -9,6 +9,7 @@ export const nailsDichVuGroup07: Lesson[] = [
     title: "Kiểm tra móng sau khi tháo sơn",
     description: "Kiểm tra tình trạng móng thật sau khi tháo hết sơn cũ.",
     level: "beginner",
+    coverImage: "/images/lessons/hand-08-remove-polish-3.jpg",
     questions: [
       {
         id: "hand-8-1",
@@ -201,6 +202,7 @@ export const nailsDichVuGroup07: Lesson[] = [
     title: "Khi khách muốn giữ lại một phần sơn",
     description: "Xử lý tình huống khi khách chỉ muốn tháo sơn một vài móng.",
     level: "beginner",
+    coverImage: "/images/lessons/hand-09-remove-polish-4.jpg",
     questions: [
       {
         id: "hand-9-1",
@@ -395,6 +397,7 @@ export const nailsDichVuGroup07: Lesson[] = [
     title: "Cắt móng đều và an toàn",
     description: "Câu tiếng Anh dùng khi cắt móng đều và tránh cắt quá ngắn.",
     level: "beginner",
+    coverImage: "/images/lessons/hand-12-cutting-2.jpg",
     questions: [
       {
         id: "hand-12-1",
@@ -587,6 +590,7 @@ export const nailsDichVuGroup07: Lesson[] = [
     title: "Xử lý móng mọc ngược hoặc bị lẹm",
     description: "Cách nói khi gặp móng mọc ngược hoặc bị lẹm cần cẩn thận khi cắt.",
     level: "beginner",
+    coverImage: "/images/lessons/hand-13-cutting-3.jpg",
     questions: [
       {
         id: "hand-13-1",
@@ -779,6 +783,7 @@ export const nailsDichVuGroup07: Lesson[] = [
     title: "Khi khách muốn thay đổi ý giữa lúc cắt",
     description: "Xử lý khi khách đổi ý về độ dài giữa lúc đang cắt móng.",
     level: "beginner",
+    coverImage: "/images/lessons/hand-14-cutting-4.jpg",
     questions: [
       {
         id: "hand-14-1",

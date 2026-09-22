@@ -9,6 +9,7 @@ export const nailsBatDauGroup11: Lesson[] = [
     title: "Hỏi khách có đặt hẹn trước không",
     description: "Phân biệt khách walk-in và khách đã đặt hẹn để sắp xếp thợ phù hợp.",
     level: "beginner",
+    coverImage: "/images/lessons/bd-new-1-dat-hen-truoc.jpg",
     questions: [
       {
         id: "bd-new-1-1",

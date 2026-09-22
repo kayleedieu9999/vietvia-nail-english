@@ -9,6 +9,7 @@ export const nailsSmallTalkGroup02: Lesson[] = [
     title: "Bắt chuyện nhẹ khi mới ngồi vào ghế",
     description: "Những câu mở đầu nhẹ nhàng ngay khi khách vừa ngồi vào ghế làm nails.",
     level: "beginner",
+    coverImage: "/images/lessons/st-05-chao-hoi-5.jpg",
     questions: [
       {
         id: "st-5-1",
@@ -223,6 +224,7 @@ export const nailsSmallTalkGroup02: Lesson[] = [
     title: "Hỏi khách hôm nay thế nào",
     description: "Cách hỏi thăm nhẹ nhàng về ngày hôm nay của khách.",
     level: "beginner",
+    coverImage: "/images/lessons/st-06-cong-viec-ngay-nghi-1.jpg",
     questions: [
       {
         id: "st-6-1",
@@ -437,6 +439,7 @@ export const nailsSmallTalkGroup02: Lesson[] = [
     title: "Hỏi khách có bận không",
     description: "Cách hỏi khách có đang bận công việc hôm nay hay không.",
     level: "beginner",
+    coverImage: "/images/lessons/st-07-cong-viec-ngay-nghi-2.jpg",
     questions: [
       {
         id: "st-7-1",
@@ -651,6 +654,7 @@ export const nailsSmallTalkGroup02: Lesson[] = [
     title: "Chia sẻ về công việc của mình",
     description: "Cách chia sẻ nhẹ nhàng về công việc làm nails của mình khi khách hỏi.",
     level: "beginner",
+    coverImage: "/images/lessons/st-08-cong-viec-ngay-nghi-3.jpg",
     questions: [
       {
         id: "st-8-1",
@@ -865,6 +869,7 @@ export const nailsSmallTalkGroup02: Lesson[] = [
     title: "Hỏi khách về ngày nghỉ",
     description: "Cách hỏi khách về ngày nghỉ và lịch làm việc một cách tự nhiên.",
     level: "beginner",
+    coverImage: "/images/lessons/st-09-cong-viec-ngay-nghi-4.jpg",
     questions: [
       {
         id: "st-9-1",

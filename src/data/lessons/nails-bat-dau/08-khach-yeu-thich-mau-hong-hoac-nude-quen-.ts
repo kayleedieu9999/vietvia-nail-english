@@ -9,6 +9,7 @@ export const nailsBatDauGroup08: Lesson[] = [
     title: "Khách yêu thích màu hồng hoặc nude quen thuộc",
     description: "Luyện cách phục vụ khách quen luôn chọn màu hồng hoặc nude giống nhau.",
     level: "beginner",
+    coverImage: "/images/lessons/clr-03-pink-nude-5.jpg",
     questions: [
       {
         id: "clr-15-1",
@@ -207,6 +208,7 @@ export const nailsBatDauGroup08: Lesson[] = [
     title: "Móng bị cắt quá ngắn",
     description: "Học cách xin lỗi và đề nghị nối dài lại khi khách thấy móng ngắn hơn mong đợi.",
     level: "beginner",
+    coverImage: "/images/lessons/unh-01-too-short-1.jpg",
     questions: [
       {
         id: "unh-1-1",
@@ -406,6 +408,7 @@ export const nailsBatDauGroup08: Lesson[] = [
     title: "Đề nghị các lựa chọn độ dài khi khách chưa hài lòng",
     description: "Tổng hợp cách xin lỗi và chủ động đưa ra các lựa chọn độ dài để khách chọn.",
     level: "beginner",
+    coverImage: "/images/lessons/unh-05-too-short-5.jpg",
     questions: [
       {
         id: "unh-5-1",
@@ -599,6 +602,7 @@ export const nailsBatDauGroup08: Lesson[] = [
     title: "Chào khách và mời làm manicure",
     description: "Câu chào cơ bản khi khách bước vào bàn làm tay.",
     level: "beginner",
+    coverImage: "/images/lessons/hand-01-greeting-1.jpg",
     questions: [
       {
         id: "hand-1-1",
@@ -792,6 +796,7 @@ export const nailsBatDauGroup08: Lesson[] = [
     title: "Hỏi khách về thời gian và lịch hẹn",
     description: "Trao đổi với khách về thời gian làm dịch vụ và lịch hẹn hôm nay.",
     level: "beginner",
+    coverImage: "/images/lessons/hand-03-greeting-3.jpg",
     questions: [
       {
         id: "hand-3-1",

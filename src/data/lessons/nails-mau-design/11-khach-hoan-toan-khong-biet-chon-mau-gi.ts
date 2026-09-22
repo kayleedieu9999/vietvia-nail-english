@@ -9,6 +9,7 @@ export const nailsMauDesignGroup11: Lesson[] = [
     title: "Khách hoàn toàn không biết chọn màu gì",
     description: "Luyện cách giúp một khách đang hoàn toàn bối rối, không biết bắt đầu từ đâu.",
     level: "situation",
+    coverImage: "/images/lessons/clr-08-undecided-1.jpg",
     questions: [
       {
         id: "clr-36-1",
@@ -208,6 +209,7 @@ export const nailsMauDesignGroup11: Lesson[] = [
     title: "Đưa ra gợi ý cụ thể cho khách phân vân",
     description: "Luyện cách đưa ra vài gợi ý cụ thể để giúp khách phân vân quyết định nhanh hơn.",
     level: "situation",
+    coverImage: "/images/lessons/clr-08-undecided-2.jpg",
     questions: [
       {
         id: "clr-37-1",
@@ -406,6 +408,7 @@ export const nailsMauDesignGroup11: Lesson[] = [
     title: "Khách sợ chọn sai màu",
     description: "Luyện cách trấn an khách đang lo lắng vì sợ chọn sai màu.",
     level: "situation",
+    coverImage: "/images/lessons/clr-08-undecided-3.jpg",
     questions: [
       {
         id: "clr-38-1",
@@ -605,6 +608,7 @@ export const nailsMauDesignGroup11: Lesson[] = [
     title: "Dùng ảnh và mẫu thật để giúp khách quyết định",
     description: "Luyện cách dùng ảnh mẫu, móng giả để giúp khách phân vân dễ quyết định hơn.",
     level: "situation",
+    coverImage: "/images/lessons/clr-08-undecided-4.jpg",
     questions: [
       {
         id: "clr-39-1",
@@ -803,6 +807,7 @@ export const nailsMauDesignGroup11: Lesson[] = [
     title: "Khi khách nhờ mình chọn hoàn toàn giúp",
     description: "Luyện cách phục vụ khi khách hoàn toàn giao việc chọn màu cho mình.",
     level: "situation",
+    coverImage: "/images/lessons/clr-08-undecided-5.jpg",
     questions: [
       {
         id: "clr-40-1",

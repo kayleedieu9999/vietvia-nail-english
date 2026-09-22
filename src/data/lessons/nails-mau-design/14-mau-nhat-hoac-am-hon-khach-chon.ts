@@ -9,6 +9,7 @@ export const nailsMauDesignGroup14: Lesson[] = [
     title: "Màu nhạt hoặc đậm hơn khách chọn",
     description: "Xử lý tình huống khách thấy sắc độ màu sơn nhạt hơn hoặc đậm hơn so với mong muốn.",
     level: "practice",
+    coverImage: "/images/lessons/unh-22-wrong-color-2.jpg",
     questions: [
       {
         id: "unh-22-1",
@@ -203,6 +204,7 @@ export const nailsMauDesignGroup14: Lesson[] = [
     title: "Xin lỗi và hỏi khách muốn đổi màu nào",
     description: "Luyện cách xin lỗi khi sai màu và chủ động hỏi khách muốn đổi sang màu nào.",
     level: "practice",
+    coverImage: "/images/lessons/unh-24-wrong-color-4.jpg",
     questions: [
       {
         id: "unh-24-1",
@@ -397,6 +399,7 @@ export const nailsMauDesignGroup14: Lesson[] = [
     title: "Một móng đậm màu hơn các móng khác",
     description: "Luyện cách nhận ra và sửa lại khi một móng có màu đậm hơn hẳn so với các móng còn lại.",
     level: "situation",
+    coverImage: "/images/lessons/unh-31-one-nail-different-1.jpg",
     questions: [
       {
         id: "unh-31-1",
@@ -590,6 +593,7 @@ export const nailsMauDesignGroup14: Lesson[] = [
   title: "Chọn màu sơn cùng khách",
   description: "Giúp khách tìm được màu sơn ưng ý bằng những câu tiếng Anh đơn giản.",
   level: "beginner",
+  coverImage: "/images/lessons/chon-mau-son.jpg",
   questions: [
     {
       id: "color-1",

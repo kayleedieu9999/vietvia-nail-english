@@ -9,6 +9,7 @@ export const nailsDichVuGroup09: Lesson[] = [
     title: "Bắt đầu chăm sóc da quanh móng",
     description: "Câu tiếng Anh dùng khi bắt đầu bước làm da quanh móng (cuticles).",
     level: "practice",
+    coverImage: "/images/lessons/hand-26-cuticles-1.jpg",
     questions: [
       {
         id: "hand-26-1",
@@ -201,6 +202,7 @@ export const nailsDichVuGroup09: Lesson[] = [
     title: "Xử lý da quanh móng bị khô hoặc cứng",
     description: "Cách nói khi gặp da quanh móng khô, cứng cần xử lý cẩn thận.",
     level: "practice",
+    coverImage: "/images/lessons/hand-27-cuticles-2.jpg",
     questions: [
       {
         id: "hand-27-1",
@@ -393,6 +395,7 @@ export const nailsDichVuGroup09: Lesson[] = [
     title: "Cắt da quanh móng cẩn thận",
     description: "Câu tiếng Anh dùng khi cần cắt bỏ phần da chết quanh móng.",
     level: "practice",
+    coverImage: "/images/lessons/hand-28-cuticles-3.jpg",
     questions: [
       {
         id: "hand-28-1",
@@ -585,6 +588,7 @@ export const nailsDichVuGroup09: Lesson[] = [
     title: "Giũa bóng móng cho mịn",
     description: "Câu tiếng Anh dùng khi giũa bóng móng cho mịn màng trước khi sơn.",
     level: "practice",
+    coverImage: "/images/lessons/hand-31-buffing-1.jpg",
     questions: [
       {
         id: "hand-31-1",
@@ -777,6 +781,7 @@ export const nailsDichVuGroup09: Lesson[] = [
     title: "Làm sạch quanh mép móng",
     description: "Làm sạch da và bụi quanh mép móng trước khi sơn.",
     level: "practice",
+    coverImage: "/images/lessons/hand-32-buffing-2.jpg",
     questions: [
       {
         id: "hand-32-1",

@@ -10,6 +10,7 @@ export const nailsMauDesignGroup01: Lesson[] = [
   title: "Chọn màu sơn",
   description: "Giúp khách chọn màu, so sánh đậm nhạt, và gợi ý màu phù hợp.",
   level: "beginner",
+  coverImage: "/images/lessons/chon-mau-son-hom-nay.jpg",
   questions: [
     {
       id: "nails-3-1",
@@ -209,6 +210,7 @@ export const nailsMauDesignGroup01: Lesson[] = [
   title: "Khách muốn design đơn giản",
   description: "Gợi ý các mẫu design đơn giản, nhẹ nhàng cho khách.",
   level: "beginner",
+  coverImage: "/images/lessons/khach-muon-design-don-gian.jpg",
   questions: buildQuestions("nails-39", [
     {
       emoji: "🙋",
@@ -327,6 +329,7 @@ export const nailsMauDesignGroup01: Lesson[] = [
   title: "Khách đưa ảnh mẫu nail design",
   description: "Xử lý khi khách đưa ảnh mẫu design muốn làm theo.",
   level: "beginner",
+  coverImage: "/images/lessons/khach-dua-anh-mau-nail-design.jpg",
   questions: buildQuestions("nails-40", [
     {
       emoji: "📸",
@@ -445,6 +448,7 @@ export const nailsMauDesignGroup01: Lesson[] = [
   title: "Design khách chọn quá khó / cần thêm thời gian",
   description: "Giải thích khéo léo khi design quá phức tạp và cần thêm thời gian.",
   level: "beginner",
+  coverImage: "/images/lessons/design-khach-chon-qua-kho-can-them-thoi-gian.jpg",
   questions: buildQuestions("nails-41", [
     {
       emoji: "😅",
@@ -563,6 +567,7 @@ export const nailsMauDesignGroup01: Lesson[] = [
   title: "Hỏi khách có thích màu hiện tại không",
   description: "Kiểm tra lại với khách xem có hài lòng với màu đang làm không.",
   level: "beginner",
+  coverImage: "/images/lessons/hoi-khach-co-thich-mau-hien-tai-khong.jpg",
   questions: buildQuestions("nails-42", [
     {
       emoji: "🎨",

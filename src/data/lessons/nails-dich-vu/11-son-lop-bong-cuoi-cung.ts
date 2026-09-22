@@ -9,6 +9,7 @@ export const nailsDichVuGroup11: Lesson[] = [
     title: "Sơn lớp bóng cuối cùng",
     description: "Sơn lớp top coat cuối cùng để bảo vệ màu sơn.",
     level: "practice",
+    coverImage: "/images/lessons/hand-39-polish-4.jpg",
     questions: [
       {
         id: "hand-39-1",
@@ -201,6 +202,7 @@ export const nailsDichVuGroup11: Lesson[] = [
     title: "Chọn giữa gel và sơn thường",
     description: "Giúp khách quyết định giữa gel manicure và sơn thường.",
     level: "situation",
+    coverImage: "/images/lessons/hand-41-gel-1.jpg",
     questions: [
       {
         id: "hand-41-1",
@@ -393,6 +395,7 @@ export const nailsDichVuGroup11: Lesson[] = [
     title: "Sơn lớp gel base coat",
     description: "Bắt đầu quy trình gel manicure với lớp base coat.",
     level: "situation",
+    coverImage: "/images/lessons/hand-42-gel-2.jpg",
     questions: [
       {
         id: "hand-42-1",
@@ -585,6 +588,7 @@ export const nailsDichVuGroup11: Lesson[] = [
     title: "Sơn màu gel và hơ đèn",
     description: "Sơn lớp màu gel và hơ đèn UV để gel cứng lại.",
     level: "situation",
+    coverImage: "/images/lessons/hand-43-gel-3.jpg",
     questions: [
       {
         id: "hand-43-1",
@@ -777,6 +781,7 @@ export const nailsDichVuGroup11: Lesson[] = [
     title: "Lau lớp nhờn sau khi hơ đèn",
     description: "Lau lớp nhờn (tacky layer) còn lại trên móng sau khi hơ đèn gel.",
     level: "situation",
+    coverImage: "/images/lessons/hand-44-gel-4.jpg",
     questions: [
       {
         id: "hand-44-1",

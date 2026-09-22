@@ -9,6 +9,7 @@ export const nailsMauDesignGroup06: Lesson[] = [
     title: "Gợi ý sắc độ hợp với làn da",
     description: "Học cách gợi ý màu nhạt hay đậm dựa theo màu da của khách.",
     level: "beginner",
+    coverImage: "/images/lessons/clr-02-light-dark-4.jpg",
     questions: [
       {
         id: "clr-9-1",
@@ -207,6 +208,7 @@ export const nailsMauDesignGroup06: Lesson[] = [
     title: "Điều chỉnh đậm nhạt cho vừa ý khách",
     description: "Luyện cách điều chỉnh dần độ đậm nhạt của màu cho đến khi khách hài lòng.",
     level: "beginner",
+    coverImage: "/images/lessons/clr-02-light-dark-5.jpg",
     questions: [
       {
         id: "clr-10-1",
@@ -405,6 +407,7 @@ export const nailsMauDesignGroup06: Lesson[] = [
     title: "Tư vấn màu hồng cho khách",
     description: "Luyện các câu nói khi khách hỏi và chọn các sắc hồng khác nhau.",
     level: "beginner",
+    coverImage: "/images/lessons/clr-03-pink-nude-1.jpg",
     questions: [
       {
         id: "clr-11-1",
@@ -603,6 +606,7 @@ export const nailsMauDesignGroup06: Lesson[] = [
     title: "Tư vấn màu nude cho khách",
     description: "Luyện các câu nói khi khách hỏi và chọn các sắc nude, beige.",
     level: "beginner",
+    coverImage: "/images/lessons/clr-03-pink-nude-2.jpg",
     questions: [
       {
         id: "clr-12-1",
@@ -801,6 +805,7 @@ export const nailsMauDesignGroup06: Lesson[] = [
     title: "So sánh màu hồng và màu nude",
     description: "Luyện cách giúp khách so sánh và chọn giữa màu hồng và màu nude.",
     level: "beginner",
+    coverImage: "/images/lessons/clr-03-pink-nude-3.jpg",
     questions: [
       {
         id: "clr-13-1",

@@ -9,6 +9,7 @@ export const nailsThanhToanGroup12: Lesson[] = [
     title: "Khen ngợi kết quả trong lúc tính tiền",
     description: "Khen ngợi bộ móng vừa hoàn thành trong lúc chuẩn bị tính tiền cho khách.",
     level: "beginner",
+    coverImage: "/images/lessons/tt-new-26-khen-ngoi-luc-tinh-tien.jpg",
     questions: [
       {
         id: "tt-new-26-1",
@@ -195,6 +196,7 @@ export const nailsThanhToanGroup12: Lesson[] = [
     title: "Xin lỗi vì để khách chờ và cảm ơn sự kiên nhẫn",
     description: "Xin lỗi khách đã chờ lâu và cảm ơn sự kiên nhẫn ngay lúc thanh toán.",
     level: "intermediate",
+    coverImage: "/images/lessons/tt-new-27-xin-loi-vi-cho-lau.jpg",
     questions: [
       {
         id: "tt-new-27-1",
@@ -382,6 +384,7 @@ export const nailsThanhToanGroup12: Lesson[] = [
     title: "Hỏi khách biết đến tiệm qua đâu",
     description: "Hỏi nhẹ nhàng khách biết đến tiệm qua kênh nào để hiểu thêm về khách hàng.",
     level: "beginner",
+    coverImage: "/images/lessons/tt-new-28-hoi-biet-den-tiem-qua-dau.jpg",
     questions: [
       {
         id: "tt-new-28-1",
@@ -568,6 +571,7 @@ export const nailsThanhToanGroup12: Lesson[] = [
     title: "Xác nhận lại ngày giờ hẹn tiếp theo",
     description: "Nói to lại ngày giờ hẹn tiếp theo để khách nhớ và xác nhận chính xác.",
     level: "beginner",
+    coverImage: "/images/lessons/tt-new-29-xac-nhan-lich-hen-tiep-theo.jpg",
     questions: [
       {
         id: "tt-new-29-1",
@@ -756,6 +760,7 @@ export const nailsThanhToanGroup12: Lesson[] = [
     title: "Khách vội, muốn thanh toán nhanh",
     description: "Xử lý nhanh gọn khi khách đang vội và cần thanh toán thật nhanh.",
     level: "intermediate",
+    coverImage: "/images/lessons/tt-new-30-khach-voi-thanh-toan-nhanh.jpg",
     questions: [
       {
         id: "tt-new-30-1",

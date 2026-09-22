@@ -10,6 +10,7 @@ export const nailsDichVuGroup03: Lesson[] = [
   title: "Khách muốn tháo bộ cũ",
   description: "Xử lý khi khách muốn tháo bỏ bộ móng cũ hoàn toàn.",
   level: "beginner",
+  coverImage: "/images/lessons/khach-muon-thao-bo-cu.jpg",
   questions: buildQuestions("nails-33", [
     {
       emoji: "🙋",
@@ -128,6 +129,7 @@ export const nailsDichVuGroup03: Lesson[] = [
   title: "Khách hỏi Gel-X",
   description: "Giới thiệu và giải thích về dịch vụ Gel-X cho khách.",
   level: "beginner",
+  coverImage: "/images/lessons/khach-hoi-gel-x.jpg",
   questions: buildQuestions("nails-34", [
     {
       emoji: "🙋",
@@ -247,6 +249,7 @@ export const nailsDichVuGroup03: Lesson[] = [
   title: "Khách hỏi Builder Gel",
   description: "Giới thiệu và giải thích về dịch vụ Builder Gel cho khách.",
   level: "beginner",
+  coverImage: "/images/lessons/khach-hoi-builder-gel.jpg",
   questions: buildQuestions("nails-35", [
     {
       emoji: "🙋",
@@ -365,6 +368,7 @@ export const nailsDichVuGroup03: Lesson[] = [
   title: "Khách hỏi Acrylic",
   description: "Giới thiệu và giải thích về dịch vụ bột acrylic cho khách.",
   level: "beginner",
+  coverImage: "/images/lessons/khach-hoi-acrylic.jpg",
   questions: buildQuestions("nails-36", [
     {
       emoji: "🙋",
@@ -483,6 +487,7 @@ export const nailsDichVuGroup03: Lesson[] = [
   title: "So sánh Gel-X và Acrylic",
   description: "Giúp khách so sánh và chọn giữa Gel-X và bột acrylic.",
   level: "beginner",
+  coverImage: "/images/lessons/so-sanh-gel-x-va-acrylic.jpg",
   questions: buildQuestions("nails-37", [
     {
       emoji: "🤔",

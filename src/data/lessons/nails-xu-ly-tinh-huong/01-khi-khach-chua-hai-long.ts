@@ -10,6 +10,7 @@ export const nailsXuLyTinhHuongGroup01: Lesson[] = [
   title: "Khi khách chưa hài lòng",
   description: "Xin lỗi tự nhiên và sửa lỗi khéo léo khi móng quá dày, lệch, hoặc sai màu.",
   level: "practice",
+  coverImage: "/images/lessons/khi-khach-chua-hai-long-mong.jpg",
   questions: [
     {
       id: "nails-14-1",
@@ -205,6 +206,7 @@ export const nailsXuLyTinhHuongGroup01: Lesson[] = [
   title: "Khách thấy móng quá dày",
   description: "Xử lý khi khách cảm thấy móng bột hoặc gel quá dày.",
   level: "beginner",
+  coverImage: "/images/lessons/khach-thay-mong-qua-day.jpg",
   questions: buildQuestions("nails-44", [
     {
       emoji: "😟",
@@ -323,6 +325,7 @@ export const nailsXuLyTinhHuongGroup01: Lesson[] = [
   title: "Khách thấy móng quá mỏng",
   description: "Xử lý khi khách cảm thấy móng bột hoặc gel quá mỏng, yếu.",
   level: "beginner",
+  coverImage: "/images/lessons/khach-thay-mong-qua-mong.jpg",
   questions: buildQuestions("nails-45", [
     {
       emoji: "😟",
@@ -441,6 +444,7 @@ export const nailsXuLyTinhHuongGroup01: Lesson[] = [
   title: "Khách thấy móng quá dài",
   description: "Xử lý khi khách cảm thấy móng đã làm quá dài so với mong muốn.",
   level: "beginner",
+  coverImage: "/images/lessons/khach-thay-mong-qua-dai.jpg",
   questions: buildQuestions("nails-46", [
     {
       emoji: "😟",
@@ -559,6 +563,7 @@ export const nailsXuLyTinhHuongGroup01: Lesson[] = [
   title: "Khách thấy móng không đều",
   description: "Xử lý khi khách thấy các móng không đồng đều nhau.",
   level: "beginner",
+  coverImage: "/images/lessons/khach-thay-mong-khong-deu.jpg",
   questions: buildQuestions("nails-47", [
     {
       emoji: "😟",

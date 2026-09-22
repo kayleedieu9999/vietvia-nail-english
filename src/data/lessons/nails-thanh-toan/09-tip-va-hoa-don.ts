@@ -9,6 +9,7 @@ export const nailsThanhToanGroup09: Lesson[] = [
     title: "Giải thích cách tip: tiền mặt hay thêm vào thẻ",
     description: "Hướng dẫn khách cách để lại tip, bằng tiền mặt hoặc thêm vào thẻ.",
     level: "beginner",
+    coverImage: "/images/lessons/tt-new-11-cach-tip-tien-mat-hay-the.jpg",
     questions: [
       {
         id: "tt-new-11-1",
@@ -197,6 +198,7 @@ export const nailsThanhToanGroup09: Lesson[] = [
     title: "Khách hỏi nên tip bao nhiêu",
     description: "Trả lời khéo léo khi khách phân vân về mức tip phù hợp.",
     level: "intermediate",
+    coverImage: "/images/lessons/tt-new-12-khach-hoi-nen-tip-bao-nhieu.jpg",
     questions: [
       {
         id: "tt-new-12-1",
@@ -383,6 +385,7 @@ export const nailsThanhToanGroup09: Lesson[] = [
     title: "Tip vào dịp lễ hoặc dịp đặc biệt",
     description: "Đáp lại khi khách tip nhiều hơn bình thường vào các dịp lễ đặc biệt.",
     level: "intermediate",
+    coverImage: "/images/lessons/tt-new-13-tip-dip-le.jpg",
     questions: [
       {
         id: "tt-new-13-1",
@@ -570,6 +573,7 @@ export const nailsThanhToanGroup09: Lesson[] = [
     title: "In hóa đơn hay gửi qua email",
     description: "Hỏi khách muốn nhận hóa đơn bằng giấy in hay gửi qua email.",
     level: "beginner",
+    coverImage: "/images/lessons/tt-new-14-in-hay-gui-email-hoa-don.jpg",
     questions: [
       {
         id: "tt-new-14-1",
@@ -755,6 +759,7 @@ export const nailsThanhToanGroup09: Lesson[] = [
     title: "Khách muốn hóa đơn chi tiết từng khoản",
     description: "Chuẩn bị hóa đơn ghi rõ từng dịch vụ khi khách cần để lưu hồ sơ hoặc công ty hoàn tiền.",
     level: "intermediate",
+    coverImage: "/images/lessons/tt-new-15-hoa-don-chi-tiet-tung-khoan.jpg",
     questions: [
       {
         id: "tt-new-15-1",

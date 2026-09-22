@@ -10,6 +10,7 @@ export const nailsBatDauGroup03: Lesson[] = [
   title: "Giải thích thêm phí gel",
   description: "Giải thích cho khách hiểu vì sao gel có thêm phụ phí.",
   level: "beginner",
+  coverImage: "/images/lessons/giai-thich-them-phi-gel.jpg",
   questions: buildQuestions("nails-22", [
     {
       emoji: "💰",
@@ -127,6 +128,7 @@ export const nailsBatDauGroup03: Lesson[] = [
   title: "Khách hỏi giá trước khi làm",
   description: "Trả lời rõ ràng khi khách muốn biết giá trước khi bắt đầu.",
   level: "beginner",
+  coverImage: "/images/lessons/khach-hoi-gia-truoc-khi-lam.jpg",
   questions: buildQuestions("nails-23", [
     {
       emoji: "💵",
@@ -244,6 +246,7 @@ export const nailsBatDauGroup03: Lesson[] = [
   title: "Khách hỏi bao lâu mới xong",
   description: "Trả lời khách về thời gian hoàn thành dịch vụ.",
   level: "beginner",
+  coverImage: "/images/lessons/khach-hoi-bao-lau-moi-xong.jpg",
   questions: buildQuestions("nails-24", [
     {
       emoji: "⏱️",
@@ -361,6 +364,7 @@ export const nailsBatDauGroup03: Lesson[] = [
   title: "Khách đang vội",
   description: "Xử lý tình huống khi khách cần làm nhanh vì có việc gấp.",
   level: "beginner",
+  coverImage: "/images/lessons/khach-dang-voi.jpg",
   questions: buildQuestions("nails-25", [
     {
       emoji: "🏃",
@@ -479,6 +483,7 @@ export const nailsBatDauGroup03: Lesson[] = [
   title: "Hỏi khách muốn móng dài hay ngắn",
   description: "Hỏi khách về độ dài móng mong muốn trước khi làm.",
   level: "beginner",
+  coverImage: "/images/lessons/hoi-khach-muon-mong-dai-hay-ngan.jpg",
   questions: buildQuestions("nails-26", [
     {
       emoji: "📏",

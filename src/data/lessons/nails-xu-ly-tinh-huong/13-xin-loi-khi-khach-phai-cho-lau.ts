@@ -9,6 +9,7 @@ export const nailsXuLyTinhHuongGroup13: Lesson[] = [
     title: "Xin lỗi khi khách phải chờ lâu",
     description: "Luyện cách xin lỗi chân thành khi khách phải chờ lâu để được sửa lại móng.",
     level: "situation",
+    coverImage: "/images/lessons/unh-43-apologizing-3.jpg",
     questions: [
       {
         id: "unh-43-1",
@@ -202,6 +203,7 @@ export const nailsXuLyTinhHuongGroup13: Lesson[] = [
     title: "Xin lỗi và cam kết làm khách hài lòng",
     description: "Luyện cách xin lỗi kèm cam kết chân thành sẽ làm cho khách hoàn toàn hài lòng.",
     level: "situation",
+    coverImage: "/images/lessons/unh-44-apologizing-4.jpg",
     questions: [
       {
         id: "unh-44-1",
@@ -396,6 +398,7 @@ export const nailsXuLyTinhHuongGroup13: Lesson[] = [
     title: "Xin lỗi khi hiểu lầm ý khách",
     description: "Luyện cách xin lỗi và lắng nghe lại một cách khiêm nhường khi hiểu lầm ý khách.",
     level: "situation",
+    coverImage: "/images/lessons/unh-45-apologizing-5.jpg",
     questions: [
       {
         id: "unh-45-1",
@@ -589,6 +592,7 @@ export const nailsXuLyTinhHuongGroup13: Lesson[] = [
   title: "Khách yêu cầu thay đổi",
   description: "Nghe và đáp lại tự tin khi khách yêu cầu điều gì đó khác đi.",
   level: "beginner",
+  coverImage: "/images/lessons/khach-yeu-cau-thay-doi.jpg",
   questions: [
     {
       id: "req-1",

@@ -9,6 +9,7 @@ export const nailsPedicureGroup06: Lesson[] = [
     title: "Khi cần tính thêm phí xử lý chai chân nặng",
     description: "Cách thông báo phụ phí khi da chai quá nặng cần dịch vụ chuyên sâu hơn.",
     level: "practice",
+    coverImage: "/images/lessons/ped-05-callus-4.jpg",
     questions: [
       {
         id: "ped-24-1",
@@ -205,6 +206,7 @@ export const nailsPedicureGroup06: Lesson[] = [
     title: "Sau khi xử lý xong da chai",
     description: "Câu tiếng Anh khi khách cảm nhận chân mềm mại hơn sau khi xử lý da chai.",
     level: "practice",
+    coverImage: "/images/lessons/ped-05-callus-5.jpg",
     questions: [
       {
         id: "ped-25-1",
@@ -401,6 +403,7 @@ export const nailsPedicureGroup06: Lesson[] = [
     title: "Hỏi khách về lực massage",
     description: "Câu tiếng Anh để hỏi khách lực massage chân như vậy có ổn không.",
     level: "practice",
+    coverImage: "/images/lessons/ped-06-massage-1.jpg",
     questions: [
       {
         id: "ped-26-1",
@@ -597,6 +600,7 @@ export const nailsPedicureGroup06: Lesson[] = [
     title: "Khi khách muốn thay đổi lực massage",
     description: "Cách phản hồi khi khách muốn massage nhẹ hơn hoặc mạnh hơn.",
     level: "practice",
+    coverImage: "/images/lessons/ped-06-massage-2.jpg",
     questions: [
       {
         id: "ped-27-1",
@@ -793,6 +797,7 @@ export const nailsPedicureGroup06: Lesson[] = [
     title: "Nâng cấp thời gian massage",
     description: "Câu tiếng Anh để giới thiệu dịch vụ nâng cấp thêm thời gian massage cho khách.",
     level: "practice",
+    coverImage: "/images/lessons/ped-06-massage-3.jpg",
     questions: [
       {
         id: "ped-28-1",

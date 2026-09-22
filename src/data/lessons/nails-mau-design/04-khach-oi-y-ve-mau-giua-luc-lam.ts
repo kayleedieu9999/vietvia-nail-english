@@ -9,6 +9,7 @@ export const nailsMauDesignGroup04: Lesson[] = [
     title: "Khách đổi ý về màu giữa lúc làm",
     description: "Xử lý khi khách bất ngờ muốn đổi màu hoàn toàn khác giữa buổi làm.",
     level: "situation",
+    coverImage: "/images/lessons/cr-46-doi-y-mau-giua-luc.jpg",
     questions: [
       {
         id: "cr-46-1",
@@ -204,6 +205,7 @@ export const nailsMauDesignGroup04: Lesson[] = [
     title: "Khách muốn màu giống trên tay và chân",
     description: "Xử lý khi khách quyết định làm luôn màu giống trên chân sau khi làm tay.",
     level: "situation",
+    coverImage: "/images/lessons/cr-47-mau-giong-tren-chan.jpg",
     questions: [
       {
         id: "cr-47-1",
@@ -399,6 +401,7 @@ export const nailsMauDesignGroup04: Lesson[] = [
     title: "Gợi ý màu theo mùa hoặc dịp",
     description: "Câu tiếng Anh khi gợi ý màu sơn phù hợp với mùa hoặc dịp đặc biệt.",
     level: "situation",
+    coverImage: "/images/lessons/ped-08-chon-mau-chan-3.jpg",
     questions: [
       {
         id: "ped-38-1",
@@ -595,6 +598,7 @@ export const nailsMauDesignGroup04: Lesson[] = [
     title: "Hỏi khách muốn màu gì",
     description: "Học cách hỏi khách đang nghĩ đến màu nào để bắt đầu buổi làm nail.",
     level: "beginner",
+    coverImage: "/images/lessons/clr-01-hoi-mau-1.jpg",
     questions: [
       {
         id: "clr-1-1",
@@ -792,6 +796,7 @@ export const nailsMauDesignGroup04: Lesson[] = [
     title: "Hỏi màu theo dịp đặc biệt",
     description: "Tập hỏi khách chọn màu cho dịp đặc biệt như tiệc, cưới, phỏng vấn.",
     level: "beginner",
+    coverImage: "/images/lessons/clr-01-hoi-mau-3.jpg",
     questions: [
       {
         id: "clr-3-1",

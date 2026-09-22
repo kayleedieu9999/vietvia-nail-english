@@ -9,6 +9,7 @@ export const nailsXuLyTinhHuongGroup05: Lesson[] = [
     title: "Khách cần nghỉ giữa buổi làm",
     description: "Xử lý khi khách cần tạm dừng để nghỉ ngơi hoặc đi vệ sinh giữa buổi làm.",
     level: "situation",
+    coverImage: "/images/lessons/cr-43-can-nghi-giua-buoi.jpg",
     questions: [
       {
         id: "cr-43-1",
@@ -206,6 +207,7 @@ export const nailsXuLyTinhHuongGroup05: Lesson[] = [
     title: "Khách dẫn bạn đến, muốn ngồi cạnh nhau",
     description: "Xử lý khi khách đi cùng bạn và muốn được sắp xếp ngồi gần nhau.",
     level: "situation",
+    coverImage: "/images/lessons/cr-44-dan-ban-den-cung.jpg",
     questions: [
       {
         id: "cr-44-1",
@@ -401,6 +403,7 @@ export const nailsXuLyTinhHuongGroup05: Lesson[] = [
     title: "Khách nhắc về dị ứng hoặc nhạy cảm với sản phẩm",
     description: "Xử lý khi khách chia sẻ về dị ứng hoặc nhạy cảm với một số sản phẩm nail.",
     level: "situation",
+    coverImage: "/images/lessons/cr-45-di-ung-san-pham.jpg",
     questions: [
       {
         id: "cr-45-1",
@@ -597,6 +600,7 @@ export const nailsXuLyTinhHuongGroup05: Lesson[] = [
     title: "Đổi từ gel sang sơn thường",
     description: "Xử lý khi khách đổi ý muốn dùng sơn thường thay vì gel giữa lúc làm.",
     level: "situation",
+    coverImage: "/images/lessons/cr-48-doi-tu-gel-sang-thuong.jpg",
     questions: [
       {
         id: "cr-48-1",
@@ -792,6 +796,7 @@ export const nailsXuLyTinhHuongGroup05: Lesson[] = [
     title: "Khi khách nói nước quá nóng",
     description: "Cách xử lý khi khách phàn nàn nước ngâm chân quá nóng.",
     level: "beginner",
+    coverImage: "/images/lessons/ped-02-nhiet-do-nuoc-2.jpg",
     questions: [
       {
         id: "ped-7-1",

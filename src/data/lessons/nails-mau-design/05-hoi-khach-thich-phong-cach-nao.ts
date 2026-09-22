@@ -9,6 +9,7 @@ export const nailsMauDesignGroup05: Lesson[] = [
     title: "Hỏi khách thích phong cách nào",
     description: "Học cách hỏi khách muốn màu nhẹ nhàng hay nổi bật.",
     level: "beginner",
+    coverImage: "/images/lessons/clr-01-hoi-mau-4.jpg",
     questions: [
       {
         id: "clr-4-1",
@@ -207,6 +208,7 @@ export const nailsMauDesignGroup05: Lesson[] = [
     title: "Gợi ý khi khách chưa biết chọn màu gì",
     description: "Luyện câu hỏi mở để giúp khách bắt đầu chọn màu.",
     level: "beginner",
+    coverImage: "/images/lessons/clr-01-hoi-mau-5.jpg",
     questions: [
       {
         id: "clr-5-1",
@@ -405,6 +407,7 @@ export const nailsMauDesignGroup05: Lesson[] = [
     title: "Chọn màu nhạt hay đậm",
     description: "Luyện cách hỏi khách muốn màu nhạt hay đậm khi khách còn phân vân.",
     level: "beginner",
+    coverImage: "/images/lessons/clr-02-light-dark-1.jpg",
     questions: [
       {
         id: "clr-6-1",
@@ -603,6 +606,7 @@ export const nailsMauDesignGroup05: Lesson[] = [
     title: "Khi khách muốn màu nhạt hơn",
     description: "Luyện các câu nói khi khách yêu cầu đổi sang màu nhạt hơn.",
     level: "beginner",
+    coverImage: "/images/lessons/clr-02-light-dark-2.jpg",
     questions: [
       {
         id: "clr-7-1",
@@ -802,6 +806,7 @@ export const nailsMauDesignGroup05: Lesson[] = [
     title: "Khi khách muốn màu đậm hơn",
     description: "Luyện các câu nói khi khách yêu cầu đổi sang màu đậm hơn.",
     level: "beginner",
+    coverImage: "/images/lessons/clr-02-light-dark-3.jpg",
     questions: [
       {
         id: "clr-8-1",

@@ -9,6 +9,7 @@ export const nailsThanhToanGroup08: Lesson[] = [
     title: "Xử lý khi khách đổi ý cách trả tiền",
     description: "Xử lý nhẹ nhàng khi thẻ bị từ chối hoặc khách muốn đổi hình thức thanh toán.",
     level: "intermediate",
+    coverImage: "/images/lessons/tt-new-6-doi-cach-tra-tien.jpg",
     questions: [
       {
         id: "tt-new-6-1",
@@ -197,6 +198,7 @@ export const nailsThanhToanGroup08: Lesson[] = [
     title: "Chia hóa đơn giữa hai người bạn",
     description: "Hướng dẫn khi hai khách đi cùng nhau muốn chia đôi hoặc trả riêng hóa đơn.",
     level: "intermediate",
+    coverImage: "/images/lessons/tt-new-7-chia-hoa-don.jpg",
     questions: [
       {
         id: "tt-new-7-1",
@@ -385,6 +387,7 @@ export const nailsThanhToanGroup08: Lesson[] = [
     title: "Giới thiệu mua gift card",
     description: "Giới thiệu và hướng dẫn khách mua thẻ quà tặng của tiệm.",
     level: "intermediate",
+    coverImage: "/images/lessons/tt-new-8-mua-gift-card.jpg",
     questions: [
       {
         id: "tt-new-8-1",
@@ -573,6 +576,7 @@ export const nailsThanhToanGroup08: Lesson[] = [
     title: "Khách đổi gift card để thanh toán",
     description: "Hướng dẫn khách sử dụng gift card để trả cho dịch vụ hôm nay.",
     level: "intermediate",
+    coverImage: "/images/lessons/tt-new-9-doi-gift-card.jpg",
     questions: [
       {
         id: "tt-new-9-1",
@@ -761,6 +765,7 @@ export const nailsThanhToanGroup08: Lesson[] = [
     title: "Hỏi khách có cần thêm gì trước khi thanh toán",
     description: "Kiểm tra lại với khách trước khi chốt hóa đơn, tránh bỏ sót dịch vụ.",
     level: "beginner",
+    coverImage: "/images/lessons/tt-new-10-hoi-them-truoc-khi-tinh-tien.jpg",
     questions: [
       {
         id: "tt-new-10-1",

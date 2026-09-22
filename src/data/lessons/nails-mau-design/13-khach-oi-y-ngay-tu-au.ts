@@ -9,6 +9,7 @@ export const nailsMauDesignGroup13: Lesson[] = [
     title: "Khách đổi ý ngay từ đầu",
     description: "Luyện cách phục vụ khi khách đổi ý về màu ngay khi vừa bắt đầu.",
     level: "situation",
+    coverImage: "/images/lessons/clr-10-doi-mau-1.jpg",
     questions: [
       {
         id: "clr-46-1",
@@ -207,6 +208,7 @@ export const nailsMauDesignGroup13: Lesson[] = [
     title: "Khách đổi ý giữa buổi làm",
     description: "Luyện cách phục vụ khi khách đổi ý về màu ngay giữa lúc đang làm.",
     level: "situation",
+    coverImage: "/images/lessons/clr-10-doi-mau-2.jpg",
     questions: [
       {
         id: "clr-47-1",
@@ -406,6 +408,7 @@ export const nailsMauDesignGroup13: Lesson[] = [
     title: "Khách đổi ý sau khi hoàn thành",
     description: "Luyện cách phục vụ khi khách nhìn lại và muốn đổi màu sau khi đã hoàn thành.",
     level: "situation",
+    coverImage: "/images/lessons/clr-10-doi-mau-3.jpg",
     questions: [
       {
         id: "clr-48-1",
@@ -604,6 +607,7 @@ export const nailsMauDesignGroup13: Lesson[] = [
     title: "Xử lý khéo khi liên tục đổi màu",
     description: "Luyện cách xử lý khéo léo khi khách đổi ý nhiều lần liên tiếp.",
     level: "situation",
+    coverImage: "/images/lessons/clr-10-doi-mau-4.jpg",
     questions: [
       {
         id: "clr-49-1",
@@ -803,6 +807,7 @@ export const nailsMauDesignGroup13: Lesson[] = [
     title: "Tổng kết: Đồng hành cùng khách chọn màu",
     description: "Ôn lại toàn diện cách đồng hành, trấn an và hỗ trợ khách trong suốt quá trình đổi màu.",
     level: "situation",
+    coverImage: "/images/lessons/clr-10-doi-mau-5.jpg",
     questions: [
       {
         id: "clr-50-1",

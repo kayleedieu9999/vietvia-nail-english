@@ -9,6 +9,7 @@ export const nailsXuLyTinhHuongGroup08: Lesson[] = [
     title: "Kiểm tra lại sau khi dũa mỏng",
     description: "Luyện cách kiểm tra kỹ hai tay và xác nhận khách đã thật sự thoải mái sau khi dũa mỏng.",
     level: "beginner",
+    coverImage: "/images/lessons/unh-15-too-thick-5.jpg",
     questions: [
       {
         id: "unh-15-1",
@@ -202,6 +203,7 @@ export const nailsXuLyTinhHuongGroup08: Lesson[] = [
     title: "Hai móng không giống hình dáng nhau",
     description: "Luyện cách nhận ra và sửa lại khi khách thấy hai móng có hình dáng khác nhau.",
     level: "practice",
+    coverImage: "/images/lessons/unh-16-shape-uneven-1.jpg",
     questions: [
       {
         id: "unh-16-1",
@@ -395,6 +397,7 @@ export const nailsXuLyTinhHuongGroup08: Lesson[] = [
     title: "Đầu móng không đối xứng",
     description: "Xử lý tình huống khách thấy đầu móng hai bên không đối xứng, một bên lệch hơn.",
     level: "practice",
+    coverImage: "/images/lessons/unh-17-shape-uneven-2.jpg",
     questions: [
       {
         id: "unh-17-1",
@@ -588,6 +591,7 @@ export const nailsXuLyTinhHuongGroup08: Lesson[] = [
     title: "Khách so sánh hai tay cạnh nhau",
     description: "Phản hồi khi khách đặt hai tay cạnh nhau để so sánh và thấy sự khác biệt rõ rệt.",
     level: "practice",
+    coverImage: "/images/lessons/unh-18-shape-uneven-3.jpg",
     questions: [
       {
         id: "unh-18-1",
@@ -782,6 +786,7 @@ export const nailsXuLyTinhHuongGroup08: Lesson[] = [
     title: "Chủ động sửa hình dáng cho đều",
     description: "Luyện cách chủ động nhận ra và đề nghị dũa lại hình dáng cho đều trước khi khách phàn nàn.",
     level: "practice",
+    coverImage: "/images/lessons/unh-19-shape-uneven-4.jpg",
     questions: [
       {
         id: "unh-19-1",

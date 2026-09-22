@@ -9,6 +9,7 @@ export const nailsMauDesignGroup09: Lesson[] = [
     title: "Màu sắc mùa xuân",
     description: "Luyện cách gợi ý các màu tươi sáng, nhẹ nhàng phù hợp với mùa xuân.",
     level: "practice",
+    coverImage: "/images/lessons/clr-06-seasonal-1.jpg",
     questions: [
       {
         id: "clr-26-1",
@@ -207,6 +208,7 @@ export const nailsMauDesignGroup09: Lesson[] = [
     title: "Màu sắc mùa hè",
     description: "Luyện cách gợi ý các màu tươi sáng, sống động phù hợp với mùa hè.",
     level: "practice",
+    coverImage: "/images/lessons/clr-06-seasonal-2.jpg",
     questions: [
       {
         id: "clr-27-1",
@@ -405,6 +407,7 @@ export const nailsMauDesignGroup09: Lesson[] = [
     title: "Màu sắc mùa thu",
     description: "Luyện cách gợi ý các màu ấm, trầm phù hợp với mùa thu.",
     level: "practice",
+    coverImage: "/images/lessons/clr-06-seasonal-3.jpg",
     questions: [
       {
         id: "clr-28-1",
@@ -603,6 +606,7 @@ export const nailsMauDesignGroup09: Lesson[] = [
     title: "Màu sắc mùa đông",
     description: "Luyện cách gợi ý các màu đậm, lấp lánh phù hợp với mùa đông.",
     level: "practice",
+    coverImage: "/images/lessons/clr-06-seasonal-4.jpg",
     questions: [
       {
         id: "clr-29-1",
@@ -801,6 +805,7 @@ export const nailsMauDesignGroup09: Lesson[] = [
     title: "Xu hướng màu sắc mới nhất",
     description: "Luyện cách giới thiệu và trò chuyện về các xu hướng màu sắc mới nhất.",
     level: "practice",
+    coverImage: "/images/lessons/clr-06-seasonal-5.jpg",
     questions: [
       {
         id: "clr-30-1",

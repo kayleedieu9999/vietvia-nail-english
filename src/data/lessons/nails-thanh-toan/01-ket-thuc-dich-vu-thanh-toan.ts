@@ -10,6 +10,7 @@ export const nailsThanhToanGroup01: Lesson[] = [
   title: "Kết thúc dịch vụ & thanh toán",
   description: "Hỏi khách có hài lòng không, thời gian khô móng, thanh toán, và cảm ơn khách.",
   level: "practice",
+  coverImage: "/images/lessons/ket-thuc-dich-vu-va-thanh-toan.jpg",
   questions: [
     {
       id: "nails-15-1",
@@ -206,6 +207,7 @@ export const nailsThanhToanGroup01: Lesson[] = [
   title: "Thanh toán, tip và receipt",
   description: "Hướng dẫn khách thanh toán, tip, và nhận hóa đơn.",
   level: "beginner",
+  coverImage: "/images/lessons/thanh-toan-tip-va-receipt.jpg",
   questions: buildQuestions("nails-64", [
     {
       emoji: "💳",
@@ -325,6 +327,7 @@ export const nailsThanhToanGroup01: Lesson[] = [
   title: "Kết thúc dịch vụ & đặt lịch lần sau",
   description: "Kết thúc dịch vụ một cách chuyên nghiệp và đặt lịch hẹn tiếp theo.",
   level: "beginner",
+  coverImage: "/images/lessons/ket-thuc-dich-vu-va-dat-lich-lan-sau.jpg",
   questions: buildQuestions("nails-65", [
     {
       emoji: "✅",
@@ -444,6 +447,7 @@ export const nailsThanhToanGroup01: Lesson[] = [
     title: "Kết thúc cuộc trò chuyện khi khách sắp về",
     description: "Cách kết thúc cuộc trò chuyện một cách tự nhiên khi khách chuẩn bị ra về.",
     level: "situation",
+    coverImage: "/images/lessons/st-47-ket-thuc-2.jpg",
     questions: [
       {
         id: "st-47-1",

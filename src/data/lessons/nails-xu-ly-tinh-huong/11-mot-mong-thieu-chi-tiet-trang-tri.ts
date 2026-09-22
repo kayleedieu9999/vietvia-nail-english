@@ -9,6 +9,7 @@ export const nailsXuLyTinhHuongGroup11: Lesson[] = [
     title: "Một móng thiếu chi tiết trang trí",
     description: "Phản hồi khi một móng thiếu chi tiết trang trí như kim tuyến hoặc hình vẽ so với các móng khác.",
     level: "situation",
+    coverImage: "/images/lessons/unh-33-one-nail-different-3.jpg",
     questions: [
       {
         id: "unh-33-1",
@@ -202,6 +203,7 @@ export const nailsXuLyTinhHuongGroup11: Lesson[] = [
     title: "Chủ động nhận ra trước khi khách nói",
     description: "Luyện cách chủ động nhận ra và sửa một móng khác biệt trước khi khách kịp phàn nàn.",
     level: "situation",
+    coverImage: "/images/lessons/unh-34-one-nail-different-4.jpg",
     questions: [
       {
         id: "unh-34-1",
@@ -396,6 +398,7 @@ export const nailsXuLyTinhHuongGroup11: Lesson[] = [
     title: "Kiểm tra lại toàn bộ móng lần cuối",
     description: "Luyện cách cùng khách kiểm tra lại toàn bộ mười móng lần cuối sau khi đã sửa móng khác biệt.",
     level: "situation",
+    coverImage: "/images/lessons/unh-35-one-nail-different-5.jpg",
     questions: [
       {
         id: "unh-35-1",
@@ -591,6 +594,7 @@ export const nailsXuLyTinhHuongGroup11: Lesson[] = [
     title: "Khách trực tiếp yêu cầu nối dài lại",
     description: "Luyện cách đồng ý và xử lý ngay khi khách trực tiếp yêu cầu sửa lại móng quá ngắn.",
     level: "situation",
+    coverImage: "/images/lessons/unh-36-asks-for-correction-1.jpg",
     questions: [
       {
         id: "unh-36-1",
@@ -784,6 +788,7 @@ export const nailsXuLyTinhHuongGroup11: Lesson[] = [
     title: "Khách yêu cầu đổi màu khác",
     description: "Luyện cách đồng ý và hỗ trợ khi khách trực tiếp yêu cầu đổi sang màu sơn khác.",
     level: "situation",
+    coverImage: "/images/lessons/unh-37-asks-for-correction-2.jpg",
     questions: [
       {
         id: "unh-37-1",

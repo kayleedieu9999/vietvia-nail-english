@@ -9,6 +9,7 @@ export const nailsBatDauGroup12: Lesson[] = [
     title: "Tiện nghi trong tiệm: wifi, nước, sạc điện thoại",
     description: "Trả lời khi khách hỏi về wifi, nhà vệ sinh, nước uống hoặc sạc điện thoại.",
     level: "beginner",
+    coverImage: "/images/lessons/bd-new-2-tien-nghi-trong-tiem.jpg",
     questions: [
       {
         id: "bd-new-2-1",

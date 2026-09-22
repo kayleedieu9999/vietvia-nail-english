@@ -9,6 +9,7 @@ export const nailsPedicureGroup04: Lesson[] = [
     title: "Khách khen nước ngâm chân",
     description: "Câu tiếng Anh khi khách khen nhiệt độ nước và cảm giác thư giãn.",
     level: "beginner",
+    coverImage: "/images/lessons/ped-02-nhiet-do-nuoc-5.jpg",
     questions: [
       {
         id: "ped-10-1",
@@ -205,6 +206,7 @@ export const nailsPedicureGroup04: Lesson[] = [
     title: "Giũa móng theo hình dáng khách muốn",
     description: "Câu tiếng Anh khi giũa móng chân theo hình dáng khách yêu cầu.",
     level: "beginner",
+    coverImage: "/images/lessons/ped-03-cat-giua-mong-3.jpg",
     questions: [
       {
         id: "ped-13-1",
@@ -401,6 +403,7 @@ export const nailsPedicureGroup04: Lesson[] = [
     title: "Giới thiệu bước chăm sóc cuticle",
     description: "Câu tiếng Anh khi bắt đầu chăm sóc phần da quanh móng chân (cuticle).",
     level: "practice",
+    coverImage: "/images/lessons/ped-04-cuticle-1.jpg",
     questions: [
       {
         id: "ped-16-1",
@@ -597,6 +600,7 @@ export const nailsPedicureGroup04: Lesson[] = [
     title: "Khách hỏi về việc loại bỏ cuticle",
     description: "Cách trả lời khi khách hỏi có nên loại bỏ hoàn toàn phần da quanh móng không.",
     level: "practice",
+    coverImage: "/images/lessons/ped-04-cuticle-2.jpg",
     questions: [
       {
         id: "ped-17-1",
@@ -793,6 +797,7 @@ export const nailsPedicureGroup04: Lesson[] = [
     title: "Khi khách bị nhột hoặc nhạy cảm",
     description: "Cách xử lý khi khách cảm thấy nhột hoặc nhạy cảm trong lúc làm cuticle.",
     level: "practice",
+    coverImage: "/images/lessons/ped-04-cuticle-3.jpg",
     questions: [
       {
         id: "ped-18-1",

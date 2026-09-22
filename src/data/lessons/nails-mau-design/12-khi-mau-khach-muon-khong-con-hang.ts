@@ -9,6 +9,7 @@ export const nailsMauDesignGroup12: Lesson[] = [
     title: "Khi màu khách muốn không còn hàng",
     description: "Luyện cách xử lý khi tiệm hết một màu và cần gợi ý màu tương tự.",
     level: "situation",
+    coverImage: "/images/lessons/clr-09-similar-shade-1.jpg",
     questions: [
       {
         id: "clr-41-1",
@@ -207,6 +208,7 @@ export const nailsMauDesignGroup12: Lesson[] = [
     title: "Tìm màu tương tự từ ảnh khách mang tới",
     description: "Luyện cách giúp khách tìm màu tương tự với một màu họ thấy trong ảnh hoặc trên Pinterest.",
     level: "situation",
+    coverImage: "/images/lessons/clr-09-similar-shade-2.jpg",
     questions: [
       {
         id: "clr-42-1",
@@ -405,6 +407,7 @@ export const nailsMauDesignGroup12: Lesson[] = [
     title: "Khi khách không thích màu vừa thử",
     description: "Luyện cách gợi ý màu tương tự khi khách không thích màu vừa thử lên tay.",
     level: "situation",
+    coverImage: "/images/lessons/clr-09-similar-shade-3.jpg",
     questions: [
       {
         id: "clr-43-1",
@@ -604,6 +607,7 @@ export const nailsMauDesignGroup12: Lesson[] = [
     title: "So sánh vài màu gần giống nhau",
     description: "Luyện cách giúp khách so sánh vài màu rất gần giống nhau để chọn màu đúng ý nhất.",
     level: "situation",
+    coverImage: "/images/lessons/clr-09-similar-shade-4.jpg",
     questions: [
       {
         id: "clr-44-1",
@@ -802,6 +806,7 @@ export const nailsMauDesignGroup12: Lesson[] = [
     title: "Tạo màu tương tự bằng cách pha trộn",
     description: "Luyện cách giải thích cho khách về việc pha trộn để tạo ra một màu tương tự mong muốn.",
     level: "situation",
+    coverImage: "/images/lessons/clr-09-similar-shade-5.jpg",
     questions: [
       {
         id: "clr-45-1",

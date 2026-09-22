@@ -9,6 +9,7 @@ export const nailsThanhToanGroup05: Lesson[] = [
     title: "Cảm ơn khách đã cho biết vấn đề",
     description: "Tổng kết cách cảm ơn khách một cách chân thành vì đã thẳng thắn cho biết vấn đề để cùng sửa lại.",
     level: "situation",
+    coverImage: "/images/lessons/unh-50-fixing-checking-5.jpg",
     questions: [
       {
         id: "unh-50-1",

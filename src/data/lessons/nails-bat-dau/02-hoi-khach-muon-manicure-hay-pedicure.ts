@@ -10,6 +10,7 @@ export const nailsBatDauGroup02: Lesson[] = [
   title: "Hỏi khách muốn manicure hay pedicure",
   description: "Hỏi khách muốn làm tay, làm chân, hay cả hai.",
   level: "beginner",
+  coverImage: "/images/lessons/hoi-khach-muon-manicure-hay-pedicure.jpg",
   questions: buildQuestions("nails-17", [
     {
       emoji: "💅",
@@ -127,6 +128,7 @@ export const nailsBatDauGroup02: Lesson[] = [
   title: "Hỏi khách đã chọn màu chưa",
   description: "Hỏi khách đã ưng ý màu nào chưa và hướng dẫn khách xem bảng màu.",
   level: "beginner",
+  coverImage: "/images/lessons/hoi-khach-da-chon-mau-chua.jpg",
   questions: buildQuestions("nails-18", [
     {
       emoji: "🎨",
@@ -244,6 +246,7 @@ export const nailsBatDauGroup02: Lesson[] = [
   title: "Khách chưa biết chọn màu gì",
   description: "Gợi ý màu sắc khi khách còn phân vân chưa biết chọn màu nào.",
   level: "beginner",
+  coverImage: "/images/lessons/khach-chua-biet-chon-mau-gi.jpg",
   questions: buildQuestions("nails-19", [
     {
       emoji: "🤷",
@@ -361,6 +364,7 @@ export const nailsBatDauGroup02: Lesson[] = [
   title: "Khách muốn đổi màu sau khi đã chọn",
   description: "Xử lý nhẹ nhàng khi khách đổi ý và muốn chọn màu khác.",
   level: "beginner",
+  coverImage: "/images/lessons/khach-muon-doi-mau-sau-khi-da-chon.jpg",
   questions: buildQuestions("nails-20", [
     {
       emoji: "😅",
@@ -478,6 +482,7 @@ export const nailsBatDauGroup02: Lesson[] = [
   title: "Hỏi khách muốn gel hay regular polish",
   description: "Giúp khách chọn giữa sơn gel và sơn thường.",
   level: "beginner",
+  coverImage: "/images/lessons/hoi-khach-muon-gel-hay-regular-polish.jpg",
   questions: buildQuestions("nails-21", [
     {
       emoji: "💅",

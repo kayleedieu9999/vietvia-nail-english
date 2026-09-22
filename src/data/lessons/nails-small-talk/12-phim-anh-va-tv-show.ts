@@ -9,6 +9,7 @@ export const nailsSmallTalkGroup12: Lesson[] = [
     title: "Hỏi khách về bộ phim đang xem",
     description: "Trò chuyện nhẹ nhàng về phim ảnh, TV show mà khách đang theo dõi.",
     level: "beginner",
+    coverImage: "/images/lessons/st-new-2-phim-anh-tv-show.jpg",
     questions: [
       {
         id: "st-new-2-1",

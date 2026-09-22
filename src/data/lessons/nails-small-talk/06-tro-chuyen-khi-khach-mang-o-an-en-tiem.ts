@@ -9,6 +9,7 @@ export const nailsSmallTalkGroup06: Lesson[] = [
     title: "Trò chuyện khi khách mang đồ ăn đến tiệm",
     description: "Cách trò chuyện tự nhiên khi khách mang đồ ăn hoặc đồ uống vào tiệm.",
     level: "practice",
+    coverImage: "/images/lessons/st-25-do-an-nha-hang-5.jpg",
     questions: [
       {
         id: "st-25-1",
@@ -223,6 +224,7 @@ export const nailsSmallTalkGroup06: Lesson[] = [
     title: "Mời khách uống nước",
     description: "Cách mời khách một ly nước hoặc đồ uống trong lúc làm nails.",
     level: "practice",
+    coverImage: "/images/lessons/st-26-ca-phe-do-uong-1.jpg",
     questions: [
       {
         id: "st-26-1",
@@ -437,6 +439,7 @@ export const nailsSmallTalkGroup06: Lesson[] = [
     title: "Nói về cà phê Việt Nam",
     description: "Cách trò chuyện về hương vị và cách pha cà phê Việt Nam với khách.",
     level: "practice",
+    coverImage: "/images/lessons/st-27-ca-phe-do-uong-2.jpg",
     questions: [
       {
         id: "st-27-1",
@@ -651,6 +654,7 @@ export const nailsSmallTalkGroup06: Lesson[] = [
     title: "Hỏi khách thích đồ uống gì",
     description: "Cách hỏi khách về loại đồ uống họ thích khi trò chuyện nhẹ nhàng.",
     level: "practice",
+    coverImage: "/images/lessons/st-28-ca-phe-do-uong-3.jpg",
     questions: [
       {
         id: "st-28-1",
@@ -865,6 +869,7 @@ export const nailsSmallTalkGroup06: Lesson[] = [
     title: "Trò chuyện về buổi sáng và cà phê",
     description: "Cách trò chuyện nhẹ nhàng về thói quen uống cà phê vào buổi sáng.",
     level: "practice",
+    coverImage: "/images/lessons/st-29-ca-phe-do-uong-4.jpg",
     questions: [
       {
         id: "st-29-1",

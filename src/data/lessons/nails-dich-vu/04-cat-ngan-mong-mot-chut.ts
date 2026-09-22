@@ -9,6 +9,7 @@ export const nailsDichVuGroup04: Lesson[] = [
     title: "Cắt ngắn móng một chút",
     description: "Học cách phản hồi tự nhiên khi khách muốn cắt móng ngắn lại.",
     level: "beginner",
+    coverImage: "/images/lessons/cr-01-ngan-hon-1.jpg",
     questions: [
       {
         id: "cr-1-1",
@@ -212,6 +213,7 @@ export const nailsDichVuGroup04: Lesson[] = [
     title: "Xác nhận độ dài trong lúc làm",
     description: "Hỏi và xác nhận với khách khi đang giũa móng.",
     level: "beginner",
+    coverImage: "/images/lessons/cr-05-xac-nhan-do-dai-1.jpg",
     questions: [
       {
         id: "cr-5-1",
@@ -410,6 +412,7 @@ export const nailsDichVuGroup04: Lesson[] = [
     title: "Làm dáng tròn hơn",
     description: "Luyện câu trả lời khi khách muốn chỉnh một móng cho tròn hơn.",
     level: "beginner",
+    coverImage: "/images/lessons/cr-07-lam-tron-hon.jpg",
     questions: [
       {
         id: "cr-7-1",
@@ -605,6 +608,7 @@ export const nailsDichVuGroup04: Lesson[] = [
     title: "Khách vãng lai đến sửa móng gấp",
     description: "Xử lý khi khách không có hẹn trước, cần sửa gấp một móng bị gãy.",
     level: "practice",
+    coverImage: "/images/lessons/cr-27-khach-vang-lai-sua-mong.jpg",
     questions: [
       {
         id: "cr-27-1",
@@ -801,6 +805,7 @@ export const nailsDichVuGroup04: Lesson[] = [
     title: "Độ dày khi fill hay làm bộ mới",
     description: "Giải thích cho khách về độ dày khi fill lại so với làm bộ móng mới.",
     level: "situation",
+    coverImage: "/images/lessons/cr-33-fill-vs-set-moi.jpg",
     questions: [
       {
         id: "cr-33-1",

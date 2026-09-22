@@ -10,6 +10,7 @@ export const nailsPedicureGroup01: Lesson[] = [
   title: "Hỏi khách muốn làm gì hôm nay",
   description: "Hỏi khách chọn manicure/pedicure, gel/sơn thường, bộ mới hay dặm lại.",
   level: "beginner",
+  coverImage: "/images/lessons/hoi-khach-muon-lam-gi-hom-nay.jpg",
   questions: [
     {
       id: "nails-2-1",
@@ -211,6 +212,7 @@ export const nailsPedicureGroup01: Lesson[] = [
   title: "Làm pedicure",
   description: "Nhiệt độ nước, chai chân, massage, khăn nóng — câu tiếng Anh khi làm chân.",
   level: "practice",
+  coverImage: "/images/lessons/lam-pedicure-thu-gian.jpg",
   questions: [
     {
       id: "nails-7-1",
@@ -407,6 +409,7 @@ export const nailsPedicureGroup01: Lesson[] = [
   title: "Pedicure — hỏi nhiệt độ nước",
   description: "Hỏi khách về nhiệt độ nước ngâm chân trong lúc pedicure.",
   level: "beginner",
+  coverImage: "/images/lessons/pedicure-hoi-nhiet-do-nuoc.jpg",
   questions: buildQuestions("nails-54", [
     {
       emoji: "💧",
@@ -525,6 +528,7 @@ export const nailsPedicureGroup01: Lesson[] = [
   title: "Pedicure — hỏi có muốn cắt ngắn móng chân không",
   description: "Hỏi khách về độ dài móng chân mong muốn khi làm pedicure.",
   level: "beginner",
+  coverImage: "/images/lessons/pedicure-hoi-co-muon-cat-ngan-mong-chan-khong.jpg",
   questions: buildQuestions("nails-55", [
     {
       emoji: "🦶",
@@ -643,6 +647,7 @@ export const nailsPedicureGroup01: Lesson[] = [
   title: "Pedicure — hỏi có muốn callus remover không",
   description: "Hỏi khách có muốn tẩy da chết gót chân trong lúc pedicure.",
   level: "beginner",
+  coverImage: "/images/lessons/pedicure-hoi-co-muon-callus-remover-khong.jpg",
   questions: buildQuestions("nails-56", [
     {
       emoji: "🦶",

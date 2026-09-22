@@ -9,6 +9,7 @@ export const nailsSmallTalkGroup07: Lesson[] = [
     title: "Trò chuyện về trà và đồ uống lành mạnh",
     description: "Cách trò chuyện nhẹ nhàng về trà và các loại đồ uống lành mạnh với khách.",
     level: "practice",
+    coverImage: "/images/lessons/st-30-ca-phe-do-uong-5.jpg",
     questions: [
       {
         id: "st-30-1",
@@ -223,6 +224,7 @@ export const nailsSmallTalkGroup07: Lesson[] = [
     title: "Hỏi khách về chuyến đi sắp tới",
     description: "Cách hỏi khách về kế hoạch du lịch sắp tới của họ.",
     level: "situation",
+    coverImage: "/images/lessons/st-31-du-lich-1.jpg",
     questions: [
       {
         id: "st-31-1",
@@ -437,6 +439,7 @@ export const nailsSmallTalkGroup07: Lesson[] = [
     title: "Hỏi về chuyến đi đã qua",
     description: "Cách hỏi khách về một chuyến du lịch mà họ đã thực hiện gần đây.",
     level: "situation",
+    coverImage: "/images/lessons/st-32-du-lich-2.jpg",
     questions: [
       {
         id: "st-32-1",
@@ -651,6 +654,7 @@ export const nailsSmallTalkGroup07: Lesson[] = [
     title: "Hỏi khách đã từng đến đó chưa",
     description: "Cách hỏi khách xem họ đã từng đến một địa điểm cụ thể chưa.",
     level: "situation",
+    coverImage: "/images/lessons/st-33-du-lich-3.jpg",
     questions: [
       {
         id: "st-33-1",
@@ -865,6 +869,7 @@ export const nailsSmallTalkGroup07: Lesson[] = [
     title: "Nói về nơi mình từng sống hoặc lớn lên",
     description: "Cách trò chuyện nhẹ nhàng về quê hương hoặc nơi mình từng sống.",
     level: "situation",
+    coverImage: "/images/lessons/st-34-du-lich-4.jpg",
     questions: [
       {
         id: "st-34-1",

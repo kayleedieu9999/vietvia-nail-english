@@ -9,6 +9,7 @@ export const nailsXuLyTinhHuongGroup06: Lesson[] = [
     title: "Móng ngắn hơn hình mẫu khách đưa",
     description: "Luyện cách phản hồi khi khách so sánh móng thật với hình mẫu và thấy ngắn hơn.",
     level: "beginner",
+    coverImage: "/images/lessons/unh-02-too-short-2.jpg",
     questions: [
       {
         id: "unh-2-1",
@@ -204,6 +205,7 @@ export const nailsXuLyTinhHuongGroup06: Lesson[] = [
     title: "Ngắn hơn tưởng tượng sau khi dũa",
     description: "Xử lý tình huống khách bất ngờ thấy móng ngắn hơn dự kiến sau khi dũa và tạo hình xong.",
     level: "beginner",
+    coverImage: "/images/lessons/unh-03-too-short-3.jpg",
     questions: [
       {
         id: "unh-3-1",
@@ -398,6 +400,7 @@ export const nailsXuLyTinhHuongGroup06: Lesson[] = [
     title: "Móng dài quá so với ý khách",
     description: "Luyện cách trấn an và đề nghị làm ngắn lại khi khách thấy móng dài hơn mong muốn.",
     level: "beginner",
+    coverImage: "/images/lessons/unh-06-too-long-1.jpg",
     questions: [
       {
         id: "unh-6-1",
@@ -593,6 +596,7 @@ export const nailsXuLyTinhHuongGroup06: Lesson[] = [
     title: "Khách muốn ngắn lại một chút",
     description: "Luyện cách hỏi rõ mức độ ngắn khách muốn và xác nhận hai tay giống nhau.",
     level: "beginner",
+    coverImage: "/images/lessons/unh-07-too-long-2.jpg",
     questions: [
       {
         id: "unh-7-1",
@@ -786,6 +790,7 @@ export const nailsXuLyTinhHuongGroup06: Lesson[] = [
     title: "Móng dài gây khó khăn trong sinh hoạt",
     description: "Xử lý tình huống khách thấy móng dài gây khó khăn khi làm việc hoặc sinh hoạt hằng ngày.",
     level: "beginner",
+    coverImage: "/images/lessons/unh-08-too-long-3.jpg",
     questions: [
       {
         id: "unh-8-1",

@@ -9,6 +9,7 @@ export const nailsPedicureGroup05: Lesson[] = [
     title: "Thoa dầu dưỡng cho cuticle",
     description: "Câu tiếng Anh khi thoa dầu dưỡng cho phần da quanh móng chân.",
     level: "practice",
+    coverImage: "/images/lessons/ped-04-cuticle-4.jpg",
     questions: [
       {
         id: "ped-19-1",
@@ -205,6 +206,7 @@ export const nailsPedicureGroup05: Lesson[] = [
     title: "Kiểm tra kết quả chăm sóc cuticle",
     description: "Câu tiếng Anh để xác nhận với khách kết quả chăm sóc cuticle đã hoàn tất.",
     level: "practice",
+    coverImage: "/images/lessons/ped-04-cuticle-5.jpg",
     questions: [
       {
         id: "ped-20-1",
@@ -401,6 +403,7 @@ export const nailsPedicureGroup05: Lesson[] = [
     title: "Hỏi khách có muốn lấy chai chân không",
     description: "Câu tiếng Anh để hỏi khách có muốn xử lý phần da chai ở chân không.",
     level: "practice",
+    coverImage: "/images/lessons/ped-05-callus-1.jpg",
     questions: [
       {
         id: "ped-21-1",
@@ -597,6 +600,7 @@ export const nailsPedicureGroup05: Lesson[] = [
     title: "Giải thích dụng cụ xử lý chai chân",
     description: "Câu tiếng Anh để giải thích các bước và dụng cụ dùng để xử lý da chai.",
     level: "practice",
+    coverImage: "/images/lessons/ped-05-callus-2.jpg",
     questions: [
       {
         id: "ped-22-1",
@@ -793,6 +797,7 @@ export const nailsPedicureGroup05: Lesson[] = [
     title: "Khách có gót chân rất chai và cần nhiều thời gian",
     description: "Cách xử lý khi gót chân khách bị chai nặng, cần thêm thời gian và cẩn thận hơn.",
     level: "practice",
+    coverImage: "/images/lessons/ped-05-callus-3.jpg",
     questions: [
       {
         id: "ped-23-1",

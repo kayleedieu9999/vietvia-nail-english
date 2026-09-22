@@ -9,6 +9,7 @@ export const nailsBatDauGroup06: Lesson[] = [
     title: "Dáng móng đặc biệt",
     description: "Học từ vựng về các dáng móng ít phổ biến như coffin, stiletto.",
     level: "beginner",
+    coverImage: "/images/lessons/cr-09-dang-mong-dac-biet.jpg",
     questions: [
       {
         id: "cr-9-1",
@@ -204,6 +205,7 @@ export const nailsBatDauGroup06: Lesson[] = [
     title: "Khách chưa biết chọn dáng nào",
     description: "Gợi ý và tư vấn dáng móng cho khách còn phân vân.",
     level: "beginner",
+    coverImage: "/images/lessons/cr-10-khach-chua-biet-chon-dang.jpg",
     questions: [
       {
         id: "cr-10-1",
@@ -400,6 +402,7 @@ export const nailsBatDauGroup06: Lesson[] = [
     title: "Khách đổi ý về dáng móng cuối buổi",
     description: "Xử lý khi khách đổi ý về dáng móng ngay gần cuối buổi làm.",
     level: "situation",
+    coverImage: "/images/lessons/cr-50-doi-y-dang-mong.jpg",
     questions: [
       {
         id: "cr-50-1",
@@ -595,6 +598,7 @@ export const nailsBatDauGroup06: Lesson[] = [
     title: "Chào khách và mời ngồi",
     description: "Câu tiếng Anh để chào khách và mời khách ngồi vào ghế pedicure.",
     level: "beginner",
+    coverImage: "/images/lessons/ped-01-bat-dau-1.jpg",
     questions: [
       {
         id: "ped-1-1",
@@ -794,6 +798,7 @@ export const nailsBatDauGroup06: Lesson[] = [
     title: "Hỏi khách muốn làm gói nào",
     description: "Câu hỏi và trả lời khi giới thiệu các gói pedicure cho khách mới.",
     level: "beginner",
+    coverImage: "/images/lessons/ped-01-bat-dau-2.jpg",
     questions: [
       {
         id: "ped-2-1",

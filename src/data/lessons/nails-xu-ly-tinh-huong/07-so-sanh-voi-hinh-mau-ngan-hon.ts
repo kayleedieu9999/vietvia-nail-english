@@ -9,6 +9,7 @@ export const nailsXuLyTinhHuongGroup07: Lesson[] = [
     title: "So sánh với hình mẫu ngắn hơn",
     description: "Luyện phản hồi khi khách so sánh móng thật dài hơn hình mẫu đã đưa cho xem.",
     level: "beginner",
+    coverImage: "/images/lessons/unh-09-too-long-4.jpg",
     questions: [
       {
         id: "unh-9-1",
@@ -202,6 +203,7 @@ export const nailsXuLyTinhHuongGroup07: Lesson[] = [
     title: "Xác nhận độ dài mới và kiểm tra sự hài lòng",
     description: "Luyện cách xác nhận độ dài đã đúng như thống nhất và kiểm tra khách đã thật sự hài lòng.",
     level: "beginner",
+    coverImage: "/images/lessons/unh-10-too-long-5.jpg",
     questions: [
       {
         id: "unh-10-1",
@@ -397,6 +399,7 @@ export const nailsXuLyTinhHuongGroup07: Lesson[] = [
     title: "Bột hoặc gel đắp quá dày",
     description: "Luyện cách xin lỗi và đề nghị dũa mỏng lại khi khách thấy móng dày và nặng.",
     level: "beginner",
+    coverImage: "/images/lessons/unh-11-too-thick-1.jpg",
     questions: [
       {
         id: "unh-11-1",
@@ -590,6 +593,7 @@ export const nailsXuLyTinhHuongGroup07: Lesson[] = [
     title: "Móng cấn tay khi gập ngón",
     description: "Xử lý tình huống khách cảm thấy móng dày cấn vào tay khi gập ngón hoặc cầm nắm.",
     level: "beginner",
+    coverImage: "/images/lessons/unh-12-too-thick-2.jpg",
     questions: [
       {
         id: "unh-12-1",
@@ -783,6 +787,7 @@ export const nailsXuLyTinhHuongGroup07: Lesson[] = [
     title: "So sánh với móng tay thật",
     description: "Phản hồi khi khách so sánh móng bột/gel với móng tay thật và thấy dày hơn nhiều.",
     level: "beginner",
+    coverImage: "/images/lessons/unh-14-too-thick-4.jpg",
     questions: [
       {
         id: "unh-14-1",

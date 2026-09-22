@@ -10,6 +10,7 @@ export const nailsBatDauGroup04: Lesson[] = [
   title: "Hỏi khách muốn shape gì",
   description: "Hỏi khách về dáng móng mong muốn: vuông, tròn, oval, hay almond.",
   level: "beginner",
+  coverImage: "/images/lessons/hoi-khach-muon-shape-gi.jpg",
   questions: buildQuestions("nails-27", [
     {
       emoji: "💅",
@@ -127,6 +128,7 @@ export const nailsBatDauGroup04: Lesson[] = [
   title: "Khách muốn đổi shape",
   description: "Xử lý khi khách đổi ý muốn dáng móng khác giữa chừng.",
   level: "beginner",
+  coverImage: "/images/lessons/khach-muon-doi-shape.jpg",
   questions: buildQuestions("nails-29", [
     {
       emoji: "🔄",
@@ -245,6 +247,7 @@ export const nailsBatDauGroup04: Lesson[] = [
     title: "Chào khách mới bước vào",
     description: "Những câu chào tự nhiên khi khách vừa bước vào tiệm.",
     level: "beginner",
+    coverImage: "/images/lessons/st-01-chao-hoi-1.jpg",
     questions: [
       {
         id: "st-1-1",
@@ -459,6 +462,7 @@ export const nailsBatDauGroup04: Lesson[] = [
     title: "Hỏi thăm khách quen",
     description: "Cách hỏi thăm nhẹ nhàng với khách đã từng làm ở tiệm.",
     level: "beginner",
+    coverImage: "/images/lessons/st-02-chao-hoi-2.jpg",
     questions: [
       {
         id: "st-2-1",
@@ -673,6 +677,7 @@ export const nailsBatDauGroup04: Lesson[] = [
     title: "Giới thiệu tên & hỏi tên khách",
     description: "Cách giới thiệu tên mình và hỏi tên khách một cách lịch sự.",
     level: "beginner",
+    coverImage: "/images/lessons/st-03-chao-hoi-3.jpg",
     questions: [
       {
         id: "st-3-1",

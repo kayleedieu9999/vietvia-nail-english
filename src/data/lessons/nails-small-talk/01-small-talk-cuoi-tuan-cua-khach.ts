@@ -10,6 +10,7 @@ export const nailsSmallTalkGroup01: Lesson[] = [
   title: "Small Talk — cuối tuần của khách",
   description: "Trò chuyện nhẹ nhàng với khách về kế hoạch cuối tuần.",
   level: "beginner",
+  coverImage: "/images/lessons/small-talk-cuoi-tuan-cua-khach.jpg",
   questions: buildQuestions("nails-59", [
     {
       emoji: "💬",
@@ -129,6 +130,7 @@ export const nailsSmallTalkGroup01: Lesson[] = [
   title: "Small Talk — công việc",
   description: "Trò chuyện nhẹ nhàng với khách về công việc của họ.",
   level: "beginner",
+  coverImage: "/images/lessons/small-talk-cong-viec.jpg",
   questions: buildQuestions("nails-60", [
     {
       emoji: "💬",
@@ -248,6 +250,7 @@ export const nailsSmallTalkGroup01: Lesson[] = [
   title: "Small Talk — gia đình/con cái",
   description: "Trò chuyện nhẹ nhàng với khách về gia đình và con cái.",
   level: "beginner",
+  coverImage: "/images/lessons/small-talk-gia-dinh-con-cai.jpg",
   questions: buildQuestions("nails-61", [
     {
       emoji: "💬",
@@ -367,6 +370,7 @@ export const nailsSmallTalkGroup01: Lesson[] = [
   title: "Small Talk — đồ ăn Việt Nam",
   description: "Trò chuyện nhẹ nhàng với khách về món ăn Việt Nam.",
   level: "beginner",
+  coverImage: "/images/lessons/small-talk-do-an-viet-nam.jpg",
   questions: buildQuestions("nails-62", [
     {
       emoji: "🍜",
@@ -486,6 +490,7 @@ export const nailsSmallTalkGroup01: Lesson[] = [
   title: "Small Talk — kỳ nghỉ / travel",
   description: "Trò chuyện nhẹ nhàng với khách về kỳ nghỉ và du lịch.",
   level: "beginner",
+  coverImage: "/images/lessons/small-talk-ky-nghi-travel.jpg",
   questions: buildQuestions("nails-63", [
     {
       emoji: "✈️",

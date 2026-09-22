@@ -9,6 +9,7 @@ export const nailsSmallTalkGroup05: Lesson[] = [
     title: "Cuối tuần với gia đình và bạn bè",
     description: "Cách trò chuyện về việc dành cuối tuần cho gia đình và bạn bè.",
     level: "practice",
+    coverImage: "/images/lessons/st-20-cuoi-tuan-5.jpg",
     questions: [
       {
         id: "st-20-1",
@@ -223,6 +224,7 @@ export const nailsSmallTalkGroup05: Lesson[] = [
     title: "Hỏi về nhà hàng mới",
     description: "Cách hỏi khách xem họ đã thử nhà hàng nào gần đây chưa.",
     level: "practice",
+    coverImage: "/images/lessons/st-21-do-an-nha-hang-1.jpg",
     questions: [
       {
         id: "st-21-1",
@@ -437,6 +439,7 @@ export const nailsSmallTalkGroup05: Lesson[] = [
     title: "Hỏi khách có thích đồ ăn Việt không",
     description: "Cách trò chuyện về việc khách có thích các món ăn Việt Nam không.",
     level: "practice",
+    coverImage: "/images/lessons/st-22-do-an-nha-hang-2.jpg",
     questions: [
       {
         id: "st-22-1",
@@ -651,6 +654,7 @@ export const nailsSmallTalkGroup05: Lesson[] = [
     title: "Gợi ý món ăn cho khách",
     description: "Cách gợi ý món ăn hoặc quán ăn cho khách một cách tự nhiên.",
     level: "practice",
+    coverImage: "/images/lessons/st-23-do-an-nha-hang-3.jpg",
     questions: [
       {
         id: "st-23-1",
@@ -865,6 +869,7 @@ export const nailsSmallTalkGroup05: Lesson[] = [
     title: "Chia sẻ về bữa ăn gần đây",
     description: "Cách trò chuyện về bữa ăn hoặc nhà hàng mà mình vừa đi ăn gần đây.",
     level: "practice",
+    coverImage: "/images/lessons/st-24-do-an-nha-hang-4.jpg",
     questions: [
       {
         id: "st-24-1",

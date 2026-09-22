@@ -9,6 +9,7 @@ export const nailsMauDesignGroup10: Lesson[] = [
     title: "Hỏi khách có muốn tay và chân cùng màu",
     description: "Luyện cách hỏi khách xem có muốn màu tay và chân giống nhau không.",
     level: "situation",
+    coverImage: "/images/lessons/clr-07-matching-1.jpg",
     questions: [
       {
         id: "clr-31-1",
@@ -208,6 +209,7 @@ export const nailsMauDesignGroup10: Lesson[] = [
     title: "Khi khách muốn màu khác nhau cho tay và chân",
     description: "Luyện cách phục vụ khách muốn hai màu khác nhau cho tay và chân.",
     level: "situation",
+    coverImage: "/images/lessons/clr-07-matching-2.jpg",
     questions: [
       {
         id: "clr-32-1",
@@ -406,6 +408,7 @@ export const nailsMauDesignGroup10: Lesson[] = [
     title: "Gợi ý phối màu tay chân hài hòa",
     description: "Luyện cách gợi ý cách phối màu tay và chân sao cho hài hòa, đẹp mắt.",
     level: "situation",
+    coverImage: "/images/lessons/clr-07-matching-3.jpg",
     questions: [
       {
         id: "clr-33-1",
@@ -604,6 +607,7 @@ export const nailsMauDesignGroup10: Lesson[] = [
     title: "Khách muốn tay chân theo cặp gia đình",
     description: "Luyện cách phục vụ khi khách và người thân muốn làm màu giống nhau.",
     level: "situation",
+    coverImage: "/images/lessons/clr-07-matching-4.jpg",
     questions: [
       {
         id: "clr-34-1",
@@ -802,6 +806,7 @@ export const nailsMauDesignGroup10: Lesson[] = [
     title: "Tay chân theo tông nhưng không hoàn toàn giống",
     description: "Luyện cách gợi ý phối tay chân theo tông màu nhưng có điểm khác biệt riêng.",
     level: "situation",
+    coverImage: "/images/lessons/clr-07-matching-5.jpg",
     questions: [
       {
         id: "clr-35-1",

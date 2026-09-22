@@ -10,6 +10,7 @@ export const nailsMauDesignGroup02: Lesson[] = [
   title: "Hỏi khách có cần sửa gì không",
   description: "Kiểm tra lần cuối trước khi hoàn thành dịch vụ.",
   level: "beginner",
+  coverImage: "/images/lessons/hoi-khach-co-can-sua-gi-khong.jpg",
   questions: buildQuestions("nails-43", [
     {
       emoji: "🔍",
@@ -128,6 +129,7 @@ export const nailsMauDesignGroup02: Lesson[] = [
     title: "Khách muốn đổi màu",
     description: "Phản hồi tự nhiên khi khách đổi ý về màu sơn.",
     level: "beginner",
+    coverImage: "/images/lessons/cr-11-doi-mau-1.jpg",
     questions: [
       {
         id: "cr-11-1",
@@ -323,6 +325,7 @@ export const nailsMauDesignGroup02: Lesson[] = [
     title: "Đổi màu giữa lúc đang làm",
     description: "Xử lý khéo khi khách đổi ý về màu ngay giữa buổi làm nail.",
     level: "beginner",
+    coverImage: "/images/lessons/cr-12-doi-mau-giua-luc-lam.jpg",
     questions: [
       {
         id: "cr-12-1",
@@ -518,6 +521,7 @@ export const nailsMauDesignGroup02: Lesson[] = [
     title: "So sánh hai màu để chọn",
     description: "Giúp khách so sánh và quyết định giữa hai màu sơn.",
     level: "beginner",
+    coverImage: "/images/lessons/cr-13-so-sanh-hai-mau.jpg",
     questions: [
       {
         id: "cr-13-1",
@@ -714,6 +718,7 @@ export const nailsMauDesignGroup02: Lesson[] = [
     title: "Màu theo mùa và xu hướng",
     description: "Trò chuyện với khách về các màu sơn theo mùa và xu hướng hiện tại.",
     level: "beginner",
+    coverImage: "/images/lessons/cr-14-mau-theo-mua.jpg",
     questions: [
       {
         id: "cr-14-1",

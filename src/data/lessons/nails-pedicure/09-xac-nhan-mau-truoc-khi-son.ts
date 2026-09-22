@@ -9,6 +9,7 @@ export const nailsPedicureGroup09: Lesson[] = [
     title: "Xác nhận màu trước khi sơn",
     description: "Câu tiếng Anh để xác nhận lần cuối màu sơn với khách trước khi bắt đầu sơn móng.",
     level: "situation",
+    coverImage: "/images/lessons/ped-08-chon-mau-chan-5.jpg",
     questions: [
       {
         id: "ped-40-1",
@@ -205,6 +206,7 @@ export const nailsPedicureGroup09: Lesson[] = [
     title: "Hỏi khách có muốn gel trên chân không",
     description: "Câu tiếng Anh để hỏi khách có muốn dùng sơn gel cho móng chân không.",
     level: "situation",
+    coverImage: "/images/lessons/ped-09-gel-pedicure-1.jpg",
     questions: [
       {
         id: "ped-41-1",
@@ -401,6 +403,7 @@ export const nailsPedicureGroup09: Lesson[] = [
     title: "So sánh độ bền giữa gel và sơn thường",
     description: "Câu tiếng Anh khi so sánh ưu nhược điểm giữa gel và sơn thường cho móng chân.",
     level: "situation",
+    coverImage: "/images/lessons/ped-09-gel-pedicure-2.jpg",
     questions: [
       {
         id: "ped-42-1",
@@ -597,6 +600,7 @@ export const nailsPedicureGroup09: Lesson[] = [
     title: "Thông báo giá và thời gian gel pedicure",
     description: "Câu tiếng Anh khi thông báo giá và thời gian cụ thể của dịch vụ gel pedicure.",
     level: "situation",
+    coverImage: "/images/lessons/ped-09-gel-pedicure-3.jpg",
     questions: [
       {
         id: "ped-43-1",
@@ -793,6 +797,7 @@ export const nailsPedicureGroup09: Lesson[] = [
     title: "Khách muốn tháo gel cũ trước",
     description: "Cách xử lý khi khách cần tháo lớp gel cũ trước khi làm pedicure mới.",
     level: "situation",
+    coverImage: "/images/lessons/ped-09-gel-pedicure-4.jpg",
     questions: [
       {
         id: "ped-44-1",

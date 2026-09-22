@@ -9,6 +9,7 @@ export const nailsDichVuGroup01: Lesson[] = [
   title: "Làm manicure",
   description: "Câu tiếng Anh dùng khi làm da, ngâm tay, giũa móng, và thoa kem dưỡng.",
   level: "practice",
+  coverImage: "/images/lessons/lam-manicure-cung-khach.jpg",
   questions: [
     {
       id: "nails-6-1",
@@ -205,6 +206,7 @@ export const nailsDichVuGroup01: Lesson[] = [
   title: "Gel polish",
   description: "So sánh gel với sơn thường, hấp đèn, và cách tháo gel an toàn.",
   level: "practice",
+  coverImage: "/images/lessons/gel-polish-la-gi.jpg",
   questions: [
     {
       id: "nails-8-1",
@@ -401,6 +403,7 @@ export const nailsDichVuGroup01: Lesson[] = [
   title: "Acrylic / New Set / Fill",
   description: "Bộ mới, dặm lại, bột bị bong, móng gãy, và độ dày bột.",
   level: "practice",
+  coverImage: "/images/lessons/acrylic-new-set-va-fill.jpg",
   questions: [
     {
       id: "nails-9-1",
@@ -597,6 +600,7 @@ export const nailsDichVuGroup01: Lesson[] = [
   title: "Gel-X / Builder Gel",
   description: "Giải thích Gel-X, builder gel, và gợi ý dịch vụ phù hợp với móng khách.",
   level: "practice",
+  coverImage: "/images/lessons/gel-x-va-builder-gel.jpg",
   questions: [
     {
       id: "nails-10-1",
@@ -793,6 +797,7 @@ export const nailsDichVuGroup01: Lesson[] = [
   title: "Giá dịch vụ & add-ons",
   description: "Trả lời câu hỏi về giá, phụ phí gel, vẽ nail, và phí tháo bột.",
   level: "practice",
+  coverImage: "/images/lessons/gia-dich-vu-va-add-on.jpg",
   questions: [
     {
       id: "nails-11-1",

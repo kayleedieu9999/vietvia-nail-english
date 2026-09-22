@@ -9,6 +9,7 @@ export const nailsThanhToanGroup02: Lesson[] = [
     title: "Nói lời cảm ơn khách vì đã trò chuyện",
     description: "Cách nói lời cảm ơn khách vì một buổi trò chuyện vui vẻ.",
     level: "situation",
+    coverImage: "/images/lessons/st-49-ket-thuc-4.jpg",
     questions: [
       {
         id: "st-49-1",
@@ -223,6 +224,7 @@ export const nailsThanhToanGroup02: Lesson[] = [
     title: "Chào tạm biệt và hẹn gặp lại lần sau",
     description: "Những câu chào tạm biệt tự nhiên và hẹn gặp lại khách ở lần sau.",
     level: "situation",
+    coverImage: "/images/lessons/st-50-ket-thuc-5.jpg",
     questions: [
       {
         id: "st-50-1",

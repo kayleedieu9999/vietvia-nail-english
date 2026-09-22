@@ -9,6 +9,7 @@ export const nailsSmallTalkGroup08: Lesson[] = [
     title: "Gợi ý địa điểm du lịch cho khách",
     description: "Cách gợi ý một địa điểm du lịch mà mình yêu thích cho khách.",
     level: "situation",
+    coverImage: "/images/lessons/st-35-du-lich-5.jpg",
     questions: [
       {
         id: "st-35-1",
@@ -223,6 +224,7 @@ export const nailsSmallTalkGroup08: Lesson[] = [
     title: "Hỏi khách về con cái nhẹ nhàng",
     description: "Cách hỏi khách về con cái một cách nhẹ nhàng, không riêng tư quá.",
     level: "situation",
+    coverImage: "/images/lessons/st-36-gia-dinh-1.jpg",
     questions: [
       {
         id: "st-36-1",
@@ -437,6 +439,7 @@ export const nailsSmallTalkGroup08: Lesson[] = [
     title: "Trò chuyện về ông bà, cha mẹ",
     description: "Cách trò chuyện nhẹ nhàng về ông bà hoặc cha mẹ mà không quá riêng tư.",
     level: "situation",
+    coverImage: "/images/lessons/st-37-gia-dinh-2.jpg",
     questions: [
       {
         id: "st-37-1",
@@ -651,6 +654,7 @@ export const nailsSmallTalkGroup08: Lesson[] = [
     title: "Nói về thú cưng trong nhà",
     description: "Cách trò chuyện nhẹ nhàng về thú cưng như một phần của gia đình.",
     level: "situation",
+    coverImage: "/images/lessons/st-38-gia-dinh-3.jpg",
     questions: [
       {
         id: "st-38-1",
@@ -865,6 +869,7 @@ export const nailsSmallTalkGroup08: Lesson[] = [
     title: "Trò chuyện về anh chị em trong nhà",
     description: "Cách trò chuyện nhẹ nhàng về anh chị em trong gia đình.",
     level: "situation",
+    coverImage: "/images/lessons/st-39-gia-dinh-4.jpg",
     questions: [
       {
         id: "st-39-1",

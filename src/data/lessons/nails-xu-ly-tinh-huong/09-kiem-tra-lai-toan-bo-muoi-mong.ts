@@ -9,6 +9,7 @@ export const nailsXuLyTinhHuongGroup09: Lesson[] = [
     title: "Kiểm tra lại toàn bộ mười móng",
     description: "Luyện cách cùng khách kiểm tra lại toàn bộ mười móng sau khi đã sửa hình dáng.",
     level: "practice",
+    coverImage: "/images/lessons/unh-20-shape-uneven-5.jpg",
     questions: [
       {
         id: "unh-20-1",
@@ -202,6 +203,7 @@ export const nailsXuLyTinhHuongGroup09: Lesson[] = [
     title: "Sơn nhầm màu hoàn toàn khác",
     description: "Luyện cách xin lỗi và sửa ngay khi sơn nhầm hoàn toàn sang màu khác với yêu cầu của khách.",
     level: "practice",
+    coverImage: "/images/lessons/unh-21-wrong-color-1.jpg",
     questions: [
       {
         id: "unh-21-1",
@@ -395,6 +397,7 @@ export const nailsXuLyTinhHuongGroup09: Lesson[] = [
     title: "So sánh với lọ màu mẫu đã chọn",
     description: "Luyện phản hồi khi khách chỉ vào lọ màu đã chọn ban đầu để so sánh với móng thật.",
     level: "practice",
+    coverImage: "/images/lessons/unh-23-wrong-color-3.jpg",
     questions: [
       {
         id: "unh-23-1",
@@ -588,6 +591,7 @@ export const nailsXuLyTinhHuongGroup09: Lesson[] = [
     title: "Xác nhận màu mới đúng ý khách",
     description: "Luyện cách xác nhận lại với khách rằng màu mới đúng chính xác với điều họ mong muốn.",
     level: "practice",
+    coverImage: "/images/lessons/unh-25-wrong-color-5.jpg",
     questions: [
       {
         id: "unh-25-1",
@@ -781,6 +785,7 @@ export const nailsXuLyTinhHuongGroup09: Lesson[] = [
     title: "Nail art không giống hình khách đưa",
     description: "Luyện cách xin lỗi và vẽ lại khi nail art không giống với hình mẫu khách đã đưa.",
     level: "practice",
+    coverImage: "/images/lessons/unh-26-design-not-matching-1.jpg",
     questions: [
       {
         id: "unh-26-1",

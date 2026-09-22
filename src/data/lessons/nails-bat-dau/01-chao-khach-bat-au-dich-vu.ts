@@ -10,6 +10,7 @@ export const nailsBatDauGroup01: Lesson[] = [
   title: "Chào khách & bắt đầu dịch vụ",
   description: "Chào đón khách, hỏi tên hẹn, và mời khách bắt đầu dịch vụ.",
   level: "beginner",
+  coverImage: "/images/lessons/chao-khach-bat-dau-dich-vu.jpg",
   questions: [
     {
       id: "nails-1-1",
@@ -215,6 +216,7 @@ export const nailsBatDauGroup01: Lesson[] = [
   title: "Hỏi độ dài móng",
   description: "Hỏi khách muốn ngắn hơn, dài hơn, hay giữ nguyên độ dài.",
   level: "beginner",
+  coverImage: "/images/lessons/hoi-do-dai-mong.jpg",
   questions: [
     {
       id: "nails-4-1",
@@ -412,6 +414,7 @@ export const nailsBatDauGroup01: Lesson[] = [
   title: "Chọn dáng móng",
   description: "Vuông, tròn, oval, almond, coffin — hỏi và gọi tên các dáng móng phổ biến.",
   level: "beginner",
+  coverImage: "/images/lessons/chon-dang-mong.jpg",
   questions: [
     {
       id: "nails-5-1",
@@ -610,6 +613,7 @@ export const nailsBatDauGroup01: Lesson[] = [
   title: "Hỏi thời gian",
   description: "Hỏi khách có bao nhiêu thời gian, dịch vụ mất bao lâu, và hẹn lịch.",
   level: "practice",
+  coverImage: "/images/lessons/hoi-thoi-gian-lam-mong.jpg",
   questions: [
     {
       id: "nails-12-1",
@@ -806,6 +810,7 @@ export const nailsBatDauGroup01: Lesson[] = [
   title: "Chào khách & hỏi dịch vụ hôm nay",
   description: "Chào khách mới bước vào và hỏi hôm nay khách muốn làm gì.",
   level: "beginner",
+  coverImage: "/images/lessons/chao-khach-hoi-dich-vu-hom-nay.jpg",
   questions: buildQuestions("nails-16", [
     {
       emoji: "👋",

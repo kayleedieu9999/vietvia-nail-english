@@ -10,6 +10,7 @@ export const nailsMauDesignGroupReclassified: Lesson[] = [
   title: "Hỏi khách có thích French tip không",
   description: "Giới thiệu và hỏi khách về kiểu French tip cổ điển.",
   level: "beginner",
+  coverImage: "/images/lessons/hoi-khach-co-thich-french-tip-khong.jpg",
   questions: buildQuestions("nails-38", [
     {
       emoji: "🤍",
@@ -128,6 +129,7 @@ export const nailsMauDesignGroupReclassified: Lesson[] = [
     title: "French tip cơ bản",
     description: "Luyện câu trả lời khi khách yêu cầu làm French tip truyền thống.",
     level: "practice",
+    coverImage: "/images/lessons/cr-21-french-tip-co-ban.jpg",
     questions: [
       {
         id: "cr-21-1",
@@ -323,6 +325,7 @@ export const nailsMauDesignGroupReclassified: Lesson[] = [
     title: "French tip màu sắc khác",
     description: "Trao đổi khi khách muốn French tip với màu khác thay vì trắng.",
     level: "practice",
+    coverImage: "/images/lessons/cr-22-french-tip-mau-sac.jpg",
     questions: [
       {
         id: "cr-22-1",
@@ -518,6 +521,7 @@ export const nailsMauDesignGroupReclassified: Lesson[] = [
     title: "Độ rộng của French tip",
     description: "Trao đổi khi khách muốn chỉnh độ rộng phần trắng của French tip.",
     level: "practice",
+    coverImage: "/images/lessons/cr-23-french-tip-do-day.jpg",
     questions: [
       {
         id: "cr-23-1",
@@ -713,6 +717,7 @@ export const nailsMauDesignGroupReclassified: Lesson[] = [
     title: "French tip cho móng chân",
     description: "Trao đổi khi khách muốn làm French tip cho pedicure.",
     level: "practice",
+    coverImage: "/images/lessons/cr-24-french-tip-chan.jpg",
     questions: [
       {
         id: "cr-24-1",
@@ -908,6 +913,7 @@ export const nailsMauDesignGroupReclassified: Lesson[] = [
     title: "Reverse French và biến thể khác",
     description: "Giới thiệu các biến thể của French tip như reverse French, French tip mờ.",
     level: "practice",
+    coverImage: "/images/lessons/cr-25-reverse-french.jpg",
     questions: [
       {
         id: "cr-25-1",
@@ -1104,6 +1110,7 @@ export const nailsMauDesignGroupReclassified: Lesson[] = [
     title: "Design cho dịp đặc biệt",
     description: "Tư vấn mẫu vẽ phù hợp cho các dịp đặc biệt như sinh nhật, lễ Tết.",
     level: "practice",
+    coverImage: "/images/lessons/cr-20-design-cho-su-kien.jpg",
     questions: [
       {
         id: "cr-20-1",
@@ -1300,6 +1307,7 @@ export const nailsMauDesignGroupReclassified: Lesson[] = [
     title: "Màu trung tính cho môi trường công việc",
     description: "Luyện cách gợi ý màu trung tính phù hợp với môi trường công sở.",
     level: "practice",
+    coverImage: "/images/lessons/clr-05-neutral-2.jpg",
     questions: [
       {
         id: "clr-22-1",

@@ -10,6 +10,7 @@ export const nailsPedicureGroup02: Lesson[] = [
   title: "Pedicure — giới thiệu pedicure upgrade",
   description: "Giới thiệu gói pedicure cao cấp hơn cho khách.",
   level: "beginner",
+  coverImage: "/images/lessons/pedicure-gioi-thieu-upgrade.jpg",
   questions: buildQuestions("nails-57", [
     {
       emoji: "✨",
@@ -128,6 +129,7 @@ export const nailsPedicureGroup02: Lesson[] = [
   title: "Hỏi khách có muốn massage lâu hơn không",
   description: "Hỏi khách có muốn kéo dài thời gian massage tay chân.",
   level: "beginner",
+  coverImage: "/images/lessons/hoi-khach-co-muon-massage-lau-hon-khong.jpg",
   questions: buildQuestions("nails-58", [
     {
       emoji: "💆",
@@ -246,6 +248,7 @@ export const nailsPedicureGroup02: Lesson[] = [
     title: "Cuticle nhẹ tay cho pedicure",
     description: "Xử lý yêu cầu nhẹ tay với cuticle khi làm pedicure cho khách.",
     level: "situation",
+    coverImage: "/images/lessons/cr-40-cuticle-pedicure.jpg",
     questions: [
       {
         id: "cr-40-1",
@@ -442,6 +445,7 @@ export const nailsPedicureGroup02: Lesson[] = [
     title: "Nhiệt độ nước quá nóng hoặc lạnh",
     description: "Xử lý khi khách phản hồi về nhiệt độ nước trong lúc làm pedicure hoặc manicure.",
     level: "situation",
+    coverImage: "/images/lessons/cr-42-nhiet-do-nuoc.jpg",
     questions: [
       {
         id: "cr-42-1",
@@ -638,6 +642,7 @@ export const nailsPedicureGroup02: Lesson[] = [
     title: "Khách muốn thêm pedicure giữa lúc làm tay",
     description: "Xử lý khi khách bất ngờ muốn thêm dịch vụ pedicure trong lúc đang làm manicure.",
     level: "situation",
+    coverImage: "/images/lessons/cr-49-them-pedicure.jpg",
     questions: [
       {
         id: "cr-49-1",

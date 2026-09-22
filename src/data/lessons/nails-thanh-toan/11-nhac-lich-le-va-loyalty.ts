@@ -9,6 +9,7 @@ export const nailsThanhToanGroup11: Lesson[] = [
     title: "Nhắc lịch hẹn trước dịp lễ hoặc sự kiện",
     description: "Gợi ý khách đặt lịch sớm trước một dịp lễ hoặc sự kiện quan trọng sắp tới.",
     level: "intermediate",
+    coverImage: "/images/lessons/tt-new-21-nhac-lich-truoc-dip-le.jpg",
     questions: [
       {
         id: "tt-new-21-1",
@@ -197,6 +198,7 @@ export const nailsThanhToanGroup11: Lesson[] = [
     title: "Nhắc khách về thẻ tích điểm",
     description: "Giới thiệu và cập nhật thẻ tích điểm hoặc chương trình khách hàng thân thiết.",
     level: "beginner",
+    coverImage: "/images/lessons/tt-new-22-the-tich-diem.jpg",
     questions: [
       {
         id: "tt-new-22-1",
@@ -383,6 +385,7 @@ export const nailsThanhToanGroup11: Lesson[] = [
     title: "Khách hứa giới thiệu bạn bè đến tiệm",
     description: "Đáp lại vui vẻ khi khách nói sẽ giới thiệu tiệm cho bạn bè, người thân.",
     level: "beginner",
+    coverImage: "/images/lessons/tt-new-23-khach-hua-gioi-thieu-ban-be.jpg",
     questions: [
       {
         id: "tt-new-23-1",
@@ -570,6 +573,7 @@ export const nailsThanhToanGroup11: Lesson[] = [
     title: "Kiểm tra móng lần cuối trước khi khách về",
     description: "Kiểm tra lại kỹ móng lần cuối và xử lý ngay khi phát hiện một lỗi nhỏ.",
     level: "intermediate",
+    coverImage: "/images/lessons/tt-new-24-kiem-tra-mong-lan-cuoi.jpg",
     questions: [
       {
         id: "tt-new-24-1",
@@ -756,6 +760,7 @@ export const nailsThanhToanGroup11: Lesson[] = [
     title: "Tiễn khách ra cửa",
     description: "Đưa khách ra cửa một cách ấm áp, chu đáo sau khi hoàn tất mọi thứ.",
     level: "beginner",
+    coverImage: "/images/lessons/tt-new-25-tien-khach-ra-cua.jpg",
     questions: [
       {
         id: "tt-new-25-1",

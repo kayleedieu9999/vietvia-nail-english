@@ -9,6 +9,7 @@ export const nailsXuLyTinhHuongGroup10: Lesson[] = [
     title: "Thiếu chi tiết so với mẫu",
     description: "Xử lý tình huống thiết kế thiếu chi tiết như hoa, đá nhỏ so với hình mẫu khách đưa.",
     level: "practice",
+    coverImage: "/images/lessons/unh-27-design-not-matching-2.jpg",
     questions: [
       {
         id: "unh-27-1",
@@ -202,6 +203,7 @@ export const nailsXuLyTinhHuongGroup10: Lesson[] = [
     title: "Kiểu vẽ khác với ý tưởng khách mô tả",
     description: "Phản hồi khi kiểu vẽ thực tế khác với ý tưởng khách đã miêu tả bằng lời.",
     level: "practice",
+    coverImage: "/images/lessons/unh-28-design-not-matching-3.jpg",
     questions: [
       {
         id: "unh-28-1",
@@ -395,6 +397,7 @@ export const nailsXuLyTinhHuongGroup10: Lesson[] = [
     title: "Chủ động đề nghị vẽ lại đúng mẫu",
     description: "Luyện cách chủ động nhận ra thiết kế chưa đúng và đề nghị vẽ lại trước khi khách phải nói ra.",
     level: "practice",
+    coverImage: "/images/lessons/unh-29-design-not-matching-4.jpg",
     questions: [
       {
         id: "unh-29-1",
@@ -589,6 +592,7 @@ export const nailsXuLyTinhHuongGroup10: Lesson[] = [
     title: "Xác nhận thiết kế mới đúng ý khách",
     description: "Luyện cách xác nhận lại với khách rằng thiết kế mới đúng chính xác với điều họ mong muốn.",
     level: "practice",
+    coverImage: "/images/lessons/unh-30-design-not-matching-5.jpg",
     questions: [
       {
         id: "unh-30-1",
@@ -783,6 +787,7 @@ export const nailsXuLyTinhHuongGroup10: Lesson[] = [
     title: "Một móng có hình dáng khác biệt",
     description: "Xử lý tình huống một móng có hình dáng khác biệt rõ so với các móng còn lại.",
     level: "situation",
+    coverImage: "/images/lessons/unh-32-one-nail-different-2.jpg",
     questions: [
       {
         id: "unh-32-1",

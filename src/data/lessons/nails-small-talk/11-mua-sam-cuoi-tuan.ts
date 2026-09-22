@@ -9,6 +9,7 @@ export const nailsSmallTalkGroup11: Lesson[] = [
     title: "Trò chuyện về mua sắm cuối tuần",
     description: "Hỏi thăm khách nhẹ nhàng về chuyện mua sắm hoặc đi chợ cuối tuần.",
     level: "beginner",
+    coverImage: "/images/lessons/st-new-1-mua-sam-cuoi-tuan.jpg",
     questions: [
       {
         id: "st-new-1-1",

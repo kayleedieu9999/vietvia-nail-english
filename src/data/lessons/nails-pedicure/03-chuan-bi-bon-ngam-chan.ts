@@ -9,6 +9,7 @@ export const nailsPedicureGroup03: Lesson[] = [
     title: "Chuẩn bị bồn ngâm chân",
     description: "Câu tiếng Anh khi chuẩn bị bồn nước và mời khách đặt chân vào ngâm.",
     level: "beginner",
+    coverImage: "/images/lessons/ped-01-bat-dau-3.jpg",
     questions: [
       {
         id: "ped-3-1",
@@ -205,6 +206,7 @@ export const nailsPedicureGroup03: Lesson[] = [
     title: "Giải thích các bước sẽ làm",
     description: "Câu tiếng Anh để nói tổng quan các bước pedicure trước khi bắt đầu.",
     level: "beginner",
+    coverImage: "/images/lessons/ped-01-bat-dau-4.jpg",
     questions: [
       {
         id: "ped-4-1",
@@ -401,6 +403,7 @@ export const nailsPedicureGroup03: Lesson[] = [
     title: "Hỏi nhiệt độ nước có ổn không",
     description: "Câu tiếng Anh để kiểm tra nhiệt độ nước ngay khi khách vừa ngâm chân.",
     level: "beginner",
+    coverImage: "/images/lessons/ped-02-nhiet-do-nuoc-1.jpg",
     questions: [
       {
         id: "ped-6-1",
@@ -597,6 +600,7 @@ export const nailsPedicureGroup03: Lesson[] = [
     title: "Khi khách muốn nước ấm hơn",
     description: "Cách phản hồi khi khách yêu cầu làm nước ấm hơn trong lúc ngâm chân.",
     level: "beginner",
+    coverImage: "/images/lessons/ped-02-nhiet-do-nuoc-3.jpg",
     questions: [
       {
         id: "ped-8-1",
@@ -793,6 +797,7 @@ export const nailsPedicureGroup03: Lesson[] = [
     title: "Điều chỉnh nước dần trong lúc ngâm",
     description: "Câu tiếng Anh khi cần theo dõi và điều chỉnh nhiệt độ nước trong suốt buổi ngâm chân.",
     level: "beginner",
+    coverImage: "/images/lessons/ped-02-nhiet-do-nuoc-4.jpg",
     questions: [
       {
         id: "ped-9-1",

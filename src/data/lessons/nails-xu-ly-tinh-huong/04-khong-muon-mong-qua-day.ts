@@ -9,6 +9,7 @@ export const nailsXuLyTinhHuongGroup04: Lesson[] = [
     title: "Không muốn móng quá dày",
     description: "Phản hồi khi khách nhấn mạnh không muốn móng bột hoặc gel quá dày.",
     level: "situation",
+    coverImage: "/images/lessons/cr-31-khong-day-1.jpg",
     questions: [
       {
         id: "cr-31-1",
@@ -205,6 +206,7 @@ export const nailsXuLyTinhHuongGroup04: Lesson[] = [
     title: "Khách phàn nàn móng quá mỏng",
     description: "Xử lý khi khách nói móng bột hoặc gel quá mỏng, dễ gãy.",
     level: "situation",
+    coverImage: "/images/lessons/cr-32-mong-qua-mong.jpg",
     questions: [
       {
         id: "cr-32-1",
@@ -400,6 +402,7 @@ export const nailsXuLyTinhHuongGroup04: Lesson[] = [
     title: "Khách có da nhạy cảm, dễ đau",
     description: "Xử lý khi khách có làn da nhạy cảm, dễ bị đau hoặc kích ứng.",
     level: "situation",
+    coverImage: "/images/lessons/cr-37-da-nhay-cam.jpg",
     questions: [
       {
         id: "cr-37-1",
@@ -596,6 +599,7 @@ export const nailsXuLyTinhHuongGroup04: Lesson[] = [
     title: "Khách từng có trải nghiệm không tốt",
     description: "Xử lý khéo léo khi khách chia sẻ về trải nghiệm không tốt ở nơi khác.",
     level: "situation",
+    coverImage: "/images/lessons/cr-39-trai-nghiem-khong-tot.jpg",
     questions: [
       {
         id: "cr-39-1",
@@ -793,6 +797,7 @@ export const nailsXuLyTinhHuongGroup04: Lesson[] = [
     title: "Khách cần nghe điện thoại giữa lúc làm",
     description: "Xử lý khéo khi khách cần dừng tay để nghe điện thoại giữa buổi làm nail.",
     level: "situation",
+    coverImage: "/images/lessons/cr-41-nghe-dien-thoai.jpg",
     questions: [
       {
         id: "cr-41-1",

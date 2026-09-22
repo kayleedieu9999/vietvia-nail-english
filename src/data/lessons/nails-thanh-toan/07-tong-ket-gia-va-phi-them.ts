@@ -9,6 +9,7 @@ export const nailsThanhToanGroup07: Lesson[] = [
     title: "Tổng kết giá cho khách",
     description: "Thông báo tổng số tiền và giải thích những gì nằm trong giá đó.",
     level: "practice",
+    coverImage: "/images/lessons/tt-new-1-tong-ket-gia.jpg",
     questions: [
       {
         id: "tt-new-1-1",
@@ -201,6 +202,7 @@ export const nailsThanhToanGroup07: Lesson[] = [
     title: "Liệt kê từng khoản trong hóa đơn",
     description: "Giải thích rõ ràng từng dịch vụ và giá riêng khi khách làm nhiều thứ cùng lúc.",
     level: "intermediate",
+    coverImage: "/images/lessons/tt-new-2-liet-ke-tung-khoan.jpg",
     questions: [
       {
         id: "tt-new-2-1",
@@ -389,6 +391,7 @@ export const nailsThanhToanGroup07: Lesson[] = [
     title: "Giải thích phí thêm cho thiết kế nail art",
     description: "Nói cho khách biết phí thêm khi chọn vẽ thiết kế hoặc trang trí đặc biệt.",
     level: "intermediate",
+    coverImage: "/images/lessons/tt-new-3-phi-thiet-ke-nail-art.jpg",
     questions: [
       {
         id: "tt-new-3-1",
@@ -578,6 +581,7 @@ export const nailsThanhToanGroup07: Lesson[] = [
     title: "Giải thích phí gel và French tip",
     description: "Nói rõ phí thêm khi khách chọn sơn gel hoặc thiết kế French tip.",
     level: "intermediate",
+    coverImage: "/images/lessons/tt-new-4-phi-gel-french-tip.jpg",
     questions: [
       {
         id: "tt-new-4-1",
@@ -765,6 +769,7 @@ export const nailsThanhToanGroup07: Lesson[] = [
     title: "Hỏi khách trả thẻ hay tiền mặt",
     description: "Hỏi và xác nhận hình thức thanh toán mà khách muốn dùng.",
     level: "beginner",
+    coverImage: "/images/lessons/tt-new-5-tra-the-hay-tien-mat.jpg",
     questions: [
       {
         id: "tt-new-5-1",

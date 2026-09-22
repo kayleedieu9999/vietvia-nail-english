@@ -9,6 +9,7 @@ export const nailsThanhToanGroup06: Lesson[] = [
     title: "Thanh toán và đặt hẹn tiếp theo",
     description: "Hoàn tất thanh toán và mời khách đặt hẹn cho lần tiếp theo.",
     level: "situation",
+    coverImage: "/images/lessons/hand-49-finishing-4.jpg",
     questions: [
       {
         id: "hand-49-1",
@@ -201,6 +202,7 @@ export const nailsThanhToanGroup06: Lesson[] = [
     title: "Chào tạm biệt và cảm ơn khách",
     description: "Lời chào tạm biệt ấm áp, chuyên nghiệp cuối dịch vụ manicure.",
     level: "situation",
+    coverImage: "/images/lessons/hand-50-finishing-5.jpg",
     questions: [
       {
         id: "hand-50-1",

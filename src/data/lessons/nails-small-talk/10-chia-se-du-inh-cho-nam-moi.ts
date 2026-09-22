@@ -9,6 +9,7 @@ export const nailsSmallTalkGroup10: Lesson[] = [
     title: "Chia sẻ dự định cho năm mới",
     description: "Cách trò chuyện nhẹ nhàng về những dự định hoặc mục tiêu cho năm mới.",
     level: "situation",
+    coverImage: "/images/lessons/st-45-holiday-birthday-5.jpg",
     questions: [
       {
         id: "st-45-1",
@@ -223,6 +224,7 @@ export const nailsSmallTalkGroup10: Lesson[] = [
     title: "Chuyển từ trò chuyện sang công việc",
     description: "Cách chuyển nhẹ nhàng từ trò chuyện sang tập trung vào dịch vụ nails.",
     level: "situation",
+    coverImage: "/images/lessons/st-46-ket-thuc-1.jpg",
     questions: [
       {
         id: "st-46-1",
@@ -437,6 +439,7 @@ export const nailsSmallTalkGroup10: Lesson[] = [
     title: "Xin lỗi vì phải tạm dừng trò chuyện",
     description: "Cách xin lỗi nhẹ nhàng khi cần tạm dừng trò chuyện để tập trung làm việc.",
     level: "situation",
+    coverImage: "/images/lessons/st-48-ket-thuc-3.jpg",
     questions: [
       {
         id: "st-48-1",

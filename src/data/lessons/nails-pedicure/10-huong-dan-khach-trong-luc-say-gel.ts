@@ -9,6 +9,7 @@ export const nailsPedicureGroup10: Lesson[] = [
     title: "Hướng dẫn khách trong lúc sấy gel",
     description: "Câu tiếng Anh khi hướng dẫn khách giữ chân yên trong lúc sấy gel dưới đèn UV.",
     level: "situation",
+    coverImage: "/images/lessons/ped-09-gel-pedicure-5.jpg",
     questions: [
       {
         id: "ped-45-1",
@@ -205,6 +206,7 @@ export const nailsPedicureGroup10: Lesson[] = [
     title: "Kiểm tra khách có hài lòng không",
     description: "Câu tiếng Anh để kiểm tra khách có hài lòng với kết quả pedicure không.",
     level: "situation",
+    coverImage: "/images/lessons/ped-10-hoan-tat-1.jpg",
     questions: [
       {
         id: "ped-46-1",
@@ -401,6 +403,7 @@ export const nailsPedicureGroup10: Lesson[] = [
     title: "Hướng dẫn thời gian khô sơn",
     description: "Câu tiếng Anh khi hướng dẫn khách về thời gian khô sơn và cách đi dép về nhà.",
     level: "situation",
+    coverImage: "/images/lessons/ped-10-hoan-tat-2.jpg",
     questions: [
       {
         id: "ped-47-1",
@@ -597,6 +600,7 @@ export const nailsPedicureGroup10: Lesson[] = [
     title: "Khi khách muốn chỉnh sửa nhỏ",
     description: "Cách xử lý khi khách muốn chỉnh sửa nhỏ trước khi kết thúc dịch vụ.",
     level: "situation",
+    coverImage: "/images/lessons/ped-10-hoan-tat-3.jpg",
     questions: [
       {
         id: "ped-48-1",
@@ -793,6 +797,7 @@ export const nailsPedicureGroup10: Lesson[] = [
   title: "Làm Pedicure cho khách",
   description: "Những câu tiếng Anh thường dùng khi chăm sóc chân cho khách.",
   level: "beginner",
+  coverImage: "/images/lessons/lam-pedicure-cho-khach.jpg",
   questions: [
     {
       id: "pedi-1",

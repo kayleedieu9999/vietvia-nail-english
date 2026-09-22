@@ -9,6 +9,7 @@ export const nailsDichVuGroup10: Lesson[] = [
     title: "Đánh giá độ bóng tự nhiên của móng",
     description: "Kiểm tra và giải thích độ bóng tự nhiên của móng sau khi giũa bóng.",
     level: "practice",
+    coverImage: "/images/lessons/hand-33-buffing-3.jpg",
     questions: [
       {
         id: "hand-33-1",
@@ -201,6 +202,7 @@ export const nailsDichVuGroup10: Lesson[] = [
     title: "Xử lý khi khách không muốn giũa bóng nhiều",
     description: "Cách nói khi khách lo giũa bóng quá nhiều sẽ hại móng.",
     level: "practice",
+    coverImage: "/images/lessons/hand-34-buffing-4.jpg",
     questions: [
       {
         id: "hand-34-1",
@@ -393,6 +395,7 @@ export const nailsDichVuGroup10: Lesson[] = [
     title: "Chọn màu sơn thường",
     description: "Giúp khách chọn màu sơn thường và bắt đầu sơn.",
     level: "practice",
+    coverImage: "/images/lessons/hand-36-polish-1.jpg",
     questions: [
       {
         id: "hand-36-1",
@@ -585,6 +588,7 @@ export const nailsDichVuGroup10: Lesson[] = [
     title: "Sửa lỗi khi sơn bị lem",
     description: "Cách xử lý khi sơn bị lem ra ngoài mép móng.",
     level: "practice",
+    coverImage: "/images/lessons/hand-37-polish-2.jpg",
     questions: [
       {
         id: "hand-37-1",
@@ -777,6 +781,7 @@ export const nailsDichVuGroup10: Lesson[] = [
     title: "Chờ sơn khô",
     description: "Câu tiếng Anh dùng khi chờ sơn khô trước khi sơn lớp tiếp theo.",
     level: "practice",
+    coverImage: "/images/lessons/hand-38-polish-3.jpg",
     questions: [
       {
         id: "hand-38-1",

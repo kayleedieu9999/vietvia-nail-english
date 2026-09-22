@@ -9,6 +9,7 @@ export const nailsPedicureGroup08: Lesson[] = [
     title: "Kiểm tra sự thoải mái trong lúc quấn khăn",
     description: "Câu tiếng Anh để kiểm tra khách có thoải mái trong lúc quấn khăn nóng không.",
     level: "situation",
+    coverImage: "/images/lessons/ped-07-hot-towel-scrub-4.jpg",
     questions: [
       {
         id: "ped-34-1",
@@ -205,6 +206,7 @@ export const nailsPedicureGroup08: Lesson[] = [
     title: "Rửa sạch sau bước khăn nóng và tẩy da chết",
     description: "Câu tiếng Anh khi rửa sạch chân khách sau bước khăn nóng và tẩy da chết.",
     level: "situation",
+    coverImage: "/images/lessons/ped-07-hot-towel-scrub-5.jpg",
     questions: [
       {
         id: "ped-35-1",
@@ -401,6 +403,7 @@ export const nailsPedicureGroup08: Lesson[] = [
     title: "Hỏi khách muốn màu gì cho chân",
     description: "Câu tiếng Anh để hỏi khách muốn chọn màu sơn nào cho móng chân.",
     level: "situation",
+    coverImage: "/images/lessons/ped-08-chon-mau-chan-1.jpg",
     questions: [
       {
         id: "ped-36-1",
@@ -597,6 +600,7 @@ export const nailsPedicureGroup08: Lesson[] = [
     title: "Khi khách phân vân giữa hai màu",
     description: "Cách giúp khách quyết định khi đang phân vân giữa hai màu sơn.",
     level: "situation",
+    coverImage: "/images/lessons/ped-08-chon-mau-chan-2.jpg",
     questions: [
       {
         id: "ped-37-1",
@@ -793,6 +797,7 @@ export const nailsPedicureGroup08: Lesson[] = [
     title: "Khi khách muốn màu chân khác màu tay",
     description: "Cách phản hồi khi khách muốn màu sơn chân khác với màu sơn tay.",
     level: "situation",
+    coverImage: "/images/lessons/ped-08-chon-mau-chan-4.jpg",
     questions: [
       {
         id: "ped-39-1",

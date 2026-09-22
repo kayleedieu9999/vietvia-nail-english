@@ -9,6 +9,7 @@ export const nailsDichVuGroupReclassified: Lesson[] = [
     title: "Khách muốn nối dài lại bằng đầu móng giả",
     description: "Luyện cách đề nghị đắp đầu móng giả (tips) để nối dài khi khách muốn móng dài hơn.",
     level: "beginner",
+    coverImage: "/images/lessons/unh-04-too-short-4.jpg",
     questions: [
       {
         id: "unh-4-1",
@@ -203,6 +204,7 @@ export const nailsDichVuGroupReclassified: Lesson[] = [
     title: "Chuyển sang bước tiếp theo sau khi tháo sơn",
     description: "Kết thúc bước tháo sơn cũ và chuẩn bị chuyển sang cắt giũa móng.",
     level: "beginner",
+    coverImage: "/images/lessons/hand-10-remove-polish-5.jpg",
     questions: [
       {
         id: "hand-10-1",
@@ -395,6 +397,7 @@ export const nailsDichVuGroupReclassified: Lesson[] = [
     title: "Hoàn tất bước giũa móng",
     description: "Kiểm tra lại toàn bộ móng sau khi giũa xong, trước khi chuyển sang tạo dáng.",
     level: "practice",
+    coverImage: "/images/lessons/hand-20-filing-5.jpg",
     questions: [
       {
         id: "hand-20-1",
@@ -587,6 +590,7 @@ export const nailsDichVuGroupReclassified: Lesson[] = [
     title: "Massage tay sau khi chăm sóc da",
     description: "Massage tay nhẹ nhàng sau khi hoàn tất chăm sóc cuticles.",
     level: "practice",
+    coverImage: "/images/lessons/hand-29-cuticles-4.jpg",
     questions: [
       {
         id: "hand-29-1",
@@ -779,6 +783,7 @@ export const nailsDichVuGroupReclassified: Lesson[] = [
     title: "Hoàn tất bước chăm sóc da và massage",
     description: "Kết thúc bước cuticles và massage, chuẩn bị chuyển sang buffing.",
     level: "practice",
+    coverImage: "/images/lessons/hand-30-cuticles-5.jpg",
     questions: [
       {
         id: "hand-30-1",
@@ -971,6 +976,7 @@ export const nailsDichVuGroupReclassified: Lesson[] = [
     title: "Hoàn tất bước giũa bóng và làm sạch",
     description: "Kiểm tra lại toàn bộ móng sau khi giũa bóng, trước khi chuyển sang sơn.",
     level: "practice",
+    coverImage: "/images/lessons/hand-35-buffing-5.jpg",
     questions: [
       {
         id: "hand-35-1",
@@ -1163,6 +1169,7 @@ export const nailsDichVuGroupReclassified: Lesson[] = [
     title: "Hoàn tất sơn thường và kiểm tra kết quả",
     description: "Kiểm tra kết quả cuối cùng sau khi sơn thường xong.",
     level: "practice",
+    coverImage: "/images/lessons/hand-40-polish-5.jpg",
     questions: [
       {
         id: "hand-40-1",

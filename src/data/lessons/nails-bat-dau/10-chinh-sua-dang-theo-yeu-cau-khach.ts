@@ -9,6 +9,7 @@ export const nailsBatDauGroup10: Lesson[] = [
     title: "Chỉnh sửa dáng theo yêu cầu khách",
     description: "Xử lý khi khách muốn chỉnh sửa thêm dáng móng đang làm.",
     level: "practice",
+    coverImage: "/images/lessons/hand-24-shape-4.jpg",
     questions: [
       {
         id: "hand-24-1",
@@ -201,6 +202,7 @@ export const nailsBatDauGroup10: Lesson[] = [
     title: "Xác nhận dáng móng cuối cùng",
     description: "Xác nhận với khách về dáng móng cuối cùng trước khi chuyển sang bước cuticles.",
     level: "practice",
+    coverImage: "/images/lessons/hand-25-shape-5.jpg",
     questions: [
       {
         id: "hand-25-1",

@@ -10,6 +10,7 @@ export const nailsXuLyTinhHuongGroup02: Lesson[] = [
   title: "Khách chưa hài lòng với màu",
   description: "Xử lý khéo léo khi khách chưa hài lòng với màu đã hoàn thành.",
   level: "beginner",
+  coverImage: "/images/lessons/khach-chua-hai-long-voi-mau.jpg",
   questions: buildQuestions("nails-48", [
     {
       emoji: "😟",
@@ -128,6 +129,7 @@ export const nailsXuLyTinhHuongGroup02: Lesson[] = [
   title: "Khách muốn sửa một móng",
   description: "Xử lý khi khách chỉ cần sửa lại một móng cụ thể.",
   level: "beginner",
+  coverImage: "/images/lessons/khach-muon-sua-mot-mong.jpg",
   questions: buildQuestions("nails-49", [
     {
       emoji: "🙋",
@@ -246,6 +248,7 @@ export const nailsXuLyTinhHuongGroup02: Lesson[] = [
   title: "Khách quay lại vì móng bị lifting",
   description: "Xử lý khi khách quay lại vì móng bị bong khỏi bề mặt móng thật.",
   level: "beginner",
+  coverImage: "/images/lessons/khach-quay-lai-vi-mong-bi-lifting.jpg",
   questions: buildQuestions("nails-50", [
     {
       emoji: "🙋",
@@ -364,6 +367,7 @@ export const nailsXuLyTinhHuongGroup02: Lesson[] = [
   title: "Khách quay lại vì gel bị bong",
   description: "Xử lý khi khách quay lại vì lớp sơn gel bị bong tróc.",
   level: "beginner",
+  coverImage: "/images/lessons/khach-quay-lai-vi-gel-bi-bong.jpg",
   questions: buildQuestions("nails-51", [
     {
       emoji: "🙋",
@@ -482,6 +486,7 @@ export const nailsXuLyTinhHuongGroup02: Lesson[] = [
   title: "Khách hỏi bảo hành / sửa móng",
   description: "Giải thích chính sách bảo hành và sửa móng của tiệm.",
   level: "beginner",
+  coverImage: "/images/lessons/khach-hoi-bao-hanh-sua-mong.jpg",
   questions: buildQuestions("nails-52", [
     {
       emoji: "🙋",

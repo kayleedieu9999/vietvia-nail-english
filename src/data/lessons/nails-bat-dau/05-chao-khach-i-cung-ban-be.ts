@@ -9,6 +9,7 @@ export const nailsBatDauGroup05: Lesson[] = [
     title: "Chào khách đi cùng bạn bè",
     description: "Cách chào khi khách đến tiệm cùng một hoặc nhiều người bạn.",
     level: "beginner",
+    coverImage: "/images/lessons/st-04-chao-hoi-4.jpg",
     questions: [
       {
         id: "st-4-1",
@@ -223,6 +224,7 @@ export const nailsBatDauGroup05: Lesson[] = [
     title: "Khách muốn để móng dài hơn",
     description: "Luyện câu trả lời khi khách yêu cầu để móng dài thêm.",
     level: "beginner",
+    coverImage: "/images/lessons/cr-02-dai-hon-1.jpg",
     questions: [
       {
         id: "cr-2-1",
@@ -422,6 +424,7 @@ export const nailsBatDauGroup05: Lesson[] = [
     title: "Chọn độ dài phù hợp",
     description: "Nói chuyện với khách về độ dài móng: ngắn, vừa, hay dài.",
     level: "beginner",
+    coverImage: "/images/lessons/cr-03-do-dai-vua-phai-1.jpg",
     questions: [
       {
         id: "cr-3-1",
@@ -621,6 +624,7 @@ export const nailsBatDauGroup05: Lesson[] = [
     title: "Các dáng móng cơ bản",
     description: "Học tên các dáng móng phổ biến và cách hỏi khách muốn dáng nào.",
     level: "beginner",
+    coverImage: "/images/lessons/cr-06-dang-mong-co-ban.jpg",
     questions: [
       {
         id: "cr-6-1",
@@ -817,6 +821,7 @@ export const nailsBatDauGroup05: Lesson[] = [
     title: "Đổi dáng khi làm lại bộ mới",
     description: "Trao đổi với khách về việc đổi sang dáng móng khác cho bộ mới.",
     level: "beginner",
+    coverImage: "/images/lessons/cr-08-doi-dang-khi-lam-lai.jpg",
     questions: [
       {
         id: "cr-8-1",

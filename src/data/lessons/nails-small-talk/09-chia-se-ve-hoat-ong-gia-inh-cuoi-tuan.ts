@@ -9,6 +9,7 @@ export const nailsSmallTalkGroup09: Lesson[] = [
     title: "Chia sẻ về hoạt động gia đình cuối tuần",
     description: "Cách chia sẻ nhẹ nhàng về hoạt động gia đình vào những ngày cuối tuần.",
     level: "situation",
+    coverImage: "/images/lessons/st-40-gia-dinh-5.jpg",
     questions: [
       {
         id: "st-40-1",
@@ -223,6 +224,7 @@ export const nailsSmallTalkGroup09: Lesson[] = [
     title: "Hỏi khách về dịp lễ sắp tới",
     description: "Cách hỏi khách xem họ có kế hoạch gì cho dịp lễ sắp tới không.",
     level: "situation",
+    coverImage: "/images/lessons/st-41-holiday-birthday-1.jpg",
     questions: [
       {
         id: "st-41-1",
@@ -437,6 +439,7 @@ export const nailsSmallTalkGroup09: Lesson[] = [
     title: "Chúc mừng sinh nhật khách",
     description: "Cách chúc mừng sinh nhật khách một cách chân thành và tự nhiên.",
     level: "situation",
+    coverImage: "/images/lessons/st-42-holiday-birthday-2.jpg",
     questions: [
       {
         id: "st-42-1",
@@ -651,6 +654,7 @@ export const nailsSmallTalkGroup09: Lesson[] = [
     title: "Nói về ngày lễ Tết truyền thống",
     description: "Cách chia sẻ về Tết hoặc các dịp lễ truyền thống của Việt Nam với khách.",
     level: "situation",
+    coverImage: "/images/lessons/st-43-holiday-birthday-3.jpg",
     questions: [
       {
         id: "st-43-1",
@@ -865,6 +869,7 @@ export const nailsSmallTalkGroup09: Lesson[] = [
     title: "Hỏi khách về kỷ niệm lễ đáng nhớ",
     description: "Cách hỏi khách về một kỷ niệm đáng nhớ trong dịp lễ hoặc sinh nhật.",
     level: "situation",
+    coverImage: "/images/lessons/st-44-holiday-birthday-4.jpg",
     questions: [
       {
         id: "st-44-1",

@@ -9,6 +9,7 @@ export const nailsMauDesignGroup03: Lesson[] = [
     title: "Chọn màu hợp với sự kiện",
     description: "Tư vấn màu sơn phù hợp với trang phục hoặc sự kiện của khách.",
     level: "beginner",
+    coverImage: "/images/lessons/cr-15-mau-hop-su-kien.jpg",
     questions: [
       {
         id: "cr-15-1",
@@ -205,6 +206,7 @@ export const nailsMauDesignGroup03: Lesson[] = [
     title: "Khách muốn design đơn giản",
     description: "Trao đổi với khách khi họ muốn một mẫu design nhẹ nhàng, không cầu kỳ.",
     level: "practice",
+    coverImage: "/images/lessons/cr-16-design-don-gian.jpg",
     questions: [
       {
         id: "cr-16-1",
@@ -401,6 +403,7 @@ export const nailsMauDesignGroup03: Lesson[] = [
     title: "Làm theo mẫu hình khách đưa",
     description: "Trao đổi với khách khi họ mang hình mẫu muốn làm giống.",
     level: "practice",
+    coverImage: "/images/lessons/cr-17-mau-theo-hinh.jpg",
     questions: [
       {
         id: "cr-17-1",
@@ -597,6 +600,7 @@ export const nailsMauDesignGroup03: Lesson[] = [
     title: "Chi tiết trong nail art",
     description: "Trao đổi với khách về các chi tiết cụ thể trong mẫu vẽ: hoa, sọc, kim tuyến.",
     level: "practice",
+    coverImage: "/images/lessons/cr-18-chi-tiet-nail-art.jpg",
     questions: [
       {
         id: "cr-18-1",
@@ -792,6 +796,7 @@ export const nailsMauDesignGroup03: Lesson[] = [
     title: "Giá và thời gian cho design",
     description: "Trả lời khi khách hỏi về giá và thời gian làm nail art.",
     level: "practice",
+    coverImage: "/images/lessons/cr-19-gia-va-thoi-gian-design.jpg",
     questions: [
       {
         id: "cr-19-1",

@@ -9,6 +9,7 @@ export const nailsXuLyTinhHuongGroup12: Lesson[] = [
     title: "Khách yêu cầu vẽ lại thiết kế",
     description: "Luyện cách linh hoạt và vui vẻ đáp ứng khi khách trực tiếp yêu cầu vẽ lại thiết kế nail art.",
     level: "situation",
+    coverImage: "/images/lessons/unh-38-asks-for-correction-3.jpg",
     questions: [
       {
         id: "unh-38-1",
@@ -203,6 +204,7 @@ export const nailsXuLyTinhHuongGroup12: Lesson[] = [
     title: "Khách yêu cầu làm mỏng lại",
     description: "Luyện cách đồng ý và xử lý ngay khi khách trực tiếp yêu cầu làm mỏng lại móng bột hoặc gel.",
     level: "situation",
+    coverImage: "/images/lessons/unh-39-asks-for-correction-4.jpg",
     questions: [
       {
         id: "unh-39-1",
@@ -396,6 +398,7 @@ export const nailsXuLyTinhHuongGroup12: Lesson[] = [
     title: "Khách yêu cầu làm đều lại hình dáng",
     description: "Luyện cách đồng ý và xử lý ngay khi khách trực tiếp yêu cầu làm đều lại hình dáng cả mười móng.",
     level: "situation",
+    coverImage: "/images/lessons/unh-40-asks-for-correction-5.jpg",
     questions: [
       {
         id: "unh-40-1",
@@ -590,6 +593,7 @@ export const nailsXuLyTinhHuongGroup12: Lesson[] = [
     title: "Những câu xin lỗi ngắn, tự nhiên",
     description: "Học những câu xin lỗi ngắn gọn, tự nhiên để dùng ngay khi có gì chưa đúng với khách.",
     level: "situation",
+    coverImage: "/images/lessons/unh-41-apologizing-1.jpg",
     questions: [
       {
         id: "unh-41-1",
@@ -783,6 +787,7 @@ export const nailsXuLyTinhHuongGroup12: Lesson[] = [
     title: "Xin lỗi kèm nhận trách nhiệm nhẹ nhàng",
     description: "Luyện cách xin lỗi kèm nhận trách nhiệm một cách nhẹ nhàng, không đổ lỗi cho ai khác.",
     level: "situation",
+    coverImage: "/images/lessons/unh-42-apologizing-2.jpg",
     questions: [
       {
         id: "unh-42-1",

@@ -9,6 +9,7 @@ export const nailsMauDesignGroup07: Lesson[] = [
     title: "Hồng và nude cho từng dịp",
     description: "Luyện cách gợi ý màu hồng hoặc nude phù hợp với từng dịp khác nhau.",
     level: "beginner",
+    coverImage: "/images/lessons/clr-03-pink-nude-4.jpg",
     questions: [
       {
         id: "clr-14-1",
@@ -207,6 +208,7 @@ export const nailsMauDesignGroup07: Lesson[] = [
     title: "Tư vấn màu đỏ cổ điển",
     description: "Luyện các câu nói khi khách hỏi về màu đỏ truyền thống.",
     level: "practice",
+    coverImage: "/images/lessons/clr-04-red-burgundy-1.jpg",
     questions: [
       {
         id: "clr-16-1",
@@ -405,6 +407,7 @@ export const nailsMauDesignGroup07: Lesson[] = [
     title: "Tư vấn màu burgundy",
     description: "Luyện các câu nói khi khách hỏi về màu đỏ rượu vang, burgundy.",
     level: "practice",
+    coverImage: "/images/lessons/clr-04-red-burgundy-2.jpg",
     questions: [
       {
         id: "clr-17-1",
@@ -603,6 +606,7 @@ export const nailsMauDesignGroup07: Lesson[] = [
     title: "Đỏ hay burgundy cho dịp lễ",
     description: "Luyện cách gợi ý màu đỏ hoặc burgundy cho các dịp lễ, tết.",
     level: "practice",
+    coverImage: "/images/lessons/clr-04-red-burgundy-3.jpg",
     questions: [
       {
         id: "clr-18-1",
@@ -801,6 +805,7 @@ export const nailsMauDesignGroup07: Lesson[] = [
     title: "Khách ngần ngại thử màu đỏ đậm",
     description: "Luyện cách trấn an khách còn e ngại khi thử màu đỏ hoặc burgundy đậm.",
     level: "practice",
+    coverImage: "/images/lessons/clr-04-red-burgundy-4.jpg",
     questions: [
       {
         id: "clr-19-1",

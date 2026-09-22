@@ -9,6 +9,7 @@ export const nailsThanhToanGroup13: Lesson[] = [
     title: "Khách muốn trả nửa tiền bây giờ, nửa lần sau",
     description: "Từ chối khéo léo khi khách đề nghị trả góp và gợi ý cách thay thế phù hợp.",
     level: "intermediate",
+    coverImage: "/images/lessons/tt-new-31-khach-muon-tra-nua-tien.jpg",
     questions: [
       {
         id: "tt-new-31-1",
@@ -196,6 +197,7 @@ export const nailsThanhToanGroup13: Lesson[] = [
     title: "Đưa danh thiếp hoặc thẻ hẹn cho khách",
     description: "Đưa danh thiếp hoặc thẻ hẹn cho khách để tiện liên lạc và đặt lịch sau này.",
     level: "beginner",
+    coverImage: "/images/lessons/tt-new-32-dua-danh-thiep.jpg",
     questions: [
       {
         id: "tt-new-32-1",
@@ -382,6 +384,7 @@ export const nailsThanhToanGroup13: Lesson[] = [
     title: "Chúc khách vui vẻ cho sự kiện đã nhắc trước đó",
     description: "Nhắc lại và chúc khách vui vẻ cho sự kiện khách từng chia sẻ trong buổi làm móng.",
     level: "intermediate",
+    coverImage: "/images/lessons/tt-new-33-chuc-khach-cho-su-kien.jpg",
     questions: [
       {
         id: "tt-new-33-1",
@@ -569,6 +572,7 @@ export const nailsThanhToanGroup13: Lesson[] = [
     title: "Cảm ơn khách lần đầu đến tiệm và mời quay lại",
     description: "Cảm ơn đặc biệt khách hàng lần đầu ghé tiệm và mời khách quay lại lần sau.",
     level: "intermediate",
+    coverImage: "/images/lessons/tt-new-34-cam-on-khach-lan-dau.jpg",
     questions: [
       {
         id: "tt-new-34-1",

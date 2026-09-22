@@ -9,6 +9,7 @@ export const nailsDichVuGroup05: Lesson[] = [
     title: "Yêu cầu về độ dày cho từng ngón",
     description: "Xử lý khi khách muốn độ dày khác nhau cho từng ngón tay cụ thể.",
     level: "situation",
+    coverImage: "/images/lessons/cr-34-yeu-cau-tung-ngon.jpg",
     questions: [
       {
         id: "cr-34-1",
@@ -204,6 +205,7 @@ export const nailsDichVuGroup05: Lesson[] = [
     title: "So sánh độ dày trước và sau khi chỉnh",
     description: "Trò chuyện với khách khi so sánh cảm giác móng trước và sau khi điều chỉnh độ dày.",
     level: "situation",
+    coverImage: "/images/lessons/cr-35-so-sanh-truoc-sau.jpg",
     questions: [
       {
         id: "cr-35-1",
@@ -400,6 +402,7 @@ export const nailsDichVuGroup05: Lesson[] = [
     title: "Đừng cắt cuticle quá nhiều",
     description: "Phản hồi khi khách yêu cầu nhẹ tay với phần da quanh móng.",
     level: "situation",
+    coverImage: "/images/lessons/cr-36-dung-cat-qua-nhieu.jpg",
     questions: [
       {
         id: "cr-36-1",
@@ -596,6 +599,7 @@ export const nailsDichVuGroup05: Lesson[] = [
     title: "Dưỡng ẩm cho vùng da mềm",
     description: "Trao đổi khi khách muốn dùng dầu dưỡng cuticle thay vì cắt.",
     level: "situation",
+    coverImage: "/images/lessons/cr-38-cuticle-oil.jpg",
     questions: [
       {
         id: "cr-38-1",
@@ -791,6 +795,7 @@ export const nailsDichVuGroup05: Lesson[] = [
     title: "Cắt móng thẳng để tránh mọc ngược",
     description: "Giải thích cho khách vì sao cắt móng chân thẳng ngang tốt cho sức khỏe.",
     level: "beginner",
+    coverImage: "/images/lessons/ped-03-cat-giua-mong-2.jpg",
     questions: [
       {
         id: "ped-12-1",

@@ -9,6 +9,7 @@ export const nailsThanhToanGroup04: Lesson[] = [
     title: "Hỏi khách sau khi sửa xong",
     description: "Luyện cách hỏi khách xem kết quả đã trông tốt hơn chưa sau khi sửa lỗi.",
     level: "situation",
+    coverImage: "/images/lessons/unh-46-fixing-checking-1.jpg",
     questions: [
       {
         id: "unh-46-1",
@@ -202,6 +203,7 @@ export const nailsThanhToanGroup04: Lesson[] = [
     title: "Hỏi khách có hài lòng với thay đổi",
     description: "Luyện cách hỏi ý kiến khách xem họ có hài lòng với những thay đổi vừa được thực hiện không.",
     level: "situation",
+    coverImage: "/images/lessons/unh-47-fixing-checking-2.jpg",
     questions: [
       {
         id: "unh-47-1",
@@ -396,6 +398,7 @@ export const nailsThanhToanGroup04: Lesson[] = [
     title: "Xác nhận trước khi khách ra về",
     description: "Luyện cách xác nhận lần cuối và chào tạm biệt khách một cách ấm áp trước khi họ ra về.",
     level: "situation",
+    coverImage: "/images/lessons/unh-48-fixing-checking-3.jpg",
     questions: [
       {
         id: "unh-48-1",
@@ -590,6 +593,7 @@ export const nailsThanhToanGroup04: Lesson[] = [
     title: "Hỏi ý kiến khách về từng chi tiết",
     description: "Luyện cách hỏi ý kiến khách về từng chi tiết đã sửa để đảm bảo mọi thứ đều đúng ý.",
     level: "situation",
+    coverImage: "/images/lessons/unh-49-fixing-checking-4.jpg",
     questions: [
       {
         id: "unh-49-1",

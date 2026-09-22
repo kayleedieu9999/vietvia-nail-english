@@ -9,6 +9,7 @@ export const nailsBatDauGroup09: Lesson[] = [
     title: "Bắt đầu dịch vụ và chuẩn bị tay khách",
     description: "Mời khách vào bàn, rửa tay và chuẩn bị bắt đầu dịch vụ.",
     level: "beginner",
+    coverImage: "/images/lessons/hand-05-greeting-5.jpg",
     questions: [
       {
         id: "hand-5-1",
@@ -201,6 +202,7 @@ export const nailsBatDauGroup09: Lesson[] = [
     title: "Hỏi khách về độ dài móng",
     description: "Hỏi khách muốn giữ độ dài móng hay cắt ngắn lại.",
     level: "beginner",
+    coverImage: "/images/lessons/hand-11-cutting-1.jpg",
     questions: [
       {
         id: "hand-11-1",
@@ -393,6 +395,7 @@ export const nailsBatDauGroup09: Lesson[] = [
     title: "Hoàn tất bước cắt móng",
     description: "Kiểm tra lại độ dài móng sau khi cắt xong, trước khi chuyển sang giũa.",
     level: "beginner",
+    coverImage: "/images/lessons/hand-15-cutting-5.jpg",
     questions: [
       {
         id: "hand-15-1",
@@ -585,6 +588,7 @@ export const nailsBatDauGroup09: Lesson[] = [
     title: "Hỏi khách muốn dáng móng gì",
     description: "Giới thiệu các dáng móng phổ biến và hỏi ý khách.",
     level: "practice",
+    coverImage: "/images/lessons/hand-21-shape-1.jpg",
     questions: [
       {
         id: "hand-21-1",
@@ -777,6 +781,7 @@ export const nailsBatDauGroup09: Lesson[] = [
     title: "Tạo dáng móng vuông và tròn",
     description: "Các câu dùng khi tạo dáng móng vuông hoặc tròn cho khách.",
     level: "practice",
+    coverImage: "/images/lessons/hand-22-shape-2.jpg",
     questions: [
       {
         id: "hand-22-1",

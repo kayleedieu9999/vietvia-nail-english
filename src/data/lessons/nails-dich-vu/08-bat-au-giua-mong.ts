@@ -9,6 +9,7 @@ export const nailsDichVuGroup08: Lesson[] = [
     title: "Bắt đầu giũa móng",
     description: "Câu tiếng Anh dùng khi bắt đầu bước giũa móng cho khách.",
     level: "practice",
+    coverImage: "/images/lessons/hand-16-filing-1.jpg",
     questions: [
       {
         id: "hand-16-1",
@@ -201,6 +202,7 @@ export const nailsDichVuGroup08: Lesson[] = [
     title: "Giũa đều các cạnh móng",
     description: "Đảm bảo các cạnh móng được giũa đều và mịn màng.",
     level: "practice",
+    coverImage: "/images/lessons/hand-17-filing-2.jpg",
     questions: [
       {
         id: "hand-17-1",
@@ -393,6 +395,7 @@ export const nailsDichVuGroup08: Lesson[] = [
     title: "Xử lý móng yếu khi giũa",
     description: "Cách nói khi gặp móng yếu, dễ gãy trong lúc giũa.",
     level: "practice",
+    coverImage: "/images/lessons/hand-18-filing-3.jpg",
     questions: [
       {
         id: "hand-18-1",
@@ -585,6 +588,7 @@ export const nailsDichVuGroup08: Lesson[] = [
     title: "Giũa mặt móng cho mịn",
     description: "Giũa nhẹ trên mặt móng để chuẩn bị cho bước sơn hoặc gel.",
     level: "practice",
+    coverImage: "/images/lessons/hand-19-filing-4.jpg",
     questions: [
       {
         id: "hand-19-1",
@@ -777,6 +781,7 @@ export const nailsDichVuGroup08: Lesson[] = [
     title: "Tạo dáng oval và hạnh nhân",
     description: "Các câu dùng khi tạo dáng oval hoặc hạnh nhân thanh mảnh cho khách.",
     level: "practice",
+    coverImage: "/images/lessons/hand-23-shape-3.jpg",
     questions: [
       {
         id: "hand-23-1",

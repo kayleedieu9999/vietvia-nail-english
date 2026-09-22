@@ -9,6 +9,7 @@ export const nailsSmallTalkGroup04: Lesson[] = [
     title: "Hỏi thăm thời tiết theo mùa",
     description: "Cách trò chuyện về sự thay đổi thời tiết theo từng mùa trong năm.",
     level: "beginner",
+    coverImage: "/images/lessons/st-15-thoi-tiet-5.jpg",
     questions: [
       {
         id: "st-15-1",
@@ -223,6 +224,7 @@ export const nailsSmallTalkGroup04: Lesson[] = [
     title: "Hỏi khách về kế hoạch cuối tuần",
     description: "Cách hỏi khách xem họ có kế hoạch gì cho cuối tuần này không.",
     level: "practice",
+    coverImage: "/images/lessons/st-16-cuoi-tuan-1.jpg",
     questions: [
       {
         id: "st-16-1",
@@ -437,6 +439,7 @@ export const nailsSmallTalkGroup04: Lesson[] = [
     title: "Chia sẻ kế hoạch cuối tuần của mình",
     description: "Cách chia sẻ kế hoạch cuối tuần của thợ nails với khách.",
     level: "practice",
+    coverImage: "/images/lessons/st-17-cuoi-tuan-2.jpg",
     questions: [
       {
         id: "st-17-1",
@@ -651,6 +654,7 @@ export const nailsSmallTalkGroup04: Lesson[] = [
     title: "Hỏi về cuối tuần đã qua",
     description: "Cách hỏi khách về cuối tuần vừa qua đã diễn ra như thế nào.",
     level: "practice",
+    coverImage: "/images/lessons/st-18-cuoi-tuan-3.jpg",
     questions: [
       {
         id: "st-18-1",
@@ -865,6 +869,7 @@ export const nailsSmallTalkGroup04: Lesson[] = [
     title: "Hoạt động cuối tuần yêu thích",
     description: "Cách trò chuyện về những hoạt động khách và thợ nails thích làm vào cuối tuần.",
     level: "practice",
+    coverImage: "/images/lessons/st-19-cuoi-tuan-4.jpg",
     questions: [
       {
         id: "st-19-1",

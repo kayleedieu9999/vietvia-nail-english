@@ -10,6 +10,7 @@ export const nailsDichVuGroup02: Lesson[] = [
   title: "Khi khách đổi ý",
   description: "Phản hồi nhẹ nhàng khi khách đổi màu, đổi dáng, hoặc đổi ý giữa chừng.",
   level: "practice",
+  coverImage: "/images/lessons/khi-khach-doi-y.jpg",
   questions: [
     {
       id: "nails-13-1",
@@ -206,6 +207,7 @@ export const nailsDichVuGroup02: Lesson[] = [
   title: "Khách muốn móng ngắn hơn",
   description: "Xử lý khi khách yêu cầu cắt móng ngắn hơn giữa chừng.",
   level: "beginner",
+  coverImage: "/images/lessons/khach-muon-mong-ngan-hon.jpg",
   questions: buildQuestions("nails-28", [
     {
       emoji: "✂️",
@@ -324,6 +326,7 @@ export const nailsDichVuGroup02: Lesson[] = [
   title: "Khách bị gãy một móng",
   description: "Xử lý tình huống khi khách bị gãy một móng và cần sửa.",
   level: "beginner",
+  coverImage: "/images/lessons/khach-bi-gay-mot-mong.jpg",
   questions: buildQuestions("nails-30", [
     {
       emoji: "💔",
@@ -441,6 +444,7 @@ export const nailsDichVuGroup02: Lesson[] = [
   title: "Khách hỏi có cần new set không",
   description: "Giải thích khi nào khách cần làm bộ mới thay vì fill.",
   level: "beginner",
+  coverImage: "/images/lessons/khach-hoi-co-can-new-set-khong.jpg",
   questions: buildQuestions("nails-31", [
     {
       emoji: "🙋",
@@ -559,6 +563,7 @@ export const nailsDichVuGroup02: Lesson[] = [
   title: "Khách chỉ muốn fill",
   description: "Xử lý khi khách chỉ muốn fill lại thay vì làm bộ mới.",
   level: "beginner",
+  coverImage: "/images/lessons/khach-chi-muon-fill.jpg",
   questions: buildQuestions("nails-32", [
     {
       emoji: "🙋",
