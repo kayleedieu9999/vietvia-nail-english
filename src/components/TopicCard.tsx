@@ -10,12 +10,11 @@ const GRAMMAR_TOPIC_HREF = "/lo-trinh/ngu-phap";
 
 /** Real nail-salon/customer photography per practice category, keyed by topic slug. */
 const TOPIC_PHOTOS: Record<string, string> = {
-  "small-talk": "/images/topic-small-talk.png",
-  "customer-requests": "/images/topic-customer-requests.png",
-  pedicure: "/images/topic-pedicure.png",
-  "nail-color": "/images/topic-nail-color.png",
-  "unhappy-customer": "/images/topic-unhappy-customer.png",
-  "dich-vu-tay": "/images/topic-hand-service.png",
+  "nails-small-talk": "/images/topic-small-talk.png",
+  "nails-dich-vu": "/images/topic-customer-requests.png",
+  "nails-pedicure": "/images/topic-pedicure.png",
+  "nails-mau-design": "/images/topic-nail-color.png",
+  "nails-xu-ly-tinh-huong": "/images/topic-unhappy-customer.png",
 };
 
 interface TopicCardProps {

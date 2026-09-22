@@ -1,16 +1,12 @@
 import { Lesson, LessonSummary, Question } from "@/types/content";
 import { vietnameseFoodLesson } from "@/data/lessons/vietnamese-food";
-import { smallTalkLesson } from "@/data/lessons/small-talk";
-import { nailColorLesson } from "@/data/lessons/nail-color";
-import { pedicureLesson } from "@/data/lessons/pedicure";
-import { customerRequestsLesson } from "@/data/lessons/customer-requests";
-import { nailGeneralLessons } from "@/data/lessons/nail-general";
-import { smallTalkMoreLessons } from "@/data/lessons/small-talk-more";
-import { customerRequestsMoreLessons } from "@/data/lessons/customer-requests-more";
-import { pedicureMoreLessons } from "@/data/lessons/pedicure-more";
-import { nailColorMoreLessons } from "@/data/lessons/nail-color-more";
-import { unhappyCustomerLessons } from "@/data/lessons/unhappy-customer";
-import { handServiceLessons } from "@/data/lessons/hand-service";
+import { nailsBatDauLessons } from "@/data/lessons/nails-bat-dau";
+import { nailsDichVuLessons } from "@/data/lessons/nails-dich-vu";
+import { nailsMauDesignLessons } from "@/data/lessons/nails-mau-design";
+import { nailsXuLyTinhHuongLessons } from "@/data/lessons/nails-xu-ly-tinh-huong";
+import { nailsPedicureLessons } from "@/data/lessons/nails-pedicure";
+import { nailsSmallTalkLessons } from "@/data/lessons/nails-small-talk";
+import { nailsThanhToanLessons } from "@/data/lessons/nails-thanh-toan";
 import { dailyEnglishLessons } from "@/data/lessons/daily-english";
 import { airportLessons } from "@/data/lessons/airport";
 import { emergencyLessons } from "@/data/lessons/emergency";
@@ -26,17 +22,13 @@ import { pronunciationLessons } from "@/data/lessons/pronunciation";
  */
 export const allLessons: Lesson[] = [
   vietnameseFoodLesson,
-  smallTalkLesson,
-  nailColorLesson,
-  pedicureLesson,
-  customerRequestsLesson,
-  ...nailGeneralLessons,
-  ...smallTalkMoreLessons,
-  ...customerRequestsMoreLessons,
-  ...pedicureMoreLessons,
-  ...nailColorMoreLessons,
-  ...unhappyCustomerLessons,
-  ...handServiceLessons,
+  ...nailsBatDauLessons,
+  ...nailsDichVuLessons,
+  ...nailsMauDesignLessons,
+  ...nailsXuLyTinhHuongLessons,
+  ...nailsPedicureLessons,
+  ...nailsSmallTalkLessons,
+  ...nailsThanhToanLessons,
   ...dailyEnglishLessons,
   ...airportLessons,
   ...emergencyLessons,

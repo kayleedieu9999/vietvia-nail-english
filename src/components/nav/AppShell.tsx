@@ -4,6 +4,7 @@ import TextScaleEffect from "@/components/TextScaleEffect";
 import Sidebar from "./Sidebar";
 import BottomNav from "./BottomNav";
 import TopBar from "./TopBar";
+import NotificationBell from "./NotificationBell";
 
 /**
  * Site-wide navigation shell — a desktop sidebar (`Sidebar`) beside the
@@ -19,10 +20,12 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
       <TextScaleEffect />
       <Sidebar />
       <div className="flex min-w-0 flex-1 flex-col">
-        <header className="sticky top-0 z-20 flex items-center justify-center border-b border-slate-200 bg-white/90 px-5 py-3 backdrop-blur lg:hidden">
+        <header className="sticky top-0 z-20 flex items-center justify-between border-b border-slate-200 bg-white/90 px-5 py-3 backdrop-blur lg:hidden">
+          <span aria-hidden className="w-11" />
           <Link href="/" className="text-base font-extrabold tracking-wide text-rose-600">
             VietVia
           </Link>
+          <NotificationBell />
         </header>
         <header className="sticky top-0 z-20 hidden border-b border-slate-200 bg-white/95 px-10 py-4 backdrop-blur lg:block">
           <TopBar />

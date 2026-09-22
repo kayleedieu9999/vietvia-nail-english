@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { topics } from "@/data/topics";
+import { topics, HOI_THOAI_NAILS_GROUP } from "@/data/topics";
 import { getAllLessonSummaries, getLessonSummariesByTopic } from "@/data/lessons";
 import { getReviewSentencePool } from "@/data/grammar";
 import TopicCard from "@/components/TopicCard";
@@ -15,22 +15,11 @@ import WeeklyProgressCard from "@/components/WeeklyProgressCard";
 import ReviewCard from "@/components/ReviewCard";
 import PromoBanner from "@/components/PromoBanner";
 
-/** Practice-category slugs shown on the homepage grid, in the order design calls for. */
-const CATEGORY_SLUGS = [
-  "small-talk",
-  "customer-requests",
-  "pedicure",
-  "nail-color",
-  "unhappy-customer",
-  "dich-vu-tay",
-];
-
 export default function HomePage() {
   const allSummaries = getAllLessonSummaries();
   const reviewSentencePool = getReviewSentencePool();
-  const categoryTopics = CATEGORY_SLUGS.map((slug) => topics.find((t) => t.slug === slug)).filter(
-    (t): t is (typeof topics)[number] => Boolean(t),
-  );
+  /** The 7 "Hội thoại Nails" sub-topics, in their `topics.ts` display order. */
+  const categoryTopics = topics.filter((t) => t.group === HOI_THOAI_NAILS_GROUP);
 
   return (
     <div className="min-h-dvh px-5 pb-16 pt-6 lg:px-10 lg:pb-24 lg:pt-8">

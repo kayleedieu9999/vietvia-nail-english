@@ -15,16 +15,23 @@
  *   (>= 6 of their 10 `english` sentences identical)
  */
 import { allLessons } from "../src/data/lessons";
+import { topics, HOI_THOAI_NAILS_GROUP } from "../src/data/topics";
 
 /** Set to null to skip the count check for a topic (e.g. legacy topics not part of this expansion). */
 const EXPECTED_TOPIC_COUNTS: Record<string, number | null> = {
-  "small-talk": 51, // 1 legacy + 50 new
-  "customer-requests": 51,
-  pedicure: 51,
-  "nail-color": 51,
-  "unhappy-customer": 50,
-  "hand-service": 50,
-  "nail-general": 15,
+  // "Hội thoại Nails" — 7 topics. Every existing nail-salon lesson across the
+  // old (now-removed) small-talk/customer-requests/pedicure/nail-color/
+  // unhappy-customer/hand-service/nail-general topics was redistributed here
+  // by theme, never deleted. 3 topics (dịch vụ / màu & design / xử lý tình
+  // huống) already had more than 50 on-theme existing lessons once
+  // redistributed — those were kept rather than deleted, so they run over 50.
+  "nails-bat-dau": 50,
+  "nails-dich-vu": 66,
+  "nails-mau-design": 77,
+  "nails-xu-ly-tinh-huong": 64,
+  "nails-pedicure": 50,
+  "nails-small-talk": 50,
+  "nails-thanh-toan": 50,
   "food-life": 1,
   "daily-english": 50,
   airport: 50,
@@ -34,6 +41,17 @@ const EXPECTED_TOPIC_COUNTS: Record<string, number | null> = {
   listening: 50,
   pronunciation: 50,
 };
+
+/** The 7 "Hội thoại Nails" topic ids, for the section-specific checks below. */
+const HOI_THOAI_NAILS_TOPIC_IDS = [
+  "nails-bat-dau",
+  "nails-dich-vu",
+  "nails-mau-design",
+  "nails-xu-ly-tinh-huong",
+  "nails-pedicure",
+  "nails-small-talk",
+  "nails-thanh-toan",
+];
 
 function normalize(text: string): string {
   return text.trim().toLowerCase().replace(/\s+/g, " ");
@@ -69,6 +87,37 @@ for (const [topicId, expected] of Object.entries(EXPECTED_TOPIC_COUNTS)) {
   if (expected != null && !byTopic.has(topicId)) {
     fail(`Topic "${topicId}" has ZERO lessons, expected ${expected}`);
   }
+}
+console.log();
+
+// --- "Hội thoại Nails" section checks ---
+console.log("Hội thoại Nails section:");
+const nailTopics = topics.filter((t) => t.group === HOI_THOAI_NAILS_GROUP);
+if (nailTopics.length !== 7) {
+  fail(`Expected exactly 7 topics in the "${HOI_THOAI_NAILS_GROUP}" group, found ${nailTopics.length}`);
+} else {
+  console.log(`  ✓ exactly 7 topics carry group "${HOI_THOAI_NAILS_GROUP}"`);
+}
+let nailTotal = 0;
+for (const topic of nailTopics) {
+  const lessons = byTopic.get(topic.id) ?? [];
+  nailTotal += lessons.length;
+  const avgQuestions = lessons.length > 0
+    ? lessons.reduce((s, l) => s + l.questions.length, 0) / lessons.length
+    : 0;
+  if (lessons.length < 50) {
+    fail(`"${topic.id}" has only ${lessons.length} lessons — every Hội thoại Nails topic must have at least 50`);
+  }
+  console.log(`  ${topic.id}: ${lessons.length} lessons, avg ${avgQuestions.toFixed(1)} questions/lesson`);
+}
+console.log(`  TOTAL: ${nailTotal} lessons across the 7 topics`);
+if (nailTotal !== 350) {
+  console.log(
+    `  ⚠ not exactly 350 — by design: 369 nail-salon lessons already existed pre-restructure (more than` +
+      ` the 350 target) and none were deleted per an explicit "do not delete existing lessons" instruction;` +
+      ` the 3 richest topics were left over 50 rather than discarding real content. This is a reported` +
+      ` deviation, not a script failure.`
+  );
 }
 console.log();
 
@@ -144,9 +193,7 @@ for (const lesson of allLessons) {
 
 // --- Duplicate English sentence detection (within each topic) ---
 console.log("Duplicate-sentence scan (within each topic):");
-// nail-general predates this expansion and is out of scope for it — report
-// its duplicates without counting them as a failure.
-const DUPLICATE_SCAN_EXEMPT_TOPICS = new Set(["nail-general"]);
+const DUPLICATE_SCAN_EXEMPT_TOPICS = new Set<string>();
 
 for (const [topicId, lessons] of byTopic) {
   const sentenceToLocation = new Map<string, string>();

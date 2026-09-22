@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useLocalSettings } from "@/lib/localSettings";
+import NotificationBell from "./NotificationBell";
 
 /**
  * Desktop-only top bar (search + notification + profile slot) above the
@@ -39,14 +40,7 @@ export default function TopBar() {
         </div>
       </form>
 
-      <button
-        type="button"
-        aria-label="Thông báo"
-        className="relative flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-slate-200 bg-white text-lg text-slate-500 transition hover:text-rose-500"
-      >
-        🔔
-        <span className="absolute right-2.5 top-2.5 h-2 w-2 rounded-full bg-rose-500" />
-      </button>
+      <NotificationBell />
 
       <Link
         href="/account/profile"

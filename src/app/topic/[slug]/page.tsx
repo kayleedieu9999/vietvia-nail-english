@@ -1,9 +1,23 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getTopicBySlug, topics } from "@/data/topics";
+import { getTopicBySlug, topics, HOI_THOAI_NAILS_GROUP } from "@/data/topics";
 import { getLessonSummariesByTopic } from "@/data/lessons";
 import LessonList from "@/components/LessonList";
+import NgheHub from "@/components/story/NgheHub";
+import NailSubTopicHub from "@/components/NailSubTopicHub";
+import { stories } from "@/data/stories";
+
+/**
+ * Two cases get a richer hub instead of the plain lesson list below, bolted
+ * on right here by slug/group rather than new routes, so the sidebar keeps
+ * its single "Nghe & phản xạ" / "Hội thoại Nails" entries. Every other
+ * topic renders exactly as before.
+ *  - "listening": adds the "Story dài" long-form mode.
+ *  - any topic in the "hoi-thoai-nails" group: adds breadcrumb, progress,
+ *    "Tiếp tục", and search (each of the 7 sub-topics gets this, not just one slug).
+ */
+const LISTENING_TOPIC_SLUG = "listening";
 
 interface TopicPageProps {
   params: Promise<{ slug: string }>;
@@ -29,6 +43,21 @@ export default async function TopicPage({ params }: TopicPageProps) {
   if (!topic) notFound();
 
   const lessons = getLessonSummariesByTopic(topic.id);
+
+  if (slug === LISTENING_TOPIC_SLUG) {
+    return <NgheHub lessons={lessons} stories={stories} />;
+  }
+
+  if (topic.group === HOI_THOAI_NAILS_GROUP) {
+    return (
+      <NailSubTopicHub
+        lessons={lessons}
+        topicTitle={topic.title}
+        topicDescription={topic.description}
+        topicEmoji={topic.emoji}
+      />
+    );
+  }
 
   return (
     <div className="min-h-dvh px-5 pb-16 pt-8">

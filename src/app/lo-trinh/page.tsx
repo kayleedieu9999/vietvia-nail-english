@@ -1,17 +1,31 @@
 import type { Metadata } from "next";
-import { getLessonSummariesByTopic } from "@/data/lessons";
+import { getLessonsByTopic } from "@/data/lessons";
 import { allGrammarRules } from "@/data/grammar";
-import LoTrinhHub from "@/components/grammar/LoTrinhHub";
+import { stories } from "@/data/stories";
+import { allRoadmapEntries } from "@/data/roadmap";
+import { RoadmapContext } from "@/lib/roadmapProgress";
+import RoadmapPageClient from "@/components/roadmap/RoadmapPageClient";
 
 export const metadata: Metadata = {
   title: "Lộ trình của bạn - VietVia English Practice",
-  description: "Mỗi ngày một chút — luyện những phần cần thiết để nói tiếng Anh tự tin hơn.",
+  description: "Chọn đúng phần bạn cần và luyện từng chút mỗi ngày.",
 };
 
 export default function LoTrinhPage() {
-  const nailLessonSlugs = getLessonSummariesByTopic("nail-general").map((lesson) => lesson.slug);
+  const topicSlugsByKey: Record<string, string[]> = {};
+  for (const entry of allRoadmapEntries) {
+    if (entry.contentRef.kind === "topics") {
+      topicSlugsByKey[entry.key] = entry.contentRef.topicIds.flatMap((id) =>
+        getLessonsByTopic(id).map((lesson) => lesson.slug),
+      );
+    }
+  }
 
-  return (
-    <LoTrinhHub nailLessonSlugs={nailLessonSlugs} totalGrammarRules={allGrammarRules.length} />
-  );
+  const context: RoadmapContext = {
+    topicSlugsByKey,
+    totalGrammarRules: allGrammarRules.length,
+    storyIds: stories.map((s) => s.id),
+  };
+
+  return <RoadmapPageClient context={context} />;
 }

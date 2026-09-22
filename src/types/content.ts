@@ -91,4 +91,6 @@ export interface Topic {
   emoji: string;
   /** Fallback illustration image for lessons/questions in this topic that don't have their own image. */
   fallbackImage?: string;
+  /** Groups related topics under one landing hub (e.g. all 7 "Hội thoại Nails" sub-topics share `"hoi-thoai-nails"`). */
+  group?: string;
 }
