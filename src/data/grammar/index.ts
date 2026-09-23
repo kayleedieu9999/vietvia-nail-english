@@ -246,13 +246,28 @@ export function getGrammarRuleSummariesByPhase(phaseNumber: number): GrammarRule
   return getGrammarRulesByPhase(phaseNumber).map(toSummary);
 }
 
+export interface GrammarReviewEntry {
+  title: string;
+  targetEnglish: string;
+  vietnameseHint: string;
+}
+
 /**
- * id → the one target-practice sentence for that rule. Just the 100 short
- * strings (a few KB), not the full teaching content — safe to ship to a
- * Client Component (the homepage "review queue" card) so it can show the
- * REAL sentence for whichever rules the learner actually got wrong, instead
- * of inventing placeholder text.
+ * id → title/targetEnglish/vietnameseHint for that rule. Just those 3 short
+ * strings per rule (a few KB total), not the full teaching content — safe to
+ * ship to a Client Component (the shared `/on-tap` review page and the
+ * homepage review card) so they can show the REAL sentence for whichever
+ * rules the learner marked/got wrong, instead of inventing placeholder text.
  */
-export function getReviewSentencePool(): Record<string, string> {
-  return Object.fromEntries(allGrammarRules.map((rule) => [rule.id, rule.speakingPractice.targetEnglish]));
+export function getGrammarReviewPool(): Record<string, GrammarReviewEntry> {
+  return Object.fromEntries(
+    allGrammarRules.map((rule) => [
+      rule.id,
+      {
+        title: rule.title,
+        targetEnglish: rule.speakingPractice.targetEnglish,
+        vietnameseHint: rule.speakingPractice.vietnameseHint,
+      },
+    ]),
+  );
 }

@@ -10,19 +10,19 @@ export const metadata: Metadata = {
 
 /**
  * "Luyện nói" is a lightweight real landing page rather than a fabricated
- * hub: only "Câu cần ôn lại" is real content today (the existing grammar
- * review queue) — the other 4 subpaths the user asked for don't have a
- * standalone browsable feature yet (speaking practice is embedded inside
- * grammar/collections/story flows), so they render as honest "Sắp có" cards
- * instead of fake ones.
+ * hub: only "Câu cần ôn lại" is real content today (the shared `/on-tap`
+ * review queue, aggregated across every collection) — the other 4 subpaths
+ * the user asked for don't have a standalone browsable feature yet (speaking
+ * practice is embedded inside grammar/collections/story flows), so they
+ * render as honest "Sắp có" cards instead of fake ones.
  */
 const ENTRIES: RoadmapEntry[] = [
   {
     key: "cau-can-on-lai",
     title: "Câu cần ôn lại",
-    description: "Ôn lại những câu bạn từng trả lời sai, luyện nói lại cho đúng.",
+    description: "Ôn lại những câu bạn đã đánh dấu cần ôn, luyện nói lại cho đúng.",
     emoji: "🔁",
-    href: "/lo-trinh/ngu-phap",
+    href: "/on-tap",
     contentRef: { kind: "placeholder" },
   },
   {

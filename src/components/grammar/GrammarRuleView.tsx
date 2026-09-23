@@ -4,6 +4,7 @@ import { useState } from "react";
 import { GrammarRuleLesson } from "@/types/grammar";
 import { speakEnglish, SLOW_SPEECH_RATE } from "@/lib/tts";
 import { matchesTarget, useSpeechRecognition } from "@/lib/useSpeechRecognition";
+import { useGrammarProgress, setRuleReviewOverride, isRuleNeedsReview } from "@/lib/grammarProgress";
 
 function SectionLabel({ children }: { children: React.ReactNode }) {
   return (
@@ -45,6 +46,10 @@ export default function GrammarRuleView({ rule, onContinue }: GrammarRuleViewPro
   const [selectedChoiceId, setSelectedChoiceId] = useState<string | null>(null);
   const nailSalonMic = useSpeechRecognition();
   const speakingMic = useSpeechRecognition();
+  const grammarProgress = useGrammarProgress();
+  const ruleProgress = grammarProgress[rule.id];
+  const needsReview = isRuleNeedsReview(ruleProgress);
+  const isMastered = ruleProgress?.reviewOverride === "mastered";
 
   const hasAnswered = selectedChoiceId !== null;
   const isCorrect = selectedChoiceId === rule.quiz.correctAnswer;
@@ -222,6 +227,28 @@ export default function GrammarRuleView({ rule, onContinue }: GrammarRuleViewPro
               Trình duyệt này chưa hỗ trợ ghi âm — hãy thử trên Chrome hoặc Safari.
             </p>
           )}
+          <div className="mt-4 flex gap-2 border-t border-slate-100 pt-3">
+            <button
+              type="button"
+              onClick={() => setRuleReviewOverride(rule.id, "review")}
+              className={`flex-1 rounded-xl border px-3 py-2 text-xs font-bold transition active:scale-95 ${
+                needsReview
+                  ? "border-rose-400 bg-rose-500 text-white"
+                  : "border-rose-200 bg-rose-50 text-rose-600"
+              }`}
+            >
+              Cần ôn lại
+            </button>
+            <button
+              type="button"
+              onClick={() => setRuleReviewOverride(rule.id, "mastered")}
+              className={`flex-1 rounded-xl px-3 py-2 text-xs font-bold text-white transition active:scale-95 ${
+                isMastered ? "bg-emerald-600" : "bg-emerald-500"
+              }`}
+            >
+              Đã nhớ
+            </button>
+          </div>
         </div>
       </section>
 

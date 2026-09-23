@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { useSidebarCollapsed } from "@/lib/sidebarState";
 import { useNavGroupsExpanded, isGroupExpanded } from "@/lib/navGroupState";
+import { useReviewCount } from "@/lib/reviewItems";
 import { buildNavSections, isNavItemActive, type NavItem, type NavGroup } from "./navItems";
 
 const EXPANDED_WIDTH = 268;
@@ -171,6 +172,8 @@ function SidebarRow({
   const active = isNavItemActive(item.href, pathname);
   const [expanded, setExpanded] = useState(active && !!item.children);
   const Icon = item.Icon;
+  const reviewCount = useReviewCount();
+  const showReviewCount = item.key === "review" && reviewCount > 0;
 
   if (item.disabled) {
     return (
@@ -220,6 +223,11 @@ function SidebarRow({
         {!collapsed && (
           <>
             <span className="min-w-0 flex-1 truncate">{item.label}</span>
+            {showReviewCount && (
+              <span className="shrink-0 rounded-full bg-rose-500 px-2 py-0.5 text-[11px] font-extrabold text-white">
+                {reviewCount}
+              </span>
+            )}
             {item.children && <span className="text-xs text-slate-400">{expanded ? "▾" : "▸"}</span>}
           </>
         )}

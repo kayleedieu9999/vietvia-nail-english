@@ -150,7 +150,7 @@ export function buildNavSections(): NavSection[] {
       title: "TIẾN ĐỘ",
       items: [
         { key: "my-progress", icon: "📊", label: "Tiến độ của tôi", href: "/results" },
-        { key: "review", icon: "🔁", label: "Câu cần ôn lại", href: "/lo-trinh/ngu-phap" },
+        { key: "review", icon: "🔁", label: "Câu cần ôn lại", href: "/on-tap" },
       ],
     },
     {

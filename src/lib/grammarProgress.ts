@@ -19,6 +19,13 @@ export interface RuleProgress {
   attempts: number;
   lastOpenedAt: string;
   completedAt?: string;
+  /**
+   * Explicit "Cần ôn lại"/"Đã nhớ" toggle from the speaking-practice section,
+   * independent of the THỬ NGAY quiz result. When set, this is the source of
+   * truth for review state; when absent, review state falls back to
+   * `quizCorrect === false` (see `isRuleNeedsReview`).
+   */
+  reviewOverride?: "review" | "mastered";
 }
 
 interface GrammarProgressState {
@@ -90,6 +97,7 @@ export function recordRuleOpened(ruleId: string): void {
         attempts: existing?.attempts ?? 0,
         lastOpenedAt: new Date().toISOString(),
         completedAt: existing?.completedAt,
+        reviewOverride: existing?.reviewOverride,
       },
     },
   });
@@ -108,7 +116,34 @@ export function recordRuleCompletion(ruleId: string, quizCorrect: boolean | null
         attempts: (existing?.attempts ?? 0) + 1,
         lastOpenedAt: existing?.lastOpenedAt ?? new Date().toISOString(),
         completedAt: existing?.completedAt ?? new Date().toISOString(),
+        reviewOverride: existing?.reviewOverride,
       },
     },
   });
+}
+
+/** Explicit "Cần ôn lại"/"Đã nhớ" toggle — upserts, so repeated clicks never create duplicate records. */
+export function setRuleReviewOverride(ruleId: string, state: "review" | "mastered"): void {
+  const current = getState();
+  const existing = current.rules[ruleId];
+  setState({
+    rules: {
+      ...current.rules,
+      [ruleId]: {
+        completed: existing?.completed ?? false,
+        quizCorrect: existing?.quizCorrect ?? null,
+        attempts: existing?.attempts ?? 0,
+        lastOpenedAt: existing?.lastOpenedAt ?? new Date().toISOString(),
+        completedAt: existing?.completedAt,
+        reviewOverride: state,
+      },
+    },
+  });
+}
+
+/** True if a rule should currently appear in the review queue: an explicit override wins over the quiz-inferred default. */
+export function isRuleNeedsReview(progress: RuleProgress | undefined): boolean {
+  if (!progress) return false;
+  if (progress.reviewOverride) return progress.reviewOverride === "review";
+  return progress.quizCorrect === false;
 }

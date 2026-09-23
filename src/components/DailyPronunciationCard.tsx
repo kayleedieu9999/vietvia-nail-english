@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
-import { dongTuData, cauNoiTuNhienData } from "@/data/collections";
+import { tuVungData, cauNoiTuNhienData } from "@/data/collections";
 import { flattenCollection } from "@/types/collection";
 import { useCollectionProgress, setItemState } from "@/lib/collectionProgress";
 import { useSpeechRecognition } from "@/lib/useSpeechRecognition";
@@ -49,7 +49,7 @@ export default function DailyPronunciationCard({ nailsPool }: DailyPronunciation
   const nailsProgress = useCollectionProgress("nails-speaking");
 
   const wordPool: PracticeItem[] = useMemo(
-    () => flattenCollection(dongTuData).map((i) => ({ itemId: i.id, english: i.english, vietnamese: i.vietnamese, ipa: i.ipa })),
+    () => flattenCollection(tuVungData).map((i) => ({ itemId: i.id, english: i.english, vietnamese: i.vietnamese, ipa: i.ipa })),
     [],
   );
   const sentencePool: PracticeItem[] = useMemo(
