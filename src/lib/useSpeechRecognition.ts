@@ -55,11 +55,22 @@ export function matchesTarget(heard: string, target: string): boolean {
 export function useSpeechRecognition() {
   const [state, setState] = useState<RecognitionState>("idle");
   const [transcript, setTranscript] = useState("");
+  /**
+   * The real native error code (e.g. "not-allowed", "no-speech", "network"),
+   * kept alongside the existing generic `state === "error"` rather than
+   * replacing it — every pre-existing consumer only ever read `state` and
+   * showed one hardcoded message, so leaving that behavior untouched and
+   * only *adding* this field is backward-compatible. A new caller that wants
+   * to distinguish "mic permission denied" from "didn't catch that" can read
+   * this; everyone else can keep ignoring it exactly as before.
+   */
+  const [errorCode, setErrorCode] = useState<string | null>(null);
   const recognitionRef = useRef<SpeechRecognitionLike | null>(null);
 
   const start = useCallback(() => {
     const Ctor = getSpeechRecognitionCtor();
     if (!Ctor) {
+      setErrorCode("not-supported");
       setState("error");
       return;
     }
@@ -72,12 +83,16 @@ export function useSpeechRecognition() {
       setTranscript(heard);
       setState("done");
     };
-    recognition.onerror = () => setState("error");
+    recognition.onerror = (event) => {
+      setErrorCode(event.error);
+      setState("error");
+    };
     recognition.onend = () => {
       setState((prev) => (prev === "listening" ? "done" : prev));
     };
     recognitionRef.current = recognition;
     setTranscript("");
+    setErrorCode(null);
     setState("listening");
     recognition.start();
   }, []);
@@ -89,7 +104,8 @@ export function useSpeechRecognition() {
   const reset = useCallback(() => {
     setState("idle");
     setTranscript("");
+    setErrorCode(null);
   }, []);
 
-  return { state, transcript, start, stop, reset };
+  return { state, transcript, errorCode, start, stop, reset };
 }

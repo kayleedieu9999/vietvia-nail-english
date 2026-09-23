@@ -2,7 +2,9 @@ import Link from "next/link";
 import { topics, HOI_THOAI_NAILS_GROUP } from "@/data/topics";
 import { getAllLessonSummaries, getLessonSummariesByTopic } from "@/data/lessons";
 import { getReviewSentencePool } from "@/data/grammar";
+import { buildNailsSpeakingPool } from "@/lib/nailsSpeakingPool";
 import TopicCard from "@/components/TopicCard";
+import DailyPronunciationCard from "@/components/DailyPronunciationCard";
 import ContinueLearningCard from "@/components/ContinueLearningCard";
 import HomeHero from "@/components/HomeHero";
 import AppStoreButton from "@/components/AppStoreButton";
@@ -18,6 +20,7 @@ import PromoBanner from "@/components/PromoBanner";
 export default function HomePage() {
   const allSummaries = getAllLessonSummaries();
   const reviewSentencePool = getReviewSentencePool();
+  const nailsSpeakingPool = buildNailsSpeakingPool();
   /** The 7 "Hội thoại Nails" sub-topics, in their `topics.ts` display order. */
   const categoryTopics = topics.filter((t) => t.group === HOI_THOAI_NAILS_GROUP);
 
@@ -53,6 +56,10 @@ export default function HomePage() {
           <div className="lg:col-span-4">
             <WeeklyProgressCard />
           </div>
+        </section>
+
+        <section className="mt-6 lg:mt-8">
+          <DailyPronunciationCard nailsPool={nailsSpeakingPool} />
         </section>
 
         <section className="mt-8 lg:mt-10">

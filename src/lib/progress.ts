@@ -86,6 +86,32 @@ export function recordLessonCompletion(lessonSlug: string, score: number, total:
   });
 }
 
+/**
+ * Registers one real speaking attempt against a reserved pseudo-slug (not a
+ * real lesson) so streak/weekly/notifications — which all just scan
+ * `lessons{}` generically — count it as today's activity, without going
+ * through `recordLessonCompletion`'s lesson-completion semantics (which
+ * would also overwrite `lastOpenedLessonSlug`, and since a pseudo-slug isn't
+ * in the real lesson list, `ContinueLearningCard` would then render null).
+ * Call this only after the learner has actually spoken — never on card load.
+ */
+export function recordDailyActivity(slug: string): void {
+  const current = getState();
+  const existing = current.lessons[slug];
+  setState({
+    ...current,
+    lessons: {
+      ...current.lessons,
+      [slug]: {
+        bestScore: 1,
+        bestTotal: 1,
+        lastPlayedAt: new Date().toISOString(),
+        timesCompleted: (existing?.timesCompleted ?? 0) + 1,
+      },
+    },
+  });
+}
+
 export function setLastOpenedLesson(lessonSlug: string): void {
   const current = getState();
   if (current.lastOpenedLessonSlug === lessonSlug) return;
