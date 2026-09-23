@@ -24,6 +24,7 @@ export const roadmapGroups: RoadmapGroup[] = [
         iconName: "Layers",
         href: "/lo-trinh",
         contentRef: { kind: "placeholder" },
+        photo: "/images/covers/foundation/foundation-study.jpg",
       },
       {
         key: "grammar100",
@@ -33,6 +34,7 @@ export const roadmapGroups: RoadmapGroup[] = [
         iconName: "BookMarked",
         href: "/lo-trinh/ngu-phap",
         contentRef: { kind: "grammar" },
+        photo: "/images/covers/grammar/grammar-workbook.jpg",
       },
       {
         key: "verbs500",
@@ -42,6 +44,7 @@ export const roadmapGroups: RoadmapGroup[] = [
         iconName: "ListChecks",
         href: "/lo-trinh/dong-tu",
         contentRef: { kind: "collection", collectionKey: "dong-tu" },
+        photo: "/images/covers/verbs/verbs-conversation.jpg",
       },
       {
         key: "vocab500",
@@ -51,6 +54,7 @@ export const roadmapGroups: RoadmapGroup[] = [
         iconName: "Library",
         href: "/lo-trinh/tu-vung",
         contentRef: { kind: "collection", collectionKey: "tu-vung" },
+        photo: "/images/covers/vocabulary/vocabulary-flashcards.jpg",
       },
       {
         key: "phrases500",
@@ -60,6 +64,7 @@ export const roadmapGroups: RoadmapGroup[] = [
         iconName: "MessagesSquare",
         href: "/lo-trinh/cau-noi-tu-nhien",
         contentRef: { kind: "collection", collectionKey: "cau-noi-tu-nhien" },
+        photo: "/images/covers/phrases/phrases-coffee-chat.jpg",
       },
       {
         key: "phrasalverbs300",
@@ -69,6 +74,7 @@ export const roadmapGroups: RoadmapGroup[] = [
         iconName: "Shuffle",
         href: "/lo-trinh/phrasal-verbs",
         contentRef: { kind: "collection", collectionKey: "phrasal-verbs" },
+        photo: "/images/covers/phrasal-verbs/phrasal-verbs-office-chat.jpg",
       },
     ],
   },
@@ -159,6 +165,7 @@ export const roadmapGroups: RoadmapGroup[] = [
         iconName: "Home",
         href: "#",
         contentRef: { kind: "placeholder" },
+        photo: "/images/covers/apartment/apartment-leasing.jpg",
       },
       {
         key: "mua-sam",
@@ -168,6 +175,7 @@ export const roadmapGroups: RoadmapGroup[] = [
         iconName: "ShoppingBag",
         href: "#",
         contentRef: { kind: "placeholder" },
+        photo: "/images/covers/shopping/shopping-checkout.jpg",
       },
       {
         key: "bac-si",
@@ -177,6 +185,7 @@ export const roadmapGroups: RoadmapGroup[] = [
         iconName: "Stethoscope",
         href: "#",
         contentRef: { kind: "placeholder" },
+        photo: "/images/covers/pharmacy/pharmacy-counter.jpg",
       },
       {
         key: "dien-thoai",
@@ -186,6 +195,7 @@ export const roadmapGroups: RoadmapGroup[] = [
         iconName: "Phone",
         href: "#",
         contentRef: { kind: "placeholder" },
+        photo: "/images/covers/customer-service/customer-service-headset.jpg",
       },
       {
         key: "truong-hoc",
@@ -195,6 +205,7 @@ export const roadmapGroups: RoadmapGroup[] = [
         iconName: "GraduationCap",
         href: "#",
         contentRef: { kind: "placeholder" },
+        photo: "/images/covers/school/school-front-office.jpg",
       },
       {
         key: "ngan-hang",
@@ -204,6 +215,7 @@ export const roadmapGroups: RoadmapGroup[] = [
         iconName: "Landmark",
         href: "#",
         contentRef: { kind: "placeholder" },
+        photo: "/images/covers/banking/banking-teller.jpg",
       },
       {
         key: "starbucks",
@@ -213,6 +225,7 @@ export const roadmapGroups: RoadmapGroup[] = [
         iconName: "Coffee",
         href: "#",
         contentRef: { kind: "placeholder" },
+        photo: "/images/covers/food-drink/food-drink-cafe.jpg",
       },
     ],
   },
@@ -230,6 +243,7 @@ export const roadmapGroups: RoadmapGroup[] = [
         iconName: "Volume2",
         href: "/topic/pronunciation",
         contentRef: { kind: "topics", topicIds: ["pronunciation"] },
+        photo: "/images/covers/pronunciation/pronunciation-mic.jpg",
         subpathTags: [
           "Âm cơ bản",
           "Minimal Pairs",
@@ -248,6 +262,7 @@ export const roadmapGroups: RoadmapGroup[] = [
         iconName: "Headphones",
         href: "/topic/listening",
         contentRef: { kind: "topics", topicIds: ["listening"] },
+        photo: "/images/covers/listening/listening-headphones.jpg",
       },
       {
         key: "story-dai",
@@ -267,6 +282,7 @@ export const roadmapGroups: RoadmapGroup[] = [
         iconName: "Mic",
         href: "/lo-trinh/luyen-noi",
         contentRef: { kind: "review-queue" },
+        photo: "/images/covers/speaking/speaking-roleplay.jpg",
         subpathTags: ["Nói theo tình huống", "Trả lời khách", "Roleplay Nails", "Roleplay đời sống", "Câu cần ôn lại"],
       },
     ],
@@ -285,6 +301,7 @@ export const roadmapGroups: RoadmapGroup[] = [
         iconName: "Flag",
         href: "/topic/citizenship",
         contentRef: { kind: "topics", topicIds: ["citizenship"] },
+        photo: "/images/covers/citizenship/citizenship-office.jpg",
         subpathTags: [
           "N-400 Interview",
           "Personal Information",

@@ -23,7 +23,7 @@ export default function RoadmapCard({ entry, progress }: RoadmapCardProps) {
   const [photoFailed, setPhotoFailed] = useState(false);
   const disabled = entry.href === "#";
   const accent = accentForKey(entry.key);
-  const showPhoto = Boolean(entry.photo) && !photoFailed && !disabled;
+  const showPhoto = Boolean(entry.photo) && !photoFailed;
 
   const card = (
     <div
@@ -43,12 +43,14 @@ export default function RoadmapCard({ entry, progress }: RoadmapCardProps) {
             sizes="(max-width: 640px) 100vw, 320px"
             onError={() => setPhotoFailed(true)}
           />
-          <span
-            aria-hidden
-            className="absolute right-2.5 top-2.5 flex h-6 w-6 items-center justify-center rounded-full bg-white/90 text-xs text-slate-500"
-          >
-            ›
-          </span>
+          {!disabled && (
+            <span
+              aria-hidden
+              className="absolute right-2.5 top-2.5 flex h-6 w-6 items-center justify-center rounded-full bg-white/90 text-xs text-slate-500"
+            >
+              ›
+            </span>
+          )}
         </div>
       ) : (
         <div className="flex items-center justify-between p-4 pb-0">

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getLessonBySlug, allLessons, getLessonsByTopic } from "@/data/lessons";
 import { getTopicBySlug } from "@/data/topics";
+import { getLessonCoverImage } from "@/lib/coverImages";
 import LessonPlayer from "@/components/lesson/LessonPlayer";
 
 interface LessonPageProps {
@@ -39,7 +40,7 @@ export default async function LessonPage({ params }: LessonPageProps) {
       topicLabel={topic ? `Chủ đề: ${topic.title}` : undefined}
       description={`${lesson.description} — khoảng ${Math.max(1, Math.round(lesson.questions.length * 0.4))} phút`}
       checklist={["Không cần đăng nhập", `${lesson.questions.length} câu hỏi`, "Có giải thích tiếng Việt"]}
-      coverImage={lesson.coverImage}
+      coverImage={getLessonCoverImage(lesson)}
       badgeEmoji={topic?.emoji}
       progressKey={lesson.slug}
       otherLessonsHref={topic ? `/topic/${topic.slug}` : "/topics"}
