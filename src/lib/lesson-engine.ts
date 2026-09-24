@@ -14,6 +14,8 @@ export interface RoundQuestion extends Question {
   /** Which lesson this question belongs to — needed for the "Bài tiếp theo" flow after a daily round. */
   sourceLessonSlug: string;
   sourceLessonTitle: string;
+  /** The lesson's topic id (e.g. "nails-bat-dau") — used by the Luyện nói speaking flow to show the nail-salon roleplay framing only for nails-sourced questions. */
+  sourceTopicId: string;
 }
 
 /** Builds a run of every question in a lesson, in original order, with choices shuffled. */
@@ -23,6 +25,7 @@ export function buildLessonRound(lesson: Lesson): RoundQuestion[] {
     shuffledChoices: shuffle(question.choices),
     sourceLessonSlug: lesson.slug,
     sourceLessonTitle: lesson.title,
+    sourceTopicId: lesson.topicId,
   }));
 }
 
