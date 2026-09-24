@@ -7,7 +7,7 @@
 
 export type RoadmapContentRef =
   | { kind: "topics"; topicIds: string[] }
-  | { kind: "collection"; collectionKey: "dong-tu" | "cau-noi-tu-nhien" | "phrasal-verbs" | "tu-vung" }
+  | { kind: "collection"; collectionKey: "dong-tu" | "cau-noi-tu-nhien" | "phrasal-verbs" | "tu-vung" | "pharmacy" }
   | { kind: "grammar" }
   | { kind: "stories" }
   | { kind: "review-queue" }

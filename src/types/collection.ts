@@ -26,7 +26,7 @@ export interface CollectionGroup {
 }
 
 export interface CollectionData {
-  key: "dong-tu" | "cau-noi-tu-nhien" | "phrasal-verbs" | "tu-vung";
+  key: "dong-tu" | "cau-noi-tu-nhien" | "phrasal-verbs" | "tu-vung" | "pharmacy";
   /** Curriculum name shown as the page title, e.g. "500 Động từ thông dụng". */
   title: string;
   subtitle: string;

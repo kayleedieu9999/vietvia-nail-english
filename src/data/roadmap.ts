@@ -180,11 +180,11 @@ export const roadmapGroups: RoadmapGroup[] = [
       {
         key: "bac-si",
         title: "Bác sĩ & Pharmacy",
-        description: "Tiếng Anh cơ bản khi đặt lịch, đi khám và lấy thuốc.",
+        description: "Đi Pharmacy & Lấy Thuốc — luyện những câu thường dùng khi lấy thuốc và hỏi pharmacist ở Mỹ.",
         emoji: "💊",
         iconName: "Stethoscope",
-        href: "#",
-        contentRef: { kind: "placeholder" },
+        href: "/lo-trinh/pharmacy",
+        contentRef: { kind: "collection", collectionKey: "pharmacy" },
         photo: "/images/covers/pharmacy/pharmacy-counter.jpg",
       },
       {

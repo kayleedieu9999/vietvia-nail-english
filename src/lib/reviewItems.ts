@@ -20,7 +20,7 @@ import { GrammarReviewEntry } from "@/data/grammar";
  * pages themselves.
  */
 
-export type ReviewContentType = "vocabulary" | "phrase" | "verb" | "phrasal_verb" | "nail_sentence" | "grammar";
+export type ReviewContentType = "vocabulary" | "phrase" | "verb" | "phrasal_verb" | "nail_sentence" | "grammar" | "pharmacy";
 
 export interface ReviewItem {
   /** Stable, unique across all content types. */
@@ -44,6 +44,7 @@ export const CONTENT_TYPE_LABELS: Record<ReviewContentType, string> = {
   phrasal_verb: "Phrasal Verb",
   nail_sentence: "Tiệm Nails",
   grammar: "Ngữ pháp",
+  pharmacy: "Pharmacy",
 };
 
 const COLLECTION_CONTENT_TYPE: Record<CollectionData["key"], ReviewContentType> = {
@@ -51,6 +52,7 @@ const COLLECTION_CONTENT_TYPE: Record<CollectionData["key"], ReviewContentType> 
   "cau-noi-tu-nhien": "phrase",
   "dong-tu": "verb",
   "phrasal-verbs": "phrasal_verb",
+  pharmacy: "pharmacy",
 };
 
 const COLLECTION_ROUTE: Record<CollectionData["key"], string> = {
@@ -58,6 +60,7 @@ const COLLECTION_ROUTE: Record<CollectionData["key"], string> = {
   "cau-noi-tu-nhien": "/lo-trinh/cau-noi-tu-nhien",
   "dong-tu": "/lo-trinh/dong-tu",
   "phrasal-verbs": "/lo-trinh/phrasal-verbs",
+  pharmacy: "/lo-trinh/pharmacy",
 };
 
 const COLLECTION_KEYS = Object.keys(collections) as CollectionData["key"][];
@@ -72,15 +75,21 @@ export function useReviewCount(): number {
   const cauNoi = useCollectionProgress("cau-noi-tu-nhien");
   const dongTu = useCollectionProgress("dong-tu");
   const phrasalVerbs = useCollectionProgress("phrasal-verbs");
+  const pharmacy = useCollectionProgress("pharmacy");
   const nails = useCollectionProgress("nails-speaking");
   const grammar = useGrammarProgress();
 
   return useMemo(() => {
     const collectionsCount =
-      countReview(tuVung) + countReview(cauNoi) + countReview(dongTu) + countReview(phrasalVerbs) + countReview(nails);
+      countReview(tuVung) +
+      countReview(cauNoi) +
+      countReview(dongTu) +
+      countReview(phrasalVerbs) +
+      countReview(pharmacy) +
+      countReview(nails);
     const grammarCount = Object.values(grammar).filter((p) => isRuleNeedsReview(p)).length;
     return collectionsCount + grammarCount;
-  }, [tuVung, cauNoi, dongTu, phrasalVerbs, nails, grammar]);
+  }, [tuVung, cauNoi, dongTu, phrasalVerbs, pharmacy, nails, grammar]);
 }
 
 /** Full item list with display details — needs the (server-built) nails pool and grammar pool passed down as props. */
@@ -92,6 +101,7 @@ export function useReviewItems(
   const cauNoi = useCollectionProgress("cau-noi-tu-nhien");
   const dongTu = useCollectionProgress("dong-tu");
   const phrasalVerbs = useCollectionProgress("phrasal-verbs");
+  const pharmacy = useCollectionProgress("pharmacy");
   const nails = useCollectionProgress("nails-speaking");
   const grammar = useGrammarProgress();
 
@@ -100,6 +110,7 @@ export function useReviewItems(
     "cau-noi-tu-nhien": cauNoi,
     "dong-tu": dongTu,
     "phrasal-verbs": phrasalVerbs,
+    pharmacy,
   };
 
   return useMemo(() => {
@@ -154,5 +165,5 @@ export function useReviewItems(
 
     return items;
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [tuVung, cauNoi, dongTu, phrasalVerbs, nails, grammar, nailsPool, grammarPool]);
+  }, [tuVung, cauNoi, dongTu, phrasalVerbs, pharmacy, nails, grammar, nailsPool, grammarPool]);
 }
