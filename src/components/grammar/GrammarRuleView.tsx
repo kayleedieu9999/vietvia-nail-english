@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { GrammarRuleLesson } from "@/types/grammar";
 import { speakEnglish, SLOW_SPEECH_RATE } from "@/lib/tts";
-import { matchesTarget, useSpeechRecognition } from "@/lib/useSpeechRecognition";
+import { getSpeechErrorMessage, matchesTarget, useSpeechRecognition } from "@/lib/useSpeechRecognition";
 import { useGrammarProgress, setRuleReviewOverride, isRuleNeedsReview } from "@/lib/grammarProgress";
 
 function SectionLabel({ children }: { children: React.ReactNode }) {
@@ -117,6 +117,9 @@ export default function GrammarRuleView({ rule, onContinue }: GrammarRuleViewPro
                 : `Bạn nói: "${nailSalonMic.transcript}" — thử lại nhé!`}
             </p>
           )}
+          {nailSalonMic.state === "error" && (
+            <p className="mt-2 text-xs text-slate-400">{getSpeechErrorMessage(nailSalonMic.errorCode)}</p>
+          )}
         </div>
       </section>
 
@@ -223,9 +226,7 @@ export default function GrammarRuleView({ rule, onContinue }: GrammarRuleViewPro
             </p>
           )}
           {speakingMic.state === "error" && (
-            <p className="mt-2 text-xs text-slate-400">
-              Trình duyệt này chưa hỗ trợ ghi âm — hãy thử trên Chrome hoặc Safari.
-            </p>
+            <p className="mt-2 text-xs text-slate-400">{getSpeechErrorMessage(speakingMic.errorCode)}</p>
           )}
           <div className="mt-4 flex gap-2 border-t border-slate-100 pt-3">
             <button

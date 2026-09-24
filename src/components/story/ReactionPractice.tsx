@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { StoryReaction } from "@/types/story";
 import { speakEnglish, SLOW_SPEECH_RATE } from "@/lib/tts";
-import { useSpeechRecognition } from "@/lib/useSpeechRecognition";
+import { getSpeechErrorMessage, useSpeechRecognition } from "@/lib/useSpeechRecognition";
 
 interface ReactionPracticeProps {
   reaction: StoryReaction;
@@ -88,9 +88,7 @@ export default function ReactionPractice({ reaction, onDone }: ReactionPracticeP
 
       {mic.state === "error" && (
         <div className="mt-3 space-y-3">
-          <p className="text-xs text-slate-400">
-            Trình duyệt này chưa hỗ trợ ghi âm — hãy thử trên Chrome hoặc Safari.
-          </p>
+          <p className="text-xs text-slate-400">{getSpeechErrorMessage(mic.errorCode)}</p>
           <button type="button" onClick={onDone} className="btn-secondary w-full">
             Bỏ qua, tiếp tục
           </button>

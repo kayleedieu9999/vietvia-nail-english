@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { getSpeechErrorMessage } from "@/lib/useSpeechRecognition";
 
 interface SpeechRecorderProps {
   state: "idle" | "listening" | "done" | "error";
@@ -59,9 +60,7 @@ export default function SpeechRecorder({ state, errorCode, onStart, label = "NÓ
 
   if (showUnsupportedError) {
     return (
-      <p className="text-center text-sm font-semibold text-slate-500">
-        Trình duyệt này chưa hỗ trợ ghi âm — hãy thử trên Chrome hoặc Safari.
-      </p>
+      <p className="text-center text-sm font-semibold text-slate-500">{getSpeechErrorMessage("not-supported")}</p>
     );
   }
 
@@ -87,9 +86,9 @@ export default function SpeechRecorder({ state, errorCode, onStart, label = "NÓ
         {state === "listening" ? "Đang nghe bạn nói…" : label}
       </p>
       {showNoSpeechError && (
-        <p className="text-xs font-semibold text-slate-500">VietVia chưa nghe rõ. Bạn thử lại nhé.</p>
+        <p className="text-xs font-semibold text-slate-500">{getSpeechErrorMessage("no-speech")}</p>
       )}
-      {showGenericError && <p className="text-xs font-semibold text-slate-500">Chưa nhận được giọng nói. Thử lại.</p>}
+      {showGenericError && <p className="text-xs font-semibold text-slate-500">{getSpeechErrorMessage(errorCode)}</p>}
     </div>
   );
 }

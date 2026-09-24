@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { CollectionItem } from "@/types/collection";
 import { speakEnglish, SLOW_SPEECH_RATE } from "@/lib/tts";
-import { matchesTarget, useSpeechRecognition } from "@/lib/useSpeechRecognition";
+import { getSpeechErrorMessage, matchesTarget, useSpeechRecognition } from "@/lib/useSpeechRecognition";
 import {
   ItemState,
   STATE_LABELS,
@@ -101,6 +101,10 @@ export default function ItemCard({ collectionKey, item, state }: ItemCardProps) 
             ? `✓ Nói đúng: "${mic.transcript}"`
             : `Bạn nói: "${mic.transcript}" — thử lại nhé!`}
         </p>
+      )}
+
+      {mic.state === "error" && (
+        <p className="mt-2 text-xs font-semibold text-slate-500">{getSpeechErrorMessage(mic.errorCode)}</p>
       )}
 
       <div className="mt-4 flex gap-2 border-t border-slate-100 pt-3">
