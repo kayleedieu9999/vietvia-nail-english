@@ -14,6 +14,7 @@ import { dmvLessons } from "@/data/lessons/dmv";
 import { citizenshipLessons } from "@/data/lessons/citizenship";
 import { listeningLessons } from "@/data/lessons/listening";
 import { pronunciationLessons } from "@/data/lessons/pronunciation";
+import { nailsBatchByTopic } from "@/data/lessons/nails-batch-2026-10";
 
 /**
  * Every lesson on the site. To add a new lesson: write a new file in
@@ -23,12 +24,19 @@ import { pronunciationLessons } from "@/data/lessons/pronunciation";
 export const allLessons: Lesson[] = [
   vietnameseFoodLesson,
   ...nailsBatDauLessons,
+  ...nailsBatchByTopic["nails-bat-dau"],
   ...nailsDichVuLessons,
+  ...nailsBatchByTopic["nails-dich-vu"],
   ...nailsMauDesignLessons,
+  ...nailsBatchByTopic["nails-mau-design"],
   ...nailsXuLyTinhHuongLessons,
+  ...nailsBatchByTopic["nails-xu-ly-tinh-huong"],
   ...nailsPedicureLessons,
+  ...nailsBatchByTopic["nails-pedicure"],
   ...nailsSmallTalkLessons,
+  ...nailsBatchByTopic["nails-small-talk"],
   ...nailsThanhToanLessons,
+  ...nailsBatchByTopic["nails-thanh-toan"],
   ...dailyEnglishLessons,
   ...airportLessons,
   ...emergencyLessons,
@@ -61,6 +69,9 @@ function toSummary(lesson: Lesson): LessonSummary {
     description: lesson.description,
     level: lesson.level,
     section: lesson.section,
+    category: lesson.category,
+    publishedAt: lesson.publishedAt,
+    newUntil: lesson.newUntil,
     questionCount: lesson.questions.length,
   };
 }

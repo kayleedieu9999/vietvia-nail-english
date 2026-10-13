@@ -7,6 +7,7 @@ import LessonList from "@/components/LessonList";
 import NgheHub from "@/components/story/NgheHub";
 import NailSubTopicHub from "@/components/NailSubTopicHub";
 import { stories } from "@/data/stories";
+import PracticeBatchLink from "@/components/PracticeBatchLink";
 
 /**
  * Two cases get a richer hub instead of the plain lesson list below, bolted
@@ -71,6 +72,9 @@ export default async function TopicPage({ params }: TopicPageProps) {
           <h1 className="text-2xl font-extrabold text-slate-900">{topic.title}</h1>
         </div>
         <p className="mt-2 text-sm text-slate-600">{topic.description}</p>
+        {slug === "airport" && (
+          <PracticeBatchLink href="/lesson/airport-batch-2026-10/luyen-tap" label="Luyện tập bài mới" />
+        )}
 
         {lessons.length === 0 ? (
           <div className="mt-8 rounded-2xl bg-slate-50 p-6 text-center ring-1 ring-slate-100">
@@ -80,7 +84,7 @@ export default async function TopicPage({ params }: TopicPageProps) {
             </p>
           </div>
         ) : (
-          <LessonList lessons={lessons} />
+          <LessonList lessons={lessons} enableSearch={lessons.some((l) => l.category)} />
         )}
       </div>
     </div>

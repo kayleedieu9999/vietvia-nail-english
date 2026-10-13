@@ -4,7 +4,7 @@
  *
  * Checks:
  * - Every topic hits its expected lesson count (see EXPECTED_TOPIC_COUNTS)
- * - Every lesson has exactly 10 questions
+ * - Every lesson has exactly 10 questions (5 for legacy lessons and Oct 2026 batch micro-lessons)
  * - Every question has a non-empty `choices` array and a `correctAnswer`
  *   that actually matches one of the choice ids
  * - No duplicate lesson ids or slugs (site-wide)
@@ -25,16 +25,16 @@ const EXPECTED_TOPIC_COUNTS: Record<string, number | null> = {
   // by theme, never deleted. 3 topics (dịch vụ / màu & design / xử lý tình
   // huống) already had more than 50 on-theme existing lessons once
   // redistributed — those were kept rather than deleted, so they run over 50.
-  "nails-bat-dau": 50,
-  "nails-dich-vu": 66,
-  "nails-mau-design": 77,
-  "nails-xu-ly-tinh-huong": 64,
-  "nails-pedicure": 50,
-  "nails-small-talk": 50,
-  "nails-thanh-toan": 50,
+  "nails-bat-dau": 51,
+  "nails-dich-vu": 71,
+  "nails-mau-design": 78,
+  "nails-xu-ly-tinh-huong": 65,
+  "nails-pedicure": 51,
+  "nails-small-talk": 51,
+  "nails-thanh-toan": 51,
   "food-life": 1,
   "daily-english": 50,
-  airport: 50,
+  airport: 60,
   emergency: 50,
   dmv: 50,
   citizenship: 50,
@@ -136,7 +136,8 @@ const seenLessonSlugs = new Map<string, string>();
 const seenQuestionIds = new Map<string, string>();
 
 for (const lesson of allLessons) {
-  const expectedQuestionCount = LEGACY_FIVE_QUESTION_SLUGS.has(lesson.slug) ? 5 : 10;
+  // Oct 2026 batch lessons (carry `publishedAt`) are compact 5-question micro-lessons.
+  const expectedQuestionCount = LEGACY_FIVE_QUESTION_SLUGS.has(lesson.slug) || lesson.publishedAt ? 5 : 10;
   if (lesson.questions.length !== expectedQuestionCount) {
     fail(
       `Lesson "${lesson.slug}" (${lesson.id}) has ${lesson.questions.length} questions, expected ${expectedQuestionCount}`

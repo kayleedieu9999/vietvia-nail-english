@@ -64,6 +64,12 @@ export interface Lesson {
   coverImage?: string;
   /** Optional group label (e.g. "BẮT ĐẦU") for topic pages with many lessons. Lessons without one render as a flat list. */
   section?: string;
+  /** Optional filter key (e.g. "tsa", "pedicure") — topic pages show filter chips only when lessons carry one. */
+  category?: string;
+  /** ISO date (YYYY-MM-DD) the lesson was published. Informational; freshness is driven by `newUntil`. */
+  publishedAt?: string;
+  /** ISO date (YYYY-MM-DD) until which the lesson shows a "NEW" badge. Absent = never NEW. */
+  newUntil?: string;
   questions: Question[];
 }
 
@@ -80,6 +86,9 @@ export interface LessonSummary {
   description: string;
   level: LessonLevel;
   section?: string;
+  category?: string;
+  publishedAt?: string;
+  newUntil?: string;
   questionCount: number;
 }
 

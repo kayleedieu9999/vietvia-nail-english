@@ -1,6 +1,10 @@
+"use client";
+
 import Link from "next/link";
 import { LessonSummary } from "@/types/content";
 import { LessonProgress } from "@/lib/progress";
+import { isFresh, useToday } from "@/lib/freshness";
+import LessonStatusBadge from "@/components/LessonStatusBadge";
 
 const levelLabels: Record<LessonSummary["level"], string> = {
   beginner: "Cơ bản",
@@ -17,6 +21,11 @@ interface LessonCardProps {
 }
 
 export default function LessonCard({ lesson, index, progress }: LessonCardProps) {
+  const today = useToday();
+  // DONE = the lesson's real completion record exists (written when a round is finished).
+  const isDone = Boolean(progress);
+  const isNew = isFresh(lesson.newUntil, today);
+
   return (
     <Link
       href={`/lesson/${lesson.slug}`}
@@ -30,7 +39,7 @@ export default function LessonCard({ lesson, index, progress }: LessonCardProps)
         <p className="text-xs font-bold uppercase tracking-wide text-rose-400">
           Bài {index + 1}
         </p>
-        <p className="mt-0.5 truncate text-base font-bold text-slate-900">{lesson.title}</p>
+        <p className="mt-0.5 line-clamp-2 text-base leading-snug font-bold text-slate-900">{lesson.title}</p>
         <p className="mt-0.5 line-clamp-2 text-sm text-slate-500">{lesson.description}</p>
         <div className="mt-2 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs font-semibold text-slate-400">
           <span>{lesson.questionCount} câu</span>
@@ -43,9 +52,12 @@ export default function LessonCard({ lesson, index, progress }: LessonCardProps)
         </div>
       </div>
 
-      <span className="shrink-0 rounded-xl bg-rose-500 px-4 py-2 text-sm font-bold text-white">
-        {progress ? "Tiếp tục" : "Bắt đầu"}
-      </span>
+      <div className="flex shrink-0 flex-col items-end gap-1.5">
+        <LessonStatusBadge isNew={isNew} isDone={isDone} />
+        <span className="rounded-xl bg-rose-500 px-4 py-2 text-sm font-bold text-white">
+          {progress ? "Tiếp tục" : "Bắt đầu"}
+        </span>
+      </div>
     </Link>
   );
 }

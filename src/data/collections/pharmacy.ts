@@ -1,4 +1,12 @@
 import { CollectionData } from "@/types/collection";
+import {
+  layThuocNew,
+  refillNew,
+  insuranceNew,
+  thanhToanNew,
+  cachDungNew,
+  hoiPharmacistNew,
+} from "./pharmacy-batch2";
 
 /**
  * "Đi Pharmacy & Lấy Thuốc ở Mỹ" — real, short customer ↔ pharmacy-staff
@@ -162,6 +170,7 @@ export const pharmacyData: CollectionData = {
         { id: "ph-50b", english: "Do I need to sign anything?", vietnamese: "Tôi có cần ký gì không?", whenToUse: "Hỏi trước khi rời quầy pharmacy.", example: "Do I need to sign anything before I go?" },
         { id: "ph-50c", english: "Thank you. Have a good day.", vietnamese: "Cảm ơn bạn. Chúc một ngày tốt lành.", whenToUse: "Câu chào tạm biệt lịch sự khi rời quầy.", example: "\"Here you go.\" \"Thank you. Have a good day.\"" },
         { id: "ph-50d", english: "You're welcome. Take care.", vietnamese: "Không có gì. Giữ gìn sức khỏe nhé.", whenToUse: "Câu nhân viên đáp lại khi bạn cảm ơn và rời đi.", example: "\"Thank you, have a good day.\" \"You're welcome. Take care.\"" },
+        ...layThuocNew,
       ],
     },
     {
@@ -221,6 +230,7 @@ export const pharmacyData: CollectionData = {
         { id: "ph-24b", english: "We sent a request to your doctor.", vietnamese: "Chúng tôi đã gửi yêu cầu cho bác sĩ.", whenToUse: "Nhân viên giải thích đã liên hệ bác sĩ.", example: "We sent a request to your doctor this morning." },
         { id: "ph-24c", english: "How long does approval usually take?", vietnamese: "Việc duyệt thường mất bao lâu?", whenToUse: "Hỏi thời gian chờ bác sĩ duyệt.", example: "How long does approval usually take?" },
         { id: "ph-24d", english: "Can you call me when it's approved?", vietnamese: "Bạn gọi tôi khi được duyệt nhé?", whenToUse: "Nhờ nhân viên báo lại khi có kết quả.", example: "Can you call me when it's approved?" },
+        ...refillNew,
       ],
     },
     {
@@ -262,6 +272,7 @@ export const pharmacyData: CollectionData = {
         { id: "ph-36b", english: "Your insurance information looks outdated.", vietnamese: "Thông tin bảo hiểm của bạn có vẻ đã cũ.", whenToUse: "Nhân viên giải thích lý do cần cập nhật.", example: "Your insurance information looks outdated, can you confirm it?" },
         { id: "ph-36c", english: "Can you give me your new insurance details?", vietnamese: "Bạn cho tôi thông tin bảo hiểm mới được không?", whenToUse: "Nhân viên yêu cầu thông tin mới.", example: "Can you give me your new insurance details, please?" },
         { id: "ph-36d", english: "I switched jobs recently.", vietnamese: "Gần đây tôi mới đổi việc.", whenToUse: "Giải thích lý do thông tin bảo hiểm thay đổi.", example: "I switched jobs recently, so my insurance changed too." },
+        ...insuranceNew,
       ],
     },
     {
@@ -297,7 +308,13 @@ export const pharmacyData: CollectionData = {
         { id: "ph-40b", english: "Do you have a photo ID with you?", vietnamese: "Bạn có mang giấy tờ có ảnh không?", whenToUse: "Cách hỏi cụ thể hơn về loại giấy tờ.", example: "Do you have a photo ID with you today?" },
         { id: "ph-40c", english: "Here's my driver's license.", vietnamese: "Đây là bằng lái xe của tôi.", whenToUse: "Cách bạn đưa giấy tờ khi được yêu cầu.", example: "\"Can I see your ID?\" \"Here's my driver's license.\"" },
         { id: "ph-40d", english: "Sorry, I left it in the car.", vietnamese: "Xin lỗi, tôi để quên trong xe.", whenToUse: "Trả lời khi tạm thời không có giấy tờ trên người.", example: "Sorry, I left it in the car. One second." },
+        ...thanhToanNew,
       ],
+    },
+    {
+      id: "cach-dung-thuoc",
+      title: "Cách dùng thuốc",
+      items: [...cachDungNew],
     },
     {
       id: "hoi-pharmacist",
@@ -350,6 +367,7 @@ export const pharmacyData: CollectionData = {
         { id: "ph-48b", english: "The pill is a different color this time.", vietnamese: "Lần này viên thuốc có màu khác.", whenToUse: "Mô tả cụ thể sự khác biệt bạn thấy.", example: "The pill is a different color this time, is it the same medicine?" },
         { id: "ph-48c", english: "That's normal — it's just a different manufacturer.", vietnamese: "Bình thường thôi — chỉ là nhà sản xuất khác.", whenToUse: "Pharmacist giải thích lý do thường gặp.", example: "\"It looks different.\" \"That's normal — it's just a different manufacturer.\"" },
         { id: "ph-48d", english: "Thanks for explaining, that makes sense.", vietnamese: "Cảm ơn đã giải thích, vậy hợp lý rồi.", whenToUse: "Cảm ơn pharmacist sau khi được giải thích lý do.", example: "Thanks for explaining, that makes sense." },
+        ...hoiPharmacistNew,
       ],
     },
   ],

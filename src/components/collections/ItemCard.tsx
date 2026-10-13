@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 import { CollectionItem } from "@/types/collection";
 import { speakEnglish, SLOW_SPEECH_RATE } from "@/lib/tts";
 import { getSpeechErrorMessage, matchesTarget, useSpeechRecognition } from "@/lib/useSpeechRecognition";
+import { isFresh, useToday } from "@/lib/freshness";
+import LessonStatusBadge from "@/components/LessonStatusBadge";
 import {
   ItemState,
   STATE_LABELS,
@@ -29,6 +31,10 @@ interface ItemCardProps {
 export default function ItemCard({ collectionKey, item, state }: ItemCardProps) {
   const mic = useSpeechRecognition();
   const [showAnswer, setShowAnswer] = useState(false);
+  const today = useToday();
+  // DONE = the learner pressed "Đã nhớ" (the collection's real completion state); never just "opened".
+  const isDone = state === "mastered";
+  const isNew = isFresh(item.newUntil, today);
 
   useEffect(() => {
     markItemSeen(collectionKey, item.id);
@@ -45,11 +51,15 @@ export default function ItemCard({ collectionKey, item, state }: ItemCardProps) 
           <p className="text-lg font-extrabold text-slate-900 lg:text-xl">{item.english}</p>
           {item.ipa && <p className="mt-0.5 text-sm text-slate-400">{item.ipa}</p>}
         </div>
-        <span
-          className={`shrink-0 rounded-full px-2.5 py-1 text-[11px] font-bold ${STATE_BADGE_CLASS[state]}`}
-        >
-          {state === "new" ? NEW_LABEL : STATE_LABELS[state]}
-        </span>
+        <div className="flex shrink-0 flex-col items-end gap-1.5">
+          <LessonStatusBadge isNew={isNew} isDone={isDone} />
+          {/* "Đã nhớ" would just repeat DONE, so the status pill is dropped once mastered. */}
+          {!isDone && (
+            <span className={`rounded-full px-2.5 py-1 text-[11px] font-bold ${STATE_BADGE_CLASS[state]}`}>
+              {state === "new" ? NEW_LABEL : STATE_LABELS[state]}
+            </span>
+          )}
+        </div>
       </div>
 
       <button

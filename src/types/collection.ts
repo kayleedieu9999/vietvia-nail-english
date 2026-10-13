@@ -17,6 +17,8 @@ export interface CollectionItem {
   exampleVietnamese?: string;
   /** Phrases only — a short "dùng khi nào" note. */
   whenToUse?: string;
+  /** ISO date (YYYY-MM-DD) until which the item shows a "NEW" badge. Absent = never NEW. */
+  newUntil?: string;
 }
 
 export interface CollectionGroup {

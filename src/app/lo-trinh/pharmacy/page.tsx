@@ -8,5 +8,8 @@ export const metadata: Metadata = {
 };
 
 export default function PharmacyPage() {
-  return <CollectionPageClient data={pharmacyData} />;
+  return <CollectionPageClient
+      data={pharmacyData}
+      practice={{ href: "/lesson/pharmacy-batch-2026-10/luyen-tap", label: "Luyện tập 50 câu mới" }}
+    />;
 }

@@ -9,17 +9,26 @@ import { airportGroup07 } from "./07-tre-huy-chuyen-bay";
 import { airportGroup08 } from "./08-mua-do-an";
 import { airportGroup09 } from "./09-chuyen-bay-noi-tiep";
 import { airportGroup10 } from "./10-taxi-xe-don";
+import { airportBatch2026_10 } from "./11-batch-2026-10";
 
-/** 50 "Airport" lessons, grouped by subtopic, combined in lesson-number order. */
+/**
+ * Filter category per original group. Added here (not in each lesson) so the
+ * original content stays untouched; groups with no clear filter (directions,
+ * food) simply carry no category and show under "Tất cả".
+ */
+const withCategory = (lessons: Lesson[], category: string): Lesson[] => lessons.map((l) => ({ ...l, category }));
+
+/** 50 original "Airport" lessons (grouped by subtopic) followed by the Oct 2026 batch (ap-51 – ap-60). */
 export const airportLessons: Lesson[] = [
-  ...airportGroup01,
-  ...airportGroup02,
-  ...airportGroup03,
+  ...withCategory(airportGroup01, "check-in"),
+  ...withCategory(airportGroup02, "tsa"),
+  ...withCategory(airportGroup03, "boarding"),
   ...airportGroup04,
-  ...airportGroup05,
+  ...withCategory(airportGroup05, "baggage"),
   ...airportGroup06,
-  ...airportGroup07,
+  ...withCategory(airportGroup07, "delay"),
   ...airportGroup08,
-  ...airportGroup09,
-  ...airportGroup10,
+  ...withCategory(airportGroup09, "delay"),
+  ...withCategory(airportGroup10, "baggage"),
+  ...airportBatch2026_10,
 ];

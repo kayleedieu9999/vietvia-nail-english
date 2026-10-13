@@ -6,9 +6,15 @@ import { CollectionData, flattenCollection } from "@/types/collection";
 import { useCollectionProgress, pickReviewItems } from "@/lib/collectionProgress";
 import ItemCard from "./ItemCard";
 import QuickReview from "./QuickReview";
+import PracticeBatchLink from "@/components/PracticeBatchLink";
+import { isFresh, useToday } from "@/lib/freshness";
+
+const NEW_GROUP = "__new__";
 
 interface CollectionPageClientProps {
   data: CollectionData;
+  /** Optional "Luyện tập" exercise set built from this collection's newest batch. */
+  practice?: { href: string; label: string };
 }
 
 /**
@@ -17,7 +23,7 @@ interface CollectionPageClientProps {
  * cards at once), and an "Ôn nhanh" quick-review overlay. Parameterized by
  * `data` so the 4 route pages are each a couple of lines.
  */
-export default function CollectionPageClient({ data }: CollectionPageClientProps) {
+export default function CollectionPageClient({ data, practice }: CollectionPageClientProps) {
   const allItems = useMemo(() => flattenCollection(data), [data]);
   const progress = useCollectionProgress(data.key);
   const viewedCount = Object.keys(progress).length;
@@ -26,6 +32,8 @@ export default function CollectionPageClient({ data }: CollectionPageClientProps
   const [query, setQuery] = useState("");
   const [activeGroupId, setActiveGroupId] = useState(data.groups[0]?.id ?? "");
   const [showReview, setShowReview] = useState(false);
+  const today = useToday();
+  const freshItems = useMemo(() => allItems.filter((i) => isFresh(i.newUntil, today)), [allItems, today]);
 
   const searching = query.trim().length > 0;
   const searchResults = useMemo(() => {
@@ -37,6 +45,7 @@ export default function CollectionPageClient({ data }: CollectionPageClientProps
   }, [allItems, query, searching]);
 
   const activeGroup = data.groups.find((g) => g.id === activeGroupId) ?? data.groups[0];
+  const visibleItems = activeGroupId === NEW_GROUP ? freshItems : activeGroup?.items;
 
   function handleContinue() {
     const firstUnseen = allItems.find((item) => !progress[item.id]);
@@ -63,6 +72,7 @@ export default function CollectionPageClient({ data }: CollectionPageClientProps
           {data.title}
         </h1>
         <p className="mt-2 text-sm leading-relaxed text-slate-600 lg:text-base">{data.subtitle}</p>
+        {practice && <PracticeBatchLink href={practice.href} label={practice.label} />}
 
         <div className="card-surface mt-5 space-y-2">
           <div className="h-2 w-full overflow-hidden rounded-full bg-well">
@@ -93,6 +103,17 @@ export default function CollectionPageClient({ data }: CollectionPageClientProps
 
         {!searching && (
           <div className="mt-4 flex flex-wrap gap-2">
+            {freshItems.length > 0 && (
+              <button
+                type="button"
+                onClick={() => setActiveGroupId(NEW_GROUP)}
+                className={`rounded-full px-3.5 py-2 text-xs font-bold transition ${
+                  activeGroupId === NEW_GROUP ? "bg-rose-500 text-white" : "bg-rose-100 text-rose-600 hover:bg-rose-200"
+                }`}
+              >
+                NEW ({freshItems.length})
+              </button>
+            )}
             {data.groups.map((group) => (
               <button
                 key={group.id}
@@ -125,7 +146,7 @@ export default function CollectionPageClient({ data }: CollectionPageClientProps
               <p className="text-sm text-slate-500">Không tìm thấy kết quả cho &quot;{query}&quot;.</p>
             )
           ) : (
-            activeGroup?.items.map((item) => (
+            visibleItems?.map((item) => (
               <ItemCard
                 key={item.id}
                 collectionKey={data.key}
